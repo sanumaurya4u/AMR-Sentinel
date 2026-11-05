@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import {
   User,
@@ -57,6 +57,22 @@ export function PrescriptionStepper() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const [isExtracting, setIsExtracting] = useState<boolean>(false);
   const [extractionNotice, setExtractionNotice] = useState<string | null>(null);
+  const [selectedCaseId, setSelectedCaseId] = useState<string>("");
+
+  // Auto-load case from URL query parameter (e.g. ?case=SYN_CASE_02_GERIATRIC_RENAL)
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const caseParam = params.get("case");
+      if (caseParam) {
+        const found = SYNTHETIC_SAMPLE_CASES.find((c) => c.id === caseParam);
+        if (found) {
+          setSelectedCaseId(found.id);
+          loadSyntheticCase(found);
+        }
+      }
+    }
+  }, []);
 
   // Assistive document extraction handler
   const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -111,6 +127,7 @@ export function PrescriptionStepper() {
 
   // Load a synthetic sample case
   const loadSyntheticCase = (c: SyntheticCase) => {
+    setSelectedCaseId(c.id);
     setAgeYears(c.patientContext.ageYears.toString());
     setGender(c.patientContext.gender);
     setIsPregnant(c.patientContext.isPregnant);
@@ -232,11 +249,11 @@ export function PrescriptionStepper() {
             </div>
           </div>
           <select
+            value={selectedCaseId}
             onChange={(e) => {
               const selected = SYNTHETIC_SAMPLE_CASES.find((c) => c.id === e.target.value);
               if (selected) loadSyntheticCase(selected);
             }}
-            defaultValue=""
             className="w-full sm:w-auto rounded-lg border border-border bg-white px-3 py-2 text-xs font-medium text-ink shadow-xs focus:border-primary focus:outline-hidden"
           >
             <option value="" disabled>

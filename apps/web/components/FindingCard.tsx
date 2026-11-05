@@ -4,13 +4,17 @@ import { EvidenceSource } from "./EvidenceDrawer";
 
 export interface FindingItem {
   id: string;
-  ruleId: string;
+  ruleId?: string;
+  rule_id?: string;
   severity: "URGENT_REVIEW" | "NEEDS_REVIEW" | "DATA_GAP" | "INFO";
   title: string;
   explanation: string;
-  inputFactsUsed: Record<string, string | number | boolean>;
+  inputFactsUsed?: Record<string, string | number | boolean>;
+  input_facts_used?: Record<string, string | number | boolean>;
   missingDataStatus?: string[];
+  missing_data_status?: string[];
   guidelineDiscussionPrompt?: string;
+  guideline_discussion_prompt?: string;
   evidence: EvidenceSource;
   acknowledged?: boolean;
 }
@@ -24,6 +28,10 @@ interface FindingCardProps {
 export function FindingCard({ finding, onOpenEvidence, onAcknowledge }: FindingCardProps) {
   const isUrgent = finding.severity === "URGENT_REVIEW";
   const isReview = finding.severity === "NEEDS_REVIEW";
+  const ruleIdentifier = finding.ruleId || finding.rule_id || "AMR-RULE";
+  const inputFacts = finding.inputFactsUsed || finding.input_facts_used || {};
+  const prompt = finding.guidelineDiscussionPrompt || finding.guideline_discussion_prompt;
+  const missingData = finding.missingDataStatus || finding.missing_data_status || [];
 
   return (
     <div
@@ -56,7 +64,7 @@ export function FindingCard({ finding, onOpenEvidence, onAcknowledge }: FindingC
               </span>
             )}
             <span className="font-mono text-[11px] font-semibold text-slate-clinical">
-              {finding.ruleId}
+              {ruleIdentifier}
             </span>
           </div>
 
@@ -76,13 +84,13 @@ export function FindingCard({ finding, onOpenEvidence, onAcknowledge }: FindingC
         </div>
 
         {/* Guideline Discussion Prompt (Non-prescriptive) */}
-        {finding.guidelineDiscussionPrompt && (
+        {prompt && (
           <div className="rounded-lg border border-primary/20 bg-primary-subtle/30 p-3 text-xs">
             <div className="flex items-start gap-2">
               <Lightbulb className="h-4 w-4 text-primary shrink-0 mt-0.5" />
               <div>
                 <span className="font-semibold text-primary">Guideline Discussion Option: </span>
-                <span className="text-ink">{finding.guidelineDiscussionPrompt}</span>
+                <span className="text-ink">{prompt}</span>
                 <p className="mt-1 text-[11px] text-slate-clinical">
                   *Prompt only. Verify local guidelines before altering therapy.
                 </p>
@@ -97,7 +105,7 @@ export function FindingCard({ finding, onOpenEvidence, onAcknowledge }: FindingC
             Clinical Input Facts Evaluated:
           </span>
           <div className="flex flex-wrap gap-2">
-            {Object.entries(finding.inputFactsUsed).map(([key, value]) => (
+            {Object.entries(inputFacts).map(([key, value]) => (
               <span
                 key={key}
                 className="inline-flex items-center gap-1 rounded bg-white px-2 py-1 border border-border text-[11px]"
@@ -110,9 +118,9 @@ export function FindingCard({ finding, onOpenEvidence, onAcknowledge }: FindingC
         </div>
 
         {/* Missing Data status */}
-        {finding.missingDataStatus && finding.missingDataStatus.length > 0 && (
+        {missingData && missingData.length > 0 && (
           <div className="text-xs text-amber-700 bg-amber-50 p-2.5 rounded-md border border-amber-200">
-            <strong>Data Gaps:</strong> {finding.missingDataStatus.join(", ")}
+            <strong>Data Gaps:</strong> {missingData.join(", ")}
           </div>
         )}
 

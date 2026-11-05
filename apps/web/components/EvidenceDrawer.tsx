@@ -6,8 +6,10 @@ export interface EvidenceSource {
   title: string;
   publisher: string;
   jurisdiction: string;
-  publishedOn: string;
-  sectionRef: string;
+  publishedOn?: string;
+  published_on?: string;
+  sectionRef?: string;
+  section_ref?: string;
   excerpt: string;
   url?: string;
 }
@@ -21,6 +23,9 @@ interface EvidenceDrawerProps {
 
 export function EvidenceDrawer({ isOpen, onClose, evidence, ruleSetVersion }: EvidenceDrawerProps) {
   if (!isOpen || !evidence) return null;
+
+  const publishedDate = evidence.publishedOn || evidence.published_on || "N/A";
+  const sectionReference = evidence.sectionRef || evidence.section_ref || "Standard Section";
 
   return (
     <div className="fixed inset-0 z-50 flex justify-end bg-black/40 backdrop-blur-xs transition-opacity">
@@ -71,7 +76,7 @@ export function EvidenceDrawer({ isOpen, onClose, evidence, ruleSetVersion }: Ev
                 <Calendar className="h-3.5 w-3.5" />
                 <span>Published Date</span>
               </div>
-              <span className="font-semibold text-ink">{evidence.publishedOn}</span>
+              <span className="font-semibold text-ink">{publishedDate}</span>
             </div>
           </div>
 
@@ -81,7 +86,7 @@ export function EvidenceDrawer({ isOpen, onClose, evidence, ruleSetVersion }: Ev
               Section Reference
             </h5>
             <div className="rounded-md bg-canvas px-3 py-2 text-xs font-mono font-medium text-ink border border-border">
-              {evidence.sectionRef}
+              {sectionReference}
             </div>
           </div>
 

@@ -51,11 +51,54 @@ export default function ResultsPage() {
     if (storedResult) {
       try {
         const parsed = JSON.parse(storedResult);
+        const resolvedAuditId = parsed.audit_id || parsed.auditId || `AUD-${Date.now()}`;
         setStatus(parsed.status || "NEEDS_REVIEW");
-        setAuditId(parsed.audit_id || parsed.auditId || `AUD-${Date.now()}`);
-        setRuleSetVersion(parsed.rule_set_version || parsed.ruleSetVersion || "1.0.0");
-        setFindings(parsed.findings || []);
+        setAuditId(resolvedAuditId);
+        setRuleSetVersion(parsed.rule_set_version || parsed.ruleSetVersion || "1.0.0-ICMR-STG-2022");
+
+        // Safely normalize findings from either snake_case (FastAPI) or camelCase (TS)
+        const rawFindings = Array.isArray(parsed.findings) ? parsed.findings : [];
+        const normalizedFindings: FindingItem[] = rawFindings.map((f: any, idx: number) => ({
+          id: f.id || `FND-${idx + 1}`,
+          ruleId: f.ruleId || f.rule_id || "AMR-RULE",
+          severity: f.severity || "NEEDS_REVIEW",
+          title: f.title || "Clinical Stewardship Advisory",
+          explanation: f.explanation || "",
+          inputFactsUsed: f.inputFactsUsed || f.input_facts_used || {},
+          missingDataStatus: f.missingDataStatus || f.missing_data_status || [],
+          guidelineDiscussionPrompt: f.guidelineDiscussionPrompt || f.guideline_discussion_prompt || undefined,
+          evidence: f.evidence
+            ? {
+                ...f.evidence,
+                publishedOn: f.evidence.publishedOn || f.evidence.published_on || "N/A",
+                sectionRef: f.evidence.sectionRef || f.evidence.section_ref || "Standard Section",
+              }
+            : {
+                id: "EVID_STANDARD",
+                title: "ICMR Standard Treatment Guidelines 2022",
+                publisher: "Indian Council of Medical Research",
+                jurisdiction: "India (National)",
+                publishedOn: "2022",
+                sectionRef: "General Guidelines",
+                excerpt: "Prescribe antimicrobials strictly according to verified indications and local antibiograms.",
+              },
+          acknowledged: Boolean(f.acknowledged),
+        }));
+
+        setFindings(normalizedFindings);
         setDataGaps(parsed.input_gaps || parsed.inputGaps || []);
+
+        // Check if an acknowledgement was previously documented in this session
+        const storedAck = sessionStorage.getItem(`amr_ack_${resolvedAuditId}`);
+        if (storedAck) {
+          try {
+            const parsedAck = JSON.parse(storedAck);
+            setIsAcknowledged(true);
+            setOverrideReason(parsedAck.reason || "");
+          } catch {
+            // ignore
+          }
+        }
         return;
       } catch (e) {
         console.error("Failed to parse stored result", e);
@@ -107,6 +150,19 @@ export default function ResultsPage() {
   const handleConfirmReview = () => {
     setIsAcknowledged(true);
     setShowAckModal(false);
+    try {
+      sessionStorage.setItem(
+        `amr_ack_${auditId}`,
+        JSON.stringify({
+          acknowledged: true,
+          reason: overrideReason,
+          timestamp: new Date().toISOString(),
+          clinician: "Dr. Ayesha (General Physician)",
+        })
+      );
+    } catch {
+      // ignore
+    }
   };
 
   return (

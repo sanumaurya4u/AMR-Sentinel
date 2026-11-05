@@ -160,7 +160,7 @@ export default function DashboardPage() {
                     {sc.prescriptionLines.map((l) => l.drugName).join(", ")}
                   </span>
                   <Link
-                    href="/new-audit"
+                    href={`/new-audit?case=${sc.id}`}
                     className="inline-flex items-center gap-1 text-xs font-bold text-primary group-hover:translate-x-0.5 transition-transform"
                   >
                     Load Case
