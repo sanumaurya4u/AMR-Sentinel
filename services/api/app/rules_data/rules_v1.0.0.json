@@ -1,0 +1,243 @@
+{
+  "version": "1.0.0-ICMR-STG-2022",
+  "evidence_snapshot_id": "SNAP-2026-WHO-ICMR-v1",
+  "last_reviewed": "2026-11-01T00:00:00Z",
+  "rules": [
+    {
+      "rule_id": "SAFETY.PED.FQ_UNDER_18",
+      "tier": 1,
+      "severity": "URGENT_REVIEW",
+      "target_drugs": ["Ciprofloxacin", "Levofloxacin", "Ofloxacin", "Norfloxacin", "Moxifloxacin", "Gemifloxacin"],
+      "target_classes": ["Fluoroquinolone"],
+      "min_age_years": 18.0,
+      "title": "Contraindicated Fluoroquinolone in Pediatric Patient (<18 Years)",
+      "explanation": "Fluoroquinolones are contraindicated in patients under 18 years due to established risk of cartilage erosion, permanent arthropathy, and weight-bearing joint injury.",
+      "guideline_discussion_prompt": "Consider discussing age-appropriate first-line options: Amoxicillin for respiratory infections, ORS + Zinc for acute diarrhea, or Cefalexin for soft tissue infections. Verify local pediatric guidelines.",
+      "evidence_ref": "EVID_ICMR_PED_FQ"
+    },
+    {
+      "rule_id": "SAFETY.PED.TETRACYCLINE_UNDER_18",
+      "tier": 1,
+      "severity": "URGENT_REVIEW",
+      "target_drugs": ["Doxycycline", "Tetracycline", "Minocycline"],
+      "target_classes": ["Tetracycline"],
+      "min_age_years": 12.0,
+      "title": "Contraindicated Tetracycline in Pediatric Patient (<12 Years)",
+      "explanation": "Tetracyclines bind calcium in developing dentition, causing permanent tooth enamel hypoplasia and bone growth suppression.",
+      "guideline_discussion_prompt": "Consider discussing beta-lactams or macrolides concordant with pediatric STGs.",
+      "evidence_ref": "EVID_ICMR_PED_TETRA"
+    },
+    {
+      "rule_id": "SAFETY.PREG.CONTRAINDICATED",
+      "tier": 1,
+      "severity": "URGENT_REVIEW",
+      "target_drugs": ["Ciprofloxacin", "Levofloxacin", "Ofloxacin", "Norfloxacin", "Moxifloxacin", "Doxycycline", "Tetracycline", "Minocycline", "Amikacin", "Gentamicin", "Co-trimoxazole"],
+      "target_classes": ["Fluoroquinolone", "Tetracycline", "Aminoglycoside"],
+      "pregnancy_contraindicated": true,
+      "title": "Contraindicated Antimicrobial in Pregnancy",
+      "explanation": "Prescribed agent carries established maternal/fetal risks (teratogenicity, ototoxicity, congenital skeletal defects, or cartilage erosion).",
+      "guideline_discussion_prompt": "Consider discussing safer pregnancy-category options: Amoxicillin, Cefalexin, or single-dose Fosfomycin (for lower UTI). Verify obstetric guidelines.",
+      "evidence_ref": "EVID_WHO_PREG_ANTIBIOTICS"
+    },
+    {
+      "rule_id": "SAFETY.RENAL.NITROFURANTOIN_EGFR_LT_30",
+      "tier": 1,
+      "severity": "URGENT_REVIEW",
+      "target_drugs": ["Nitrofurantoin"],
+      "egfr_threshold": 30.0,
+      "geriatric_age_threshold": 65.0,
+      "title": "Nitrofurantoin Contraindicated in Severe Renal Impairment (eGFR <30 mL/min)",
+      "explanation": "Nitrofurantoin requires adequate glomerular filtration to achieve therapeutic urinary concentrations. In eGFR <30 mL/min or geriatric impairment, drug accumulation causes treatment failure and severe peripheral neurotoxicity.",
+      "guideline_discussion_prompt": "Consider discussing single-dose Fosfomycin (3g PO) or Cefalexin (500mg QID x 5d) for acute cystitis in renal impairment.",
+      "evidence_ref": "EVID_BEERS_ICMR_NITROFURANTOIN"
+    },
+    {
+      "rule_id": "SAFETY.RENAL.MISSING_EGFR_HOLD",
+      "tier": 1,
+      "severity": "DATA_GAP",
+      "target_drugs": ["Gentamicin", "Amikacin", "Vancomycin", "Colistin"],
+      "target_classes": ["Aminoglycoside", "Polymyxin", "Glycopeptide"],
+      "requires_egfr": true,
+      "title": "Mandatory Renal Function Documentation Hold",
+      "explanation": "Narrow-therapeutic nephrotoxic agents require documented eGFR/creatinine clearance prior to administration to calculate dose adjustments and prevent acute tubular necrosis.",
+      "guideline_discussion_prompt": "Document patient eGFR / Serum Creatinine before initiating narrow-therapeutic nephrotoxics.",
+      "evidence_ref": "EVID_KDIGO_RENAL_HOLD"
+    },
+    {
+      "rule_id": "SAFETY.ALLERGY.BETA_LACTAM",
+      "tier": 1,
+      "severity": "URGENT_REVIEW",
+      "target_drugs": ["Amoxicillin", "Amoxicillin-Clavulanate", "Ampicillin", "Cefalexin", "Cefixime", "Ceftriaxone"],
+      "allergy_triggers": ["penicillin", "beta-lactam", "amoxicillin", "ampicillin"],
+      "title": "Potential Beta-Lactam Anaphylaxis / Cross-Reactivity Risk",
+      "explanation": "Patient has documented Penicillin / Beta-Lactam allergy. Administration carries risk of severe IgE-mediated anaphylaxis or cross-reactivity.",
+      "guideline_discussion_prompt": "Consider discussing non-beta-lactam classes (e.g. Macrolides, Fosfomycin, or Doxycycline depending on indication). Confirm allergy severity.",
+      "evidence_ref": "EVID_ICMR_ALLERGY_ANAPHYLAXIS"
+    },
+    {
+      "rule_id": "REGULATORY.BANNED_FDC",
+      "tier": 2,
+      "severity": "URGENT_REVIEW",
+      "target_drugs": ["Cefixime + Azithromycin", "Ofloxacin + Ornidazole"],
+      "title": "Regulatory Prohibited Fixed-Dose Combination (CDSCO Gazette Ban)",
+      "explanation": "Prescribed fixed-dose combination is banned by the Central Drugs Standard Control Organisation (CDSCO) due to lack of therapeutic justification and accelerated resistance selection.",
+      "guideline_discussion_prompt": "Discontinue dual FDC. Treat with single indicated first-line agent based on confirmed pathogen or standard guideline.",
+      "evidence_ref": "EVID_CDSCO_BANNED_FDC"
+    },
+    {
+      "rule_id": "STEWARDSHIP.VIRAL.ACUTE_BRONCHITIS",
+      "tier": 2,
+      "severity": "NEEDS_REVIEW",
+      "target_conditions": ["SYN_ACUTE_BRONCHITIS"],
+      "title": "Inappropriate Antimicrobial in Self-Limiting Viral Acute Bronchitis",
+      "explanation": "Acute bronchitis in immunocompetent patients is viral in >90% of cases. ICMR STG 2022 confirms antibiotics confer zero clinical benefit and increase adverse drug events.",
+      "guideline_discussion_prompt": "Consider discussing symptomatic relief: hydration, steam inhalation, antitussives, and reassuring the patient regarding typical 10-14 day natural cough course.",
+      "evidence_ref": "EVID_ICMR_RESP_BRONCHITIS"
+    },
+    {
+      "rule_id": "STEWARDSHIP.VIRAL.COMMON_COLD_URTI",
+      "tier": 2,
+      "severity": "NEEDS_REVIEW",
+      "target_conditions": ["SYN_COMMON_COLD", "SYN_VIRAL_URTI", "SYN_PHARYNGITIS_NON_STREP"],
+      "title": "Inappropriate Antimicrobial in Viral Upper Respiratory Infection",
+      "explanation": "Common cold and non-streptococcal viral pharyngitis are exclusively viral. Empirical antibiotic therapy is contraindicated under ICMR and WHO stewardship standards.",
+      "guideline_discussion_prompt": "Consider discussing supportive antipyretic care (Paracetamol), saline gargles, and rest.",
+      "evidence_ref": "EVID_ICMR_URTI_COLD"
+    },
+    {
+      "rule_id": "STEWARDSHIP.AWARE.RESERVE_ESCALATION",
+      "tier": 3,
+      "severity": "NEEDS_REVIEW",
+      "target_drugs": ["Meropenem", "Linezolid", "Colistin"],
+      "aware_group": "Reserve",
+      "mild_indications": ["SYN_CAP_MILD", "SYN_UNCOMPLICATED_UTI", "SYN_SSTI_UNCOMPLICATED", "SYN_AOM"],
+      "title": "WHO AWaRe Reserve Escalation Alert for Mild Outpatient Infection",
+      "explanation": "Reserve-class antimicrobials are 'last-resort' agents reserved strictly for multidrug-resistant confirmed pathogens. Empirical outpatient use jeopardizes critical global antimicrobial reserves.",
+      "guideline_discussion_prompt": "Consider discussing Access-group standard first-line therapy (e.g. Nitrofurantoin or Fosfomycin for UTI; Amoxicillin for mild CAP).",
+      "evidence_ref": "EVID_WHO_AWARE_2023"
+    },
+    {
+      "rule_id": "STEWARDSHIP.DURATION.EXCESSIVE",
+      "tier": 4,
+      "severity": "NEEDS_REVIEW",
+      "target_conditions": ["SYN_UNCOMPLICATED_UTI", "SYN_CAP_MILD"],
+      "max_duration_days": 5,
+      "title": "Excessive Prescribed Treatment Duration (>5 Days)",
+      "explanation": "ICMR STG 2022 standard recommends short-course therapy (3 to 5 days) for uncomplicated cystitis and mild CAP. Extended courses select for resistant commensal flora without improving clinical cure.",
+      "guideline_discussion_prompt": "Consider discussing 5-day treatment completion if patient is clinically afebrile.",
+      "evidence_ref": "EVID_ICMR_SHORT_COURSE"
+    }
+  ],
+  "evidence_catalog": {
+    "EVID_ICMR_PED_FQ": {
+      "id": "EVID_ICMR_PED_FQ",
+      "title": "ICMR Standard Treatment Guidelines: Pediatric Antimicrobial Stewardship",
+      "publisher": "Indian Council of Medical Research (ICMR)",
+      "jurisdiction": "India (National)",
+      "published_on": "2022-09-15",
+      "section_ref": "Pediatric Guidelines • Section 4.2 • Page 38",
+      "excerpt": "Fluoroquinolones (Ciprofloxacin, Ofloxacin, Levofloxacin) are strictly contraindicated in pediatric patients (<18 years) due to documented animal and clinical evidence of cartilage erosion, arthropathy, and tendon rupture, except in specific life-threatening multidrug-resistant cystic fibrosis or anthrax.",
+      "url": "https://main.icmr.nic.in"
+    },
+    "EVID_ICMR_PED_TETRA": {
+      "id": "EVID_ICMR_PED_TETRA",
+      "title": "ICMR Guidelines: Pediatric Contraindications for Tetracyclines",
+      "publisher": "Indian Council of Medical Research (ICMR)",
+      "jurisdiction": "India (National)",
+      "published_on": "2022-09-15",
+      "section_ref": "Pediatric Guidelines • Section 4.5 • Page 41",
+      "excerpt": "Tetracyclines form a stable calcium complex in any bone-forming tissue. Use during tooth development causes permanent tooth discoloration (yellow-gray-brown) and enamel hypoplasia in children under 12 years.",
+      "url": "https://main.icmr.nic.in"
+    },
+    "EVID_WHO_PREG_ANTIBIOTICS": {
+      "id": "EVID_WHO_PREG_ANTIBIOTICS",
+      "title": "WHO Clinical Guidelines on Antibiotic Safety in Pregnancy and Lactation",
+      "publisher": "World Health Organization (WHO)",
+      "jurisdiction": "Global",
+      "published_on": "2023-05-10",
+      "section_ref": "Chapter 6: Maternal Fetal Safety • Page 82",
+      "excerpt": "Fluoroquinolones, Tetracyclines, and Aminoglycosides carry proven fetal toxicity risks (cartilage lesions, permanent bone/dental hypoplasia, and 8th cranial nerve damage). They must not be prescribed during pregnancy unless no viable alternative exists.",
+      "url": "https://www.who.int"
+    },
+    "EVID_BEERS_ICMR_NITROFURANTOIN": {
+      "id": "EVID_BEERS_ICMR_NITROFURANTOIN",
+      "title": "AGS Beers Criteria & ICMR Guidelines: Nitrofurantoin in Renal Impairment",
+      "publisher": "American Geriatrics Society & ICMR",
+      "jurisdiction": "Global / India",
+      "published_on": "2023-05-04",
+      "section_ref": "Beers Table 2 / ICMR Nephro-Geriatric Section 2.1",
+      "excerpt": "Avoid nitrofurantoin in individuals with creatinine clearance / eGFR < 30 mL/min. Inadequate urinary drug concentration occurs alongside increased risk of severe peripheral neuropathy and pulmonary fibrosis.",
+      "url": "https://main.icmr.nic.in"
+    },
+    "EVID_KDIGO_RENAL_HOLD": {
+      "id": "EVID_KDIGO_RENAL_HOLD",
+      "title": "KDIGO Clinical Practice Guideline for Acute Kidney Injury & Drug Dosing",
+      "publisher": "Kidney Disease: Improving Global Outcomes (KDIGO)",
+      "jurisdiction": "International",
+      "published_on": "2022-11-20",
+      "section_ref": "Nephrotoxic Antimicrobial Protocols • Recommendation 3.1.2",
+      "excerpt": "Prior to administering narrow-therapeutic index nephrotoxic agents including Aminoglycosides, Polymyxins, and Glycopeptides, baseline renal function (eGFR or Serum Creatinine) must be documented to guide initial interval and dosage titration.",
+      "url": "https://kdigo.org"
+    },
+    "EVID_ICMR_ALLERGY_ANAPHYLAXIS": {
+      "id": "EVID_ICMR_ALLERGY_ANAPHYLAXIS",
+      "title": "ICMR Guidelines: Antimicrobial Hypersensitivity and Cross-Reactivity",
+      "publisher": "Indian Council of Medical Research (ICMR)",
+      "jurisdiction": "India (National)",
+      "published_on": "2022-09-15",
+      "section_ref": "Safety Protocols • Section 1.4",
+      "excerpt": "Patients with severe or unknown Penicillin hypersensitivity must not be prescribed Aminopenicillins or early-generation Cephalosporins without specialist immunological allergy clearance due to the risk of fatal anaphylaxis.",
+      "url": "https://main.icmr.nic.in"
+    },
+    "EVID_CDSCO_BANNED_FDC": {
+      "id": "EVID_CDSCO_BANNED_FDC",
+      "title": "CDSCO Gazette Notification: Banned Irrational Fixed-Dose Combinations",
+      "publisher": "Central Drugs Standard Control Organisation (CDSCO)",
+      "jurisdiction": "India (National Regulatory)",
+      "published_on": "2023-06-02",
+      "section_ref": "Gazette S.O. 2486(E) • Prohibited Antimicrobial FDCs",
+      "excerpt": "The Central Government hereby prohibits the manufacture, sale, and distribution of irrational antimicrobial combinations including Cefixime + Azithromycin and Ofloxacin + Ornidazole as they lack therapeutic justification and accelerate antimicrobial resistance.",
+      "url": "https://cdsco.gov.in"
+    },
+    "EVID_ICMR_RESP_BRONCHITIS": {
+      "id": "EVID_ICMR_RESP_BRONCHITIS",
+      "title": "ICMR STG 2022: Respiratory Infections — Acute Bronchitis",
+      "publisher": "Indian Council of Medical Research (ICMR)",
+      "jurisdiction": "India (National)",
+      "published_on": "2022-09-15",
+      "section_ref": "Respiratory Infections • Section 3.1 • Page 24",
+      "excerpt": "Acute bronchitis in immunocompetent adults is predominantly viral and self-limiting. Antibiotics provide zero clinical benefit and are not indicated. Symptomatic management alone is standard of care.",
+      "url": "https://main.icmr.nic.in"
+    },
+    "EVID_ICMR_URTI_COLD": {
+      "id": "EVID_ICMR_URTI_COLD",
+      "title": "ICMR STG 2022: Upper Respiratory Infections & Common Cold",
+      "publisher": "Indian Council of Medical Research (ICMR)",
+      "jurisdiction": "India (National)",
+      "published_on": "2022-09-15",
+      "section_ref": "ENT Guidelines • Section 1.2 • Page 11",
+      "excerpt": "Common cold, viral rhinopharyngitis, and non-streptococcal pharyngitis are viral etiologies. Antibiotic therapy is contraindicated; antipyretics and supportive hydration represent first-line therapy.",
+      "url": "https://main.icmr.nic.in"
+    },
+    "EVID_WHO_AWARE_2023": {
+      "id": "EVID_WHO_AWARE_2023",
+      "title": "WHO AWaRe Antibiotic Classification & Stewardship Book 2023",
+      "publisher": "World Health Organization (WHO)",
+      "jurisdiction": "Global",
+      "published_on": "2023-07-15",
+      "section_ref": "AWaRe Classification • Reserve Group Protocols",
+      "excerpt": "Reserve group antibiotics such as Meropenem, Linezolid, and Colistin should be treated as last-resort options. Their use should be strictly restricted to highly specific patients and settings with confirmed or strongly suspected MDR infections.",
+      "url": "https://www.who.int"
+    },
+    "EVID_ICMR_SHORT_COURSE": {
+      "id": "EVID_ICMR_SHORT_COURSE",
+      "title": "ICMR Standard Treatment Guidelines: Optimal Antimicrobial Duration",
+      "publisher": "Indian Council of Medical Research (ICMR)",
+      "jurisdiction": "India (National)",
+      "published_on": "2022-09-15",
+      "section_ref": "Antimicrobial Stewardship • Duration Standards • Page 8",
+      "excerpt": "For uncomplicated acute cystitis and mild outpatient community-acquired pneumonia, evidence-based antimicrobial duration is 3 to 5 days. Prolonged therapy does not enhance clinical cure and directly induces collateral resistance in host microbiota.",
+      "url": "https://main.icmr.nic.in"
+    }
+  }
+}
