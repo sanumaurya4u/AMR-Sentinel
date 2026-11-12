@@ -1,0 +1,4162 @@
+{
+  "total_files": 74,
+  "total_size_bytes": 239470591,
+  "directories": {
+    ".": {
+      "rel_path": ".",
+      "files_count": 4,
+      "subdirs_count": 11,
+      "files": [
+        {
+          "name": "IND data-who-int-dashboards-amr-antimicrobial-resistance-profile.md",
+          "rel_path": "IND data-who-int-dashboards-amr-antimicrobial-resistance-profile.md",
+          "size_bytes": 16325,
+          "extension": ".md",
+          "text_info": {
+            "line_count": 449,
+            "head": [
+              "[Skip to content](https://data.who.int/dashboards/amr/antimicrobial-resistance-profile?m49=356#main)",
+              "# Antimicrobial Resistance Dashboard",
+              "WHO AMR Programme",
+              "![](https://data.who.int/ResourcePackages/DDIBootstrap5/assets/dist/images/flags/GEO_FLAG_356.svg?package=DDIBootstrap5)India",
+              "- Country, territory or area",
+              "- Afghanistan",
+              "- Albania",
+              "- Algeria",
+              "- American Samoa",
+              "- Andorra",
+              "- Angola"
+            ]
+          }
+        },
+        {
+          "name": "WHO_RELAY_AMR.csv",
+          "rel_path": "WHO_RELAY_AMR.csv",
+          "size_bytes": 74351381,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 214368,
+            "columns": [
+              "IND_ID",
+              "IND_CODE",
+              "IND_UUID",
+              "IND_PER_CODE",
+              "DIM_TIME",
+              "DIM_TIME_TYPE",
+              "DIM_GEO_CODE_M49",
+              "DIM_GEO_CODE_TYPE",
+              "DIM_1_CODE",
+              "DIM_MEMBER_1_CODE",
+              "DIM_2_CODE",
+              "DIM_MEMBER_2_CODE",
+              "DIM_3_CODE",
+              "DIM_MEMBER_3_CODE",
+              "DIM_4_CODE",
+              "DIM_MEMBER_4_CODE",
+              "DIM_5_CODE",
+              "DIM_MEMBER_5_CODE",
+              "DIM_6_CODE",
+              "DIM_MEMBER_6_CODE",
+              "DIM_7_CODE",
+              "DIM_MEMBER_7_CODE",
+              "DIM_8_CODE",
+              "DIM_MEMBER_8_CODE",
+              "DIM_9_CODE",
+              "DIM_MEMBER_9_CODE",
+              "DIM_VALUE_TYPE",
+              "VALUE_NUMERIC",
+              "VALUE_LABEL",
+              "VALUE_NUMERIC_LOWER",
+              "VALUE_LABEL_LOWER",
+              "VALUE_NUMERIC_UPPER",
+              "VALUE_LABEL_UPPER",
+              "VALUE_COMMENTS",
+              "DIM_PUBLISH_STATE_CODE",
+              "VALUE_PROVENANCE",
+              "VALUE_CALC_TYPE",
+              "OBSERVATION_STATUS",
+              "ATT_1_CODE",
+              "ATT_MEMBER_1_CODE",
+              "ATT_2_CODE",
+              "ATT_MEMBER_2_CODE",
+              "_RecordID",
+              "Sys_PK",
+              "Sys_RowTitle",
+              "Sys_Version",
+              "Sys_VersionID",
+              "Sys_OriginCode",
+              "Sys_LoadBy",
+              "Sys_CommitDateUtc",
+              "Sys_FirstLoadBy",
+              "Sys_FirstCommitDateUtc",
+              "Sys_ID",
+              "Sys_BatchID",
+              "Sys_FirstBatchID"
+            ],
+            "num_columns": 55,
+            "sample_rows": [
+              {
+                "IND_ID": "TrACSS12017_OH_Q4.1",
+                "IND_CODE": "2017_OH_Q4.1",
+                "IND_UUID": "TrACSS1",
+                "IND_PER_CODE": "2017_OH_Q4.1",
+                "DIM_TIME": "2017",
+                "DIM_TIME_TYPE": "YEAR",
+                "DIM_GEO_CODE_M49": "192",
+                "DIM_GEO_CODE_TYPE": "COUNTRY",
+                "DIM_1_CODE": "",
+                "DIM_MEMBER_1_CODE": "",
+                "DIM_2_CODE": "",
+                "DIM_MEMBER_2_CODE": "",
+                "DIM_3_CODE": "",
+                "DIM_MEMBER_3_CODE": "",
+                "DIM_4_CODE": "",
+                "DIM_MEMBER_4_CODE": "",
+                "DIM_5_CODE": "",
+                "DIM_MEMBER_5_CODE": "",
+                "DIM_6_CODE": "",
+                "DIM_MEMBER_6_CODE": "",
+                "DIM_7_CODE": "",
+                "DIM_MEMBER_7_CODE": "",
+                "DIM_8_CODE": "",
+                "DIM_MEMBER_8_CODE": "",
+                "DIM_9_CODE": "",
+                "DIM_MEMBER_9_CODE": "",
+                "DIM_VALUE_TYPE": "TEXT",
+                "VALUE_NUMERIC": "2.00000000000000",
+                "VALUE_LABEL": "B",
+                "VALUE_NUMERIC_LOWER": "",
+                "VALUE_LABEL_LOWER": "",
+                "VALUE_NUMERIC_UPPER": "",
+                "VALUE_LABEL_UPPER": "",
+                "VALUE_COMMENTS": "",
+                "DIM_PUBLISH_STATE_CODE": "",
+                "VALUE_PROVENANCE": "",
+                "VALUE_CALC_TYPE": "",
+                "OBSERVATION_STATUS": "",
+                "ATT_1_CODE": "",
+                "ATT_MEMBER_1_CODE": "",
+                "ATT_2_CODE": "",
+                "ATT_MEMBER_2_CODE": "",
+                "_RecordID": "ff98d171-80de-88fe-8026-01a0c7db3100",
+                "Sys_PK": "-2147483619",
+                "Sys_RowTitle": "-",
+                "Sys_Version": "1",
+                "Sys_VersionID": "FF98D171-80DE-88FE-8026-01A0C7DB3100.1",
+                "Sys_OriginCode": "SYS_DATA_LOAD",
+                "Sys_LoadBy": "-",
+                "Sys_CommitDateUtc": "2026-09-22 06:43:33",
+                "Sys_FirstLoadBy": "-",
+                "Sys_FirstCommitDateUtc": "2026-09-22 06:43:33",
+                "Sys_ID": "ff98d171-80de-88fe-8026-01a0c7db3100",
+                "Sys_BatchID": "1317069",
+                "Sys_FirstBatchID": "1317069"
+              },
+              {
+                "IND_ID": "TrACSS12017_OH_Q4.1",
+                "IND_CODE": "2017_OH_Q4.1",
+                "IND_UUID": "TrACSS1",
+                "IND_PER_CODE": "2017_OH_Q4.1",
+                "DIM_TIME": "2017",
+                "DIM_TIME_TYPE": "YEAR",
+                "DIM_GEO_CODE_M49": "196",
+                "DIM_GEO_CODE_TYPE": "COUNTRY",
+                "DIM_1_CODE": "",
+                "DIM_MEMBER_1_CODE": "",
+                "DIM_2_CODE": "",
+                "DIM_MEMBER_2_CODE": "",
+                "DIM_3_CODE": "",
+                "DIM_MEMBER_3_CODE": "",
+                "DIM_4_CODE": "",
+                "DIM_MEMBER_4_CODE": "",
+                "DIM_5_CODE": "",
+                "DIM_MEMBER_5_CODE": "",
+                "DIM_6_CODE": "",
+                "DIM_MEMBER_6_CODE": "",
+                "DIM_7_CODE": "",
+                "DIM_MEMBER_7_CODE": "",
+                "DIM_8_CODE": "",
+                "DIM_MEMBER_8_CODE": "",
+                "DIM_9_CODE": "",
+                "DIM_MEMBER_9_CODE": "",
+                "DIM_VALUE_TYPE": "TEXT",
+                "VALUE_NUMERIC": "2.00000000000000",
+                "VALUE_LABEL": "B",
+                "VALUE_NUMERIC_LOWER": "",
+                "VALUE_LABEL_LOWER": "",
+                "VALUE_NUMERIC_UPPER": "",
+                "VALUE_LABEL_UPPER": "",
+                "VALUE_COMMENTS": "",
+                "DIM_PUBLISH_STATE_CODE": "",
+                "VALUE_PROVENANCE": "",
+                "VALUE_CALC_TYPE": "",
+                "OBSERVATION_STATUS": "",
+                "ATT_1_CODE": "",
+                "ATT_MEMBER_1_CODE": "",
+                "ATT_2_CODE": "",
+                "ATT_MEMBER_2_CODE": "",
+                "_RecordID": "bd263740-322c-8719-8027-01a0c7db3100",
+                "Sys_PK": "-2147483618",
+                "Sys_RowTitle": "-",
+                "Sys_Version": "1",
+                "Sys_VersionID": "BD263740-322C-8719-8027-01A0C7DB3100.1",
+                "Sys_OriginCode": "SYS_DATA_LOAD",
+                "Sys_LoadBy": "-",
+                "Sys_CommitDateUtc": "2026-09-22 06:43:33",
+                "Sys_FirstLoadBy": "-",
+                "Sys_FirstCommitDateUtc": "2026-09-22 06:43:33",
+                "Sys_ID": "bd263740-322c-8719-8027-01a0c7db3100",
+                "Sys_BatchID": "1317069",
+                "Sys_FirstBatchID": "1317069"
+              },
+              {
+                "IND_ID": "TrACSS12017_OH_Q4.1",
+                "IND_CODE": "2017_OH_Q4.1",
+                "IND_UUID": "TrACSS1",
+                "IND_PER_CODE": "2017_OH_Q4.1",
+                "DIM_TIME": "2017",
+                "DIM_TIME_TYPE": "YEAR",
+                "DIM_GEO_CODE_M49": "203",
+                "DIM_GEO_CODE_TYPE": "COUNTRY",
+                "DIM_1_CODE": "",
+                "DIM_MEMBER_1_CODE": "",
+                "DIM_2_CODE": "",
+                "DIM_MEMBER_2_CODE": "",
+                "DIM_3_CODE": "",
+                "DIM_MEMBER_3_CODE": "",
+                "DIM_4_CODE": "",
+                "DIM_MEMBER_4_CODE": "",
+                "DIM_5_CODE": "",
+                "DIM_MEMBER_5_CODE": "",
+                "DIM_6_CODE": "",
+                "DIM_MEMBER_6_CODE": "",
+                "DIM_7_CODE": "",
+                "DIM_MEMBER_7_CODE": "",
+                "DIM_8_CODE": "",
+                "DIM_MEMBER_8_CODE": "",
+                "DIM_9_CODE": "",
+                "DIM_MEMBER_9_CODE": "",
+                "DIM_VALUE_TYPE": "TEXT",
+                "VALUE_NUMERIC": "2.00000000000000",
+                "VALUE_LABEL": "B",
+                "VALUE_NUMERIC_LOWER": "",
+                "VALUE_LABEL_LOWER": "",
+                "VALUE_NUMERIC_UPPER": "",
+                "VALUE_LABEL_UPPER": "",
+                "VALUE_COMMENTS": "",
+                "DIM_PUBLISH_STATE_CODE": "",
+                "VALUE_PROVENANCE": "",
+                "VALUE_CALC_TYPE": "",
+                "OBSERVATION_STATUS": "",
+                "ATT_1_CODE": "",
+                "ATT_MEMBER_1_CODE": "",
+                "ATT_2_CODE": "",
+                "ATT_MEMBER_2_CODE": "",
+                "_RecordID": "813d6a51-4249-8a93-8028-01a0c7db3100",
+                "Sys_PK": "-2147483617",
+                "Sys_RowTitle": "-",
+                "Sys_Version": "1",
+                "Sys_VersionID": "813D6A51-4249-8A93-8028-01A0C7DB3100.1",
+                "Sys_OriginCode": "SYS_DATA_LOAD",
+                "Sys_LoadBy": "-",
+                "Sys_CommitDateUtc": "2026-09-22 06:43:33",
+                "Sys_FirstLoadBy": "-",
+                "Sys_FirstCommitDateUtc": "2026-09-22 06:43:33",
+                "Sys_ID": "813d6a51-4249-8a93-8028-01a0c7db3100",
+                "Sys_BatchID": "1317069",
+                "Sys_FirstBatchID": "1317069"
+              }
+            ]
+          }
+        },
+        {
+          "name": "aware-essentialmeds-org-list-awareGroup-Not-recommended.md",
+          "rel_path": "aware-essentialmeds-org-list-awareGroup-Not-recommended.md",
+          "size_bytes": 41442,
+          "extension": ".md",
+          "text_info": {
+            "line_count": 5259,
+            "head": [
+              "# [![aware logo](https://aware.essentialmeds.org/images/aware_logo_no_shadow.svg)](http://aware.essentialmeds.org/list)",
+              "[Groups](https://aware.essentialmeds.org/groups) [Antibiotic resistance](https://aware.essentialmeds.org/resistance) [List of antibiotics](https://aware.essentialmeds.org/list)",
+              "export",
+              "## Export",
+              "PDF",
+              "Excel (XLSX)",
+              "Word (DOCX)",
+              "CancelExport"
+            ]
+          }
+        },
+        {
+          "name": "aware-essentialmeds-org-list.md",
+          "rel_path": "aware-essentialmeds-org-list.md",
+          "size_bytes": 148863,
+          "extension": ".md",
+          "text_info": {
+            "line_count": 18275,
+            "head": [
+              "# [![aware logo](https://aware.essentialmeds.org/images/aware_logo_no_shadow.svg)](http://aware.essentialmeds.org/list)",
+              "[Groups](https://aware.essentialmeds.org/groups) [Antibiotic resistance](https://aware.essentialmeds.org/resistance) [List of antibiotics](https://aware.essentialmeds.org/list)",
+              "export",
+              "## Export",
+              "PDF",
+              "Excel (XLSX)",
+              "Word (DOCX)",
+              "CancelExport"
+            ]
+          }
+        }
+      ]
+    },
+    "amr": {
+      "rel_path": "amr",
+      "files_count": 9,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "amr2017.pdf",
+          "rel_path": "amr\\amr2017.pdf",
+          "size_bytes": 1312425,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amr2018.pdf",
+          "rel_path": "amr\\amr2018.pdf",
+          "size_bytes": 1161185,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amr2019.pdf",
+          "rel_path": "amr\\amr2019.pdf",
+          "size_bytes": 1708114,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amr2020.pdf",
+          "rel_path": "amr\\amr2020.pdf",
+          "size_bytes": 1041517,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amr2021.pdf",
+          "rel_path": "amr\\amr2021.pdf",
+          "size_bytes": 1945718,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amr2022.pdf",
+          "rel_path": "amr\\amr2022.pdf",
+          "size_bytes": 1609536,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amr2023.pdf",
+          "rel_path": "amr\\amr2023.pdf",
+          "size_bytes": 1107389,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amr2024.pdf",
+          "rel_path": "amr\\amr2024.pdf",
+          "size_bytes": 2515349,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amr2025.pdf",
+          "rel_path": "amr\\amr2025.pdf",
+          "size_bytes": 1356832,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    "amrc": {
+      "rel_path": "amrc",
+      "files_count": 3,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "amrc2022.pdf",
+          "rel_path": "amrc\\amrc2022.pdf",
+          "size_bytes": 1136486,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amrc2023.pdf",
+          "rel_path": "amrc\\amrc2023.pdf",
+          "size_bytes": 1140440,
+          "extension": ".pdf"
+        },
+        {
+          "name": "amrc2024.pdf",
+          "rel_path": "amrc\\amrc2024.pdf",
+          "size_bytes": 1935201,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    "AMR_ANALYZED_DATA_PACKAGE": {
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE",
+      "files_count": 11,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "PACKAGE_MANIFEST.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\PACKAGE_MANIFEST.csv",
+          "size_bytes": 987,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 11,
+            "columns": [
+              "file",
+              "bytes",
+              "sha256"
+            ],
+            "num_columns": 3,
+            "sample_rows": [
+              {
+                "file": "amr_chatbot_corpus.csv",
+                "bytes": "3925051",
+                "sha256": "02880f310ac36d535ee76fb2ffea8a246bf83136fd3174bfe86a6472981a20b4"
+              },
+              {
+                "file": "amr_chatbot_corpus.jsonl",
+                "bytes": "4940992",
+                "sha256": "ad441e86480472bea74d05c4790e7e8c9521d256335d5de3bfb221abb536bd95"
+              },
+              {
+                "file": "amr_data_quality_report.csv",
+                "bytes": "1074",
+                "sha256": "069e70846eee29740ae55b1bcfe31dd56131d5cbe9ca6b24fe1cd4cb46289ba1"
+              }
+            ]
+          }
+        },
+        {
+          "name": "amr_chatbot_corpus.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_chatbot_corpus.csv",
+          "size_bytes": 3925051,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 22105,
+            "columns": [
+              "record_id",
+              "source_id",
+              "publisher",
+              "network",
+              "data_layer",
+              "report_year",
+              "record_type",
+              "pdf_page",
+              "pathogen",
+              "antibiotic",
+              "specimen",
+              "metric",
+              "value",
+              "unit",
+              "text",
+              "source_citation",
+              "quality_flag"
+            ],
+            "num_columns": 17,
+            "sample_rows": [
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p001_c00",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "publisher": "NCDC, Government of India",
+                "network": "NARS-Net",
+                "data_layer": "NCDC_AMR_surveillance_or_consumption",
+                "report_year": "2017",
+                "record_type": "document_chunk",
+                "pdf_page": "1",
+                "pathogen": "",
+                "antibiotic": "",
+                "specimen": "",
+                "metric": "",
+                "value": "",
+                "unit": "",
+                "text": "National Centre for Disease Control\n National AMR Surveillance Network\n AMR Data for year 2017\n\nNCDC is coordinating the \u201cNational Programme for Containment of Antimicrobial resistance\u201d\napproved during the 12th five year plan. Under the programme a network of laboratories is being\nset up across the country for conducting Antimicrobial Resistance (AMR) surveillance in order to\nunderstand the AMR trends in various geographical regions and accordingly take appropriate\naction. Currently 13 labs are included in the network:\n1. Lady Hardinge Medical College and associated hospitals, New Delhi, Delhi\n2. VMMC and associated Safdarjung Hospital, New Delhi, Delhi\n3. Government Medical College & Hospital, Chandigarh (UT)\n4. GSVM Medical College, Kanpur, Uttar Pradesh\n5. SMS Medical College, Jaipur, Rajasthan\n6. BJ Medical College, Ahmedabad, Gujarat\n7. BJ Medical College, Pune, Maharashtra\n8. Mysore Medical College and Research Institute, Mysore, Karnataka\n9. KAPV Govt Medical College Hospital, Thiruchirapally, Tamil Nadu\n10. Government Medical College, Thiruvananthapuram, Kerala\n11. MGM Medical College & MY Hospital, Indore, Madhya Pradesh\n12. NEIGRIHMS, Shillong, Meghalaya\n13. Gauhati, Medical College Hospital, Guwahati, Assam\n\nNCDC received AMR surveillance data for the year 2017 from 10 of the above 13 labs (S.no. 1 to\n10) based on the standardized Data Management SOP in the WHONET format for the following\npathogens:\n1. Staphylococcus aureus\n2. Enterococci species\n3. Escherichia coli\n4. Klebsiella species\n5. Pseudomonas species\n6. Acinetobacter species\n7. Salmonella enterica serotype Typhi and Paratyphi\n\n 1",
+                "source_citation": "amr23.pdf | PDF page 1",
+                "quality_flag": "verified"
+              },
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p002_c00",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "publisher": "NCDC, Government of India",
+                "network": "NARS-Net",
+                "data_layer": "NCDC_AMR_surveillance_or_consumption",
+                "report_year": "2017",
+                "record_type": "document_chunk",
+                "pdf_page": "2",
+                "pathogen": "",
+                "antibiotic": "",
+                "specimen": "",
+                "metric": "",
+                "value": "",
+                "unit": "",
+                "text": "The AMR data collected under the National AMR Containment Programme for the year 2017 is from\ntertiary health care settings (medical colleges). The data has been analyzed and is summarized below:\n\nTable1. The pathogens and specimens included\n Specimen S. Enterococcus Klebsiella E. coli Acinetoba Pseudom Salmonella\n aureus species pneumoniae cter onas Typhi/Par\n species species atyphi\n Blood \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Urine \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Pus Aspirates \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Other Sterile \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Body fluids\n\nTotal Number of unique patient\u2019s isolates data after validation from these 10 labs = 25833\n\uf0b7 Urine - 12144\n\uf0b7 Blood - 6354\n\uf0b7 Pus Aspirates (PA) and Other Sterile body fluids (OSBF) - 7335\n\n 2",
+                "source_citation": "amr23.pdf | PDF page 2",
+                "quality_flag": "verified"
+              },
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p003_c00",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "publisher": "NCDC, Government of India",
+                "network": "NARS-Net",
+                "data_layer": "NCDC_AMR_surveillance_or_consumption",
+                "report_year": "2017",
+                "record_type": "document_chunk",
+                "pdf_page": "3",
+                "pathogen": "",
+                "antibiotic": "",
+                "specimen": "",
+                "metric": "",
+                "value": "",
+                "unit": "",
+                "text": "Figure 1. Isolation rate of priority pathogens from various specimens\n\nFigure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n Healthcare facility\n\n 3",
+                "source_citation": "amr23.pdf | PDF page 3",
+                "quality_flag": "verified"
+              }
+            ]
+          }
+        },
+        {
+          "name": "amr_chatbot_corpus.jsonl",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_chatbot_corpus.jsonl",
+          "size_bytes": 4940992,
+          "extension": ".jsonl",
+          "jsonl_info": {
+            "line_count": 3843,
+            "sample_records": [
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p001_c00",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "publisher": "NCDC, Government of India",
+                "network": "NARS-Net",
+                "data_layer": "NCDC_AMR_surveillance_or_consumption",
+                "report_year": 2017,
+                "record_type": "document_chunk",
+                "pdf_page": 1,
+                "pathogen": "",
+                "antibiotic": "",
+                "specimen": "",
+                "metric": "",
+                "value": "",
+                "unit": "",
+                "text": "National Centre for Disease Control\n National AMR Surveillance Network\n AMR Data for year 2017\n\nNCDC is coordinating the \u201cNational Programme for Containment of Antimicrobial resistance\u201d\napproved during the 12th five year plan. Under the programme a network of laboratories is being\nset up across the country for conducting Antimicrobial Resistance (AMR) surveillance in order to\nunderstand the AMR trends in various geographical regions and accordingly take appropriate\naction. Currently 13 labs are included in the network:\n1. Lady Hardinge Medical College and associated hospitals, New Delhi, Delhi\n2. VMMC and associated Safdarjung Hospital, New Delhi, Delhi\n3. Government Medical College & Hospital, Chandigarh (UT)\n4. GSVM Medical College, Kanpur, Uttar Pradesh\n5. SMS Medical College, Jaipur, Rajasthan\n6. BJ Medical College, Ahmedabad, Gujarat\n7. BJ Medical College, Pune, Maharashtra\n8. Mysore Medical College and Research Institute, Mysore, Karnataka\n9. KAPV Govt Medical College Hospital, Thiruchirapally, Tamil Nadu\n10. Government Medical College, Thiruvananthapuram, Kerala\n11. MGM Medical College & MY Hospital, Indore, Madhya Pradesh\n12. NEIGRIHMS, Shillong, Meghalaya\n13. Gauhati, Medical College Hospital, Guwahati, Assam\n\nNCDC received AMR surveillance data for the year 2017 from 10 of the above 13 labs (S.no. 1 to\n10) based on the standardized Data Management SOP in the WHONET format for the following\npathogens:\n1. Staphylococcus aureus\n2. Enterococci species\n3. Escherichia coli\n4. Klebsiella species\n5. Pseudomonas species\n6. Acinetobacter species\n7. Salmonella enterica serotype Typhi and Paratyphi\n\n 1",
+                "source_citation": "amr23.pdf | PDF page 1",
+                "quality_flag": "verified"
+              },
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p002_c00",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "publisher": "NCDC, Government of India",
+                "network": "NARS-Net",
+                "data_layer": "NCDC_AMR_surveillance_or_consumption",
+                "report_year": 2017,
+                "record_type": "document_chunk",
+                "pdf_page": 2,
+                "pathogen": "",
+                "antibiotic": "",
+                "specimen": "",
+                "metric": "",
+                "value": "",
+                "unit": "",
+                "text": "The AMR data collected under the National AMR Containment Programme for the year 2017 is from\ntertiary health care settings (medical colleges). The data has been analyzed and is summarized below:\n\nTable1. The pathogens and specimens included\n Specimen S. Enterococcus Klebsiella E. coli Acinetoba Pseudom Salmonella\n aureus species pneumoniae cter onas Typhi/Par\n species species atyphi\n Blood \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Urine \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Pus Aspirates \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Other Sterile \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Body fluids\n\nTotal Number of unique patient\u2019s isolates data after validation from these 10 labs = 25833\n\uf0b7 Urine - 12144\n\uf0b7 Blood - 6354\n\uf0b7 Pus Aspirates (PA) and Other Sterile body fluids (OSBF) - 7335\n\n 2",
+                "source_citation": "amr23.pdf | PDF page 2",
+                "quality_flag": "verified"
+              },
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p003_c00",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "publisher": "NCDC, Government of India",
+                "network": "NARS-Net",
+                "data_layer": "NCDC_AMR_surveillance_or_consumption",
+                "report_year": 2017,
+                "record_type": "document_chunk",
+                "pdf_page": 3,
+                "pathogen": "",
+                "antibiotic": "",
+                "specimen": "",
+                "metric": "",
+                "value": "",
+                "unit": "",
+                "text": "Figure 1. Isolation rate of priority pathogens from various specimens\n\nFigure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n Healthcare facility\n\n 3",
+                "source_citation": "amr23.pdf | PDF page 3",
+                "quality_flag": "verified"
+              }
+            ]
+          }
+        },
+        {
+          "name": "amr_data_quality_report.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_data_quality_report.csv",
+          "size_bytes": 1074,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 8,
+            "columns": [
+              "dataset",
+              "rows",
+              "columns",
+              "duplicates",
+              "missing_report_year_before_fix",
+              "missing_report_year_after_fix",
+              "critical_issue",
+              "status"
+            ],
+            "num_columns": 8,
+            "sample_rows": [
+              {
+                "dataset": "ncdc_rag_clean",
+                "rows": "1095",
+                "columns": "15",
+                "duplicates": "0",
+                "missing_report_year_before_fix": "25",
+                "missing_report_year_after_fix": "0",
+                "critical_issue": "25 records in amr24.pdf had missing report_year; repaired to 2018 from source_id/source manifest.",
+                "status": "cleaned"
+              },
+              {
+                "dataset": "ncdc_evidence_clean",
+                "rows": "346",
+                "columns": "11",
+                "duplicates": "0",
+                "missing_report_year_before_fix": "25",
+                "missing_report_year_after_fix": "0",
+                "critical_issue": "2018 resistance evidence metadata year repaired from source provenance.",
+                "status": "cleaned"
+              },
+              {
+                "dataset": "ncdc_rag_chunks",
+                "rows": "749",
+                "columns": "8",
+                "duplicates": "0",
+                "missing_report_year_before_fix": "0",
+                "missing_report_year_after_fix": "0",
+                "critical_issue": "All 749 chunk IDs match the 749 document_chunk records in ncdc_amr_machine_trainable.csv.",
+                "status": "verified"
+              }
+            ]
+          }
+        },
+        {
+          "name": "amr_source_registry.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_source_registry.csv",
+          "size_bytes": 8355,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 29,
+            "columns": [
+              "source_id",
+              "publisher",
+              "network",
+              "data_layer",
+              "report_year",
+              "reporting_period",
+              "filename",
+              "runtime_filename",
+              "page_count",
+              "sha256",
+              "sha256_verified_against_manifest",
+              "official_source",
+              "role"
+            ],
+            "num_columns": 13,
+            "sample_rows": [
+              {
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "publisher": "National Centre for Disease Control (NCDC), Government of India",
+                "network": "NARS-Net",
+                "data_layer": "resistance",
+                "report_year": "2017",
+                "reporting_period": "2017",
+                "filename": "amr23.pdf",
+                "runtime_filename": "amr2017.pdf",
+                "page_count": "15",
+                "sha256": "0070d1b36c314a235bf1b744170e8e7bc95655db064c57cbb485f8301ffff6b2",
+                "sha256_verified_against_manifest": "True",
+                "official_source": "yes",
+                "role": "primary_source"
+              },
+              {
+                "source_id": "NCDC_resistance_2018_NARS-Net",
+                "publisher": "National Centre for Disease Control (NCDC), Government of India",
+                "network": "NARS-Net",
+                "data_layer": "resistance",
+                "report_year": "2018",
+                "reporting_period": "2018",
+                "filename": "amr24.pdf",
+                "runtime_filename": "amr2018.pdf",
+                "page_count": "19",
+                "sha256": "a09987ec16fe77b10438cd3340bf1c2c4aae1cd330ba0601b33231453693836f",
+                "sha256_verified_against_manifest": "True",
+                "official_source": "yes",
+                "role": "primary_source"
+              },
+              {
+                "source_id": "NCDC_resistance_2019_NARS-Net",
+                "publisher": "National Centre for Disease Control (NCDC), Government of India",
+                "network": "NARS-Net",
+                "data_layer": "resistance",
+                "report_year": "2019",
+                "reporting_period": "Reporting Period - January to December 2019 National Programme on AMR Containment National Centre for Disease Control 0 Directorate General",
+                "filename": "amr25.pdf",
+                "runtime_filename": "amr2019.pdf",
+                "page_count": "44",
+                "sha256": "6056c836ea739dd02cfc0af39295a49c41bffd4da31cfe302085b53a19fd3097",
+                "sha256_verified_against_manifest": "True",
+                "official_source": "yes",
+                "role": "primary_source"
+              }
+            ]
+          }
+        },
+        {
+          "name": "amr_surveillance_trend_summary.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_surveillance_trend_summary.csv",
+          "size_bytes": 317,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 10,
+            "columns": [
+              "year",
+              "ncdc_submitted_isolates",
+              "ncdc_unique_patient_isolates",
+              "icmr_culture_positive_isolates"
+            ],
+            "num_columns": 4,
+            "sample_rows": [
+              {
+                "year": "2017",
+                "ncdc_submitted_isolates": "25833",
+                "ncdc_unique_patient_isolates": "25833",
+                "icmr_culture_positive_isolates": "45930.0"
+              },
+              {
+                "year": "2018",
+                "ncdc_submitted_isolates": "50724",
+                "ncdc_unique_patient_isolates": "50724",
+                "icmr_culture_positive_isolates": "60497.0"
+              },
+              {
+                "year": "2019",
+                "ncdc_submitted_isolates": "78860",
+                "ncdc_unique_patient_isolates": "74200",
+                "icmr_culture_positive_isolates": "107387.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "icmr_surveillance_pages.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\icmr_surveillance_pages.csv",
+          "size_bytes": 2175630,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 1354,
+            "columns": [
+              "source_id",
+              "filename",
+              "document_type",
+              "report_year",
+              "network",
+              "pdf_page",
+              "section",
+              "title",
+              "text",
+              "source_citation"
+            ],
+            "num_columns": 10,
+            "sample_rows": [
+              {
+                "source_id": "ICMR_AMRSN_2017",
+                "filename": "icmramrannualreport2017.pdf",
+                "document_type": "surveillance",
+                "report_year": "2017",
+                "network": "ICMR-AMRSN",
+                "pdf_page": "1",
+                "section": "",
+                "title": "",
+                "text": "1 AMR surveillance network Indian Council of Medical Research 2017 Compiled by: Dr Kamini Walia, Ph D MPH Maj Gen(Dr) V C Ohri, MD Dr Harpreet Singh, PhD Nodal centre Principal investigators Regional centre Principal investigators Typhoid: Dr Arti Kapil, AIIMS, New Delhi Dr Camilla Rodriques. Hinduja , Mumbai Fungal pathogens: Dr Arunaloke Chakarabarty, PGIMER, Chandigarh Dr Chand Wattal, SGRH, New Delhi Diarreal pathogens and GNNF: Dr V Balaji, CMC Vellore Dr Sanjay Bhattacharya, TMC, Kolkata Gram positive pathogens: Dr Sujatha Sistla, JIPMER, Pondicherry Dr Sourav Sen, AFMC, Pune Enterobacteriaceae spp: Dr Pallab Ray, PGIMER, Chandigarh Dr Thirunarayan, Apollo Chennai Dr Vijayshree Deotale, MGIMS Wardha Annual report Antimicrobial Resistance Surveillance Network January 2017-December 2017",
+                "source_citation": "icmramrannualreport2017.pdf | PDF page 1"
+              },
+              {
+                "source_id": "ICMR_AMRSN_2017",
+                "filename": "icmramrannualreport2017.pdf",
+                "document_type": "surveillance",
+                "report_year": "2017",
+                "network": "ICMR-AMRSN",
+                "pdf_page": "2",
+                "section": "",
+                "title": "",
+                "text": "2 AMR surveillance network Indian Council of Medical Research 2017 Summary of results of ICMR surveillance data from January 2017 to December 2017 Of the total number of 45,930 isolates, 55% were from in-patients in wards, 18% were from ICUs and 27% were from outpatients. Outpatient isolates (12,336) were predominantly from pus (39%) and urine (23%), ward isolates were predominantly from pus (32%) and blood (23%) and ICU isolates were predominantly from blood (25%), pus and lower respiratory tract (16% each). Gram negatives constituted major share (74%) of the isolates overall. Gram negatives were responsible for 98% of fecal, 96% of LRT, 87% of urinary, 80% of CSF, 76% of surgical site, and 62% each of blood and pus isolates. This will have bearing in empiric choice of antibiotics. Most importantly, the fact that 76% of surgical site infections were due to gram negatives will demand revising antibiotic prophylaxis guidelines for such infections which had targeted Staphylococci as the predominant organism for decades. Specimen wise, predominant group of isolates included Enterobacteriaceae (37%) and Staphylococci (30%) from blood, Enterobacteriaceae (73%) from urine, non-fermenting gram negative bacteria(GNB) (61%) and Enterobacteriaceae (34%) from LRT, Enterobacteriaceae (38%) and Staphylococci (33%) from pus, non-fermenting GNB (40%) and Enterobacteriaceae (39%) from CSF, Enterobacteriaceae (46%) and non-fermenting GNB (27%) from surgical sites, and fecal pathogens (68%) from feces. The isolates from blood comprised of Enterobacteriaceae (37%) followed by Staphylococci (30%) and nonfermenting GNB (19%). Of the Enterobacteriaceae, E. coli was the commonest (46%) followed by K. pneumoniae (42%) and Enterobacter species (7%). Among the typhoidal organisms, S. typhi is the most common etiological agent followed by S. paratyphi A. The ciprofloxacin susceptibility percentage was 15-18% only. Resistance in S. paratyphi A is higher as compared to S. typhi. Fluoroquinolone resistance was associated with DNA gyrase mutations. So it is no longer empirical choice. Third generation cephalosporin\u2019s are most commonly used for the treatment. But MIC50 and MIC 90 showed increasing trend. Among the diarrheal pathogens, Aeromonas spp is one of the most isolated species among diarrheal pathogens. Aeromonas spp showed moderate resistance to all tested antibiotics. Resistance to carbapenems especially imipenem, was higher compared to",
+                "source_citation": "icmramrannualreport2017.pdf | PDF page 2"
+              },
+              {
+                "source_id": "ICMR_AMRSN_2017",
+                "filename": "icmramrannualreport2017.pdf",
+                "document_type": "surveillance",
+                "report_year": "2017",
+                "network": "ICMR-AMRSN",
+                "pdf_page": "3",
+                "section": "",
+                "title": "",
+                "text": "3 AMR surveillance network Indian Council of Medical Research 2017 Blood OPD Ward ICU Urine OPD Ward ICU LRT OPD Ward ICU CSF OPD Ward ICU SS OPD Ward ICU Feces OPD Ward ICU other classes of antibiotics. Most Aeromonas strains are generally susceptible to trimethoprim-sulfamethoxazole (TMP-SMX), fluoroquinolones, second and third generation cephalosporins, aminoglycosides, carbapenems, chloramphenicol, and tetracyclines. Shigella spp is the second common diarrheal pathogen and the isolates demonstrated increased resistance to nalidixic acid and trimethoprim- sulfamethoxazole (89.9%). Tetracycline still appears to be effective for V cholerae. Figure i . Source of origin (OPD, ward or ICU) of isolates from various categories of specimens. Candida tropicalis and Aspergillus flavus was are most commonly isolated yeast and mold respectively. Wickerhamomyces anomalous(13.1%) was recognized as emerging yeast in pediatric patients. Increasing resistance in C. tropicalis against fluconazole and caspofungin is a serious concern. Heterogeneous over expression of efflux pumps was noticed in resistant C. tropicalis isolates. Total OPD Ward ICU Pus OPD Ward ICU",
+                "source_citation": "icmramrannualreport2017.pdf | PDF page 3"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ncdc_evidence_clean.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\ncdc_evidence_clean.csv",
+          "size_bytes": 390507,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 5443,
+            "columns": [
+              "evidence_id",
+              "source_id",
+              "filename",
+              "document_type",
+              "report_year",
+              "network",
+              "pdf_page",
+              "label",
+              "heading",
+              "raw_text",
+              "quality_flag"
+            ],
+            "num_columns": 11,
+            "sample_rows": [
+              {
+                "evidence_id": "NCDC_resistance_2017_NARS-Net_p003_0000",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "filename": "amr23.pdf",
+                "document_type": "resistance",
+                "report_year": "2017",
+                "network": "NARS-Net",
+                "pdf_page": "3",
+                "label": "Figure 1",
+                "heading": "Isolation rate of priority pathogens from various specimens",
+                "raw_text": "Figure 1. Isolation rate of priority pathogens from various specimens",
+                "quality_flag": "verified"
+              },
+              {
+                "evidence_id": "NCDC_resistance_2017_NARS-Net_p003_0001",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "filename": "amr23.pdf",
+                "document_type": "resistance",
+                "report_year": "2017",
+                "network": "NARS-Net",
+                "pdf_page": "3",
+                "label": "Figure 2. Isolation rate of priority pathogen from all specimens w.r",
+                "heading": "t the type of location in",
+                "raw_text": "Figure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n          Healthcare facility\n\n\n\n\n                                                                                                 3",
+                "quality_flag": "verified"
+              },
+              {
+                "evidence_id": "NCDC_resistance_2017_NARS-Net_p004_0002",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "filename": "amr23.pdf",
+                "document_type": "resistance",
+                "report_year": "2017",
+                "network": "NARS-Net",
+                "pdf_page": "4",
+                "label": "Table 2. Specimen",
+                "heading": "wise isolation of number of Priority Pathogens",
+                "raw_text": "Table 2. Specimen-wise isolation of number of Priority Pathogens\n\n                                                                              Number isolated\n                             Total          Number            Number         Other Sterile Body\n                           number of        isolated       isolated from        Fluids +Pus\n  Priority Pathogens        isolates      from Blood           Urine             aspirates\n S. aureus                    4537            2317                0                2220\n Enterococcus species         2760             620              1837                303\n E. coli                      8445             496              6919               1030\n Klebsiella species           6209            1341              3388               1480\n Pseudomonas species          1498             383                0                1115\n Acinetobacter species        2195            1008                0                1187\n Salmonella enterica\n serotype Typhi and\n Paratyphi                    189              189               0                     0\n Total                       25833            6354             12144                 7335",
+                "quality_flag": "verified"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ncdc_rag_clean.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\ncdc_rag_clean.csv",
+          "size_bytes": 970907,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 19357,
+            "columns": [
+              "record_id",
+              "record_type",
+              "source_id",
+              "filename",
+              "document_type",
+              "report_year",
+              "network",
+              "pdf_page",
+              "section",
+              "title",
+              "text",
+              "target",
+              "source_citation",
+              "quality_flag",
+              "training_role"
+            ],
+            "num_columns": 15,
+            "sample_rows": [
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p001_c00",
+                "record_type": "document_chunk",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "filename": "amr23.pdf",
+                "document_type": "resistance",
+                "report_year": "2017",
+                "network": "NARS-Net",
+                "pdf_page": "1",
+                "section": "",
+                "title": "",
+                "text": "National Centre for Disease Control\n National AMR Surveillance Network\n AMR Data for year 2017\n\nNCDC is coordinating the \u201cNational Programme for Containment of Antimicrobial resistance\u201d\napproved during the 12th five year plan. Under the programme a network of laboratories is being\nset up across the country for conducting Antimicrobial Resistance (AMR) surveillance in order to\nunderstand the AMR trends in various geographical regions and accordingly take appropriate\naction. Currently 13 labs are included in the network:\n1. Lady Hardinge Medical College and associated hospitals, New Delhi, Delhi\n2. VMMC and associated Safdarjung Hospital, New Delhi, Delhi\n3. Government Medical College & Hospital, Chandigarh (UT)\n4. GSVM Medical College, Kanpur, Uttar Pradesh\n5. SMS Medical College, Jaipur, Rajasthan\n6. BJ Medical College, Ahmedabad, Gujarat\n7. BJ Medical College, Pune, Maharashtra\n8. Mysore Medical College and Research Institute, Mysore, Karnataka\n9. KAPV Govt Medical College Hospital, Thiruchirapally, Tamil Nadu\n10. Government Medical College, Thiruvananthapuram, Kerala\n11. MGM Medical College & MY Hospital, Indore, Madhya Pradesh\n12. NEIGRIHMS, Shillong, Meghalaya\n13. Gauhati, Medical College Hospital, Guwahati, Assam\n\nNCDC received AMR surveillance data for the year 2017 from 10 of the above 13 labs (S.no. 1 to\n10) based on the standardized Data Management SOP in the WHONET format for the following\npathogens:\n1. Staphylococcus aureus\n2. Enterococci species\n3. Escherichia coli\n4. Klebsiella species\n5. Pseudomonas species\n6. Acinetobacter species\n7. Salmonella enterica serotype Typhi and Paratyphi\n\n 1",
+                "target": "",
+                "source_citation": "amr23.pdf | PDF page 1",
+                "quality_flag": "verified",
+                "training_role": "retrieval_context"
+              },
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p002_c00",
+                "record_type": "document_chunk",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "filename": "amr23.pdf",
+                "document_type": "resistance",
+                "report_year": "2017",
+                "network": "NARS-Net",
+                "pdf_page": "2",
+                "section": "",
+                "title": "",
+                "text": "The AMR data collected under the National AMR Containment Programme for the year 2017 is from\ntertiary health care settings (medical colleges). The data has been analyzed and is summarized below:\n\nTable1. The pathogens and specimens included\n Specimen S. Enterococcus Klebsiella E. coli Acinetoba Pseudom Salmonella\n aureus species pneumoniae cter onas Typhi/Par\n species species atyphi\n Blood \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Urine \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Pus Aspirates \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Other Sterile \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Body fluids\n\nTotal Number of unique patient\u2019s isolates data after validation from these 10 labs = 25833\n\uf0b7 Urine - 12144\n\uf0b7 Blood - 6354\n\uf0b7 Pus Aspirates (PA) and Other Sterile body fluids (OSBF) - 7335\n\n 2",
+                "target": "",
+                "source_citation": "amr23.pdf | PDF page 2",
+                "quality_flag": "verified",
+                "training_role": "retrieval_context"
+              },
+              {
+                "record_id": "NCDC_resistance_2017_NARS-Net_p003_c00",
+                "record_type": "document_chunk",
+                "source_id": "NCDC_resistance_2017_NARS-Net",
+                "filename": "amr23.pdf",
+                "document_type": "resistance",
+                "report_year": "2017",
+                "network": "NARS-Net",
+                "pdf_page": "3",
+                "section": "",
+                "title": "",
+                "text": "Figure 1. Isolation rate of priority pathogens from various specimens\n\nFigure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n Healthcare facility\n\n 3",
+                "target": "",
+                "source_citation": "amr23.pdf | PDF page 3",
+                "quality_flag": "verified",
+                "training_role": "retrieval_context"
+              }
+            ]
+          }
+        },
+        {
+          "name": "who_amr_canonical.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\who_amr_canonical.csv",
+          "size_bytes": 406505,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 1020,
+            "columns": [
+              "canonical_indicator",
+              "organism",
+              "country",
+              "DIM_GEO_CODE_M49",
+              "year",
+              "value_percent",
+              "value_label",
+              "definition",
+              "source_indicator_code",
+              "VALUE_PROVENANCE",
+              "DIM_VALUE_TYPE",
+              "DIM_PUBLISH_STATE_CODE",
+              "unit",
+              "source"
+            ],
+            "num_columns": 14,
+            "sample_rows": [
+              {
+                "canonical_indicator": "E_coli_3GC_resistance",
+                "organism": "Escherichia coli",
+                "country": "Algeria",
+                "DIM_GEO_CODE_M49": "12",
+                "year": "2023",
+                "value_percent": "55.36",
+                "value_label": "55.4",
+                "definition": "Percentage of bloodstream infection due to  Escherichia coli resistant to 3rd-generation cephalosporin (e.g., ESBL- E. coli) among patients seeking care and whose blood sample is taken and tested. AMR Surveillance National Coordinating Center",
+                "source_indicator_code": "AMR_INFECT_ECOLI",
+                "VALUE_PROVENANCE": "",
+                "DIM_VALUE_TYPE": "RATE_PER_100",
+                "DIM_PUBLISH_STATE_CODE": "PUBLISHED",
+                "unit": "percent",
+                "source": "WHO RELAY / GLASS AMR indicator export"
+              },
+              {
+                "canonical_indicator": "E_coli_3GC_resistance",
+                "organism": "Escherichia coli",
+                "country": "Argentina",
+                "DIM_GEO_CODE_M49": "32",
+                "year": "2017",
+                "value_percent": "18.4",
+                "value_label": "18.4",
+                "definition": "Percentage of bloodstream infection due to  Escherichia coli resistant to 3rd-generation cephalosporin (e.g., ESBL- E. coli) among patients seeking care and whose blood sample is taken and tested. AMR Surveillance National Coordinating Center",
+                "source_indicator_code": "AMR_INFECT_ECOLI",
+                "VALUE_PROVENANCE": "",
+                "DIM_VALUE_TYPE": "RATE_PER_100",
+                "DIM_PUBLISH_STATE_CODE": "PUBLISHED",
+                "unit": "percent",
+                "source": "WHO RELAY / GLASS AMR indicator export"
+              },
+              {
+                "canonical_indicator": "E_coli_3GC_resistance",
+                "organism": "Escherichia coli",
+                "country": "Argentina",
+                "DIM_GEO_CODE_M49": "32",
+                "year": "2018",
+                "value_percent": "20.0",
+                "value_label": "20",
+                "definition": "Percentage of bloodstream infection due to  Escherichia coli resistant to 3rd-generation cephalosporin (e.g., ESBL- E. coli) among patients seeking care and whose blood sample is taken and tested. AMR Surveillance National Coordinating Center",
+                "source_indicator_code": "AMR_INFECT_ECOLI",
+                "VALUE_PROVENANCE": "",
+                "DIM_VALUE_TYPE": "RATE_PER_100",
+                "DIM_PUBLISH_STATE_CODE": "PUBLISHED",
+                "unit": "percent",
+                "source": "WHO RELAY / GLASS AMR indicator export"
+              }
+            ]
+          }
+        },
+        {
+          "name": "who_aware_antibiotics.csv",
+          "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\who_aware_antibiotics.csv",
+          "size_bytes": 38537,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 377,
+            "columns": [
+              "aware_index",
+              "antibiotic",
+              "aware_group",
+              "recommendation_count",
+              "recommendations",
+              "source"
+            ],
+            "num_columns": 6,
+            "sample_rows": [
+              {
+                "aware_index": "1",
+                "antibiotic": "Acetylspiramycin + metronidazole",
+                "aware_group": "Not Recommended",
+                "recommendation_count": "0",
+                "recommendations": "",
+                "source": "WHO AWaRe / Essential Medicines List export"
+              },
+              {
+                "aware_index": "2",
+                "antibiotic": "Amikacin",
+                "aware_group": "Access",
+                "recommendation_count": "5",
+                "recommendations": "Neutropaenia (high-risk); cefotaxime; Acute pyelonephritis (severe); Inflammatory or other diseases of prostate (severe); ceftriaxone",
+                "source": "WHO AWaRe / Essential Medicines List export"
+              },
+              {
+                "aware_index": "3",
+                "antibiotic": "Amikacin + cefepime",
+                "aware_group": "Not Recommended",
+                "recommendation_count": "0",
+                "recommendations": "",
+                "source": "WHO AWaRe / Essential Medicines List export"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "amr_knowledge_base": {
+      "rel_path": "amr_knowledge_base",
+      "files_count": 5,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "AMR_KNOWLEDGE_BASE.md",
+          "rel_path": "amr_knowledge_base\\AMR_KNOWLEDGE_BASE.md",
+          "size_bytes": 6839612,
+          "extension": ".md",
+          "text_info": {
+            "line_count": 180378,
+            "head": [
+              "---",
+              "schema:",
+              "name: AMR Knowledge Base",
+              "version: '1.0'",
+              "format: markdown-with-yaml-records",
+              "record_schema: amr.record.v1",
+              "corpus:",
+              "id: amr-india-verified-kb",
+              "title: India Antimicrobial Resistance Verified Knowledge Base",
+              "language: en",
+              "record_count: 3843",
+              "source_count: 28",
+              "generated_from: amr_chatbot_corpus.csv",
+              "indexing:",
+              "primary_key: record.id"
+            ]
+          }
+        },
+        {
+          "name": "AMR_KNOWLEDGE_INDEX.yaml",
+          "rel_path": "amr_knowledge_base\\AMR_KNOWLEDGE_INDEX.yaml",
+          "size_bytes": 2117620,
+          "extension": ".yaml",
+          "text_info": {
+            "line_count": 65337,
+            "head": [
+              "schema: amr.index.v1",
+              "corpus_id: amr-india-verified-kb",
+              "generated_from: AMR_KNOWLEDGE_BASE.md",
+              "primary_key: id",
+              "records:",
+              "- id: ICMR_AMRSN_2017_p001",
+              "index_key: amr/ICMR_AMR_surveillance/page_chunk/ICMR_AMRSN_2017_p001",
+              "source_id: ICMR_AMRSN_2017",
+              "data_layer: ICMR_AMR_surveillance",
+              "record_type: page_chunk",
+              "report_year: 2017",
+              "pdf_page: 1",
+              "pathogen: null",
+              "antibiotic: null",
+              "specimen: null"
+            ]
+          }
+        },
+        {
+          "name": "AMR_KNOWLEDGE_MANIFEST.csv",
+          "rel_path": "amr_knowledge_base\\AMR_KNOWLEDGE_MANIFEST.csv",
+          "size_bytes": 404,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 5,
+            "columns": [
+              "file",
+              "bytes",
+              "sha256"
+            ],
+            "num_columns": 3,
+            "sample_rows": [
+              {
+                "file": "AMR_KNOWLEDGE_BASE.md",
+                "bytes": "6839612",
+                "sha256": "3cb0ad06a92b29e31541eae1447d218d5f21bbb487472251f7b69b1416b9ad29"
+              },
+              {
+                "file": "AMR_KNOWLEDGE_INDEX.yaml",
+                "bytes": "2117620",
+                "sha256": "5c1f2d84f765e5ab56af503c3fdea2bdc337879930a3cd8250ef29b192c00b5f"
+              },
+              {
+                "file": "AMR_SOURCE_INDEX.yaml",
+                "bytes": "14723",
+                "sha256": "38c282b9708305e3499926183a179b703ef0b8e899a3d9b8dfdcd562c217cc8d"
+              }
+            ]
+          }
+        },
+        {
+          "name": "AMR_KNOWLEDGE_VALIDATION.yaml",
+          "rel_path": "amr_knowledge_base\\AMR_KNOWLEDGE_VALIDATION.yaml",
+          "size_bytes": 1188,
+          "extension": ".yaml",
+          "text_info": {
+            "line_count": 42,
+            "head": [
+              "schema: amr.validation.v1",
+              "corpus_file: AMR_KNOWLEDGE_BASE.md",
+              "record_count: 3843",
+              "unique_record_ids: true",
+              "unresolved_source_ids: []",
+              "all_source_ids_resolve: true",
+              "null_record_ids: 0",
+              "layer_counts:",
+              "ICMR_AMR_surveillance: 1353",
+              "NCDC_AMR_surveillance_or_consumption: 1095",
+              "WHO_AMR_indicator: 1019",
+              "antibiotic_ontology: 376",
+              "record_type_counts:",
+              "page_chunk: 1353",
+              "structured_observation: 1019"
+            ]
+          }
+        },
+        {
+          "name": "AMR_SOURCE_INDEX.yaml",
+          "rel_path": "amr_knowledge_base\\AMR_SOURCE_INDEX.yaml",
+          "size_bytes": 14723,
+          "extension": ".yaml",
+          "text_info": {
+            "line_count": 401,
+            "head": [
+              "schema: amr.source-index.v1",
+              "sources:",
+              "- source_id: NCDC_resistance_2017_NARS-Net",
+              "publisher: National Centre for Disease Control (NCDC), Government of India",
+              "network: NARS-Net",
+              "data_layer: resistance",
+              "report_year: '2017'",
+              "reporting_period: '2017'",
+              "filename: amr23.pdf",
+              "runtime_filename: amr2017.pdf",
+              "page_count: 15",
+              "sha256: 0070d1b36c314a235bf1b744170e8e7bc95655db064c57cbb485f8301ffff6b2",
+              "sha256_verified_against_manifest: 'True'",
+              "official_source: 'yes'",
+              "role: primary_source"
+            ]
+          }
+        }
+      ]
+    },
+    "ayur": {
+      "rel_path": "ayur",
+      "files_count": 3,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "Global_Scenario_of_Antimicrobial_Resistance_A_Revi.pdf",
+          "rel_path": "ayur\\Global_Scenario_of_Antimicrobial_Resistance_A_Revi.pdf",
+          "size_bytes": 410097,
+          "extension": ".pdf"
+        },
+        {
+          "name": "JFMPC-12-1764.pdf",
+          "rel_path": "ayur\\JFMPC-12-1764.pdf",
+          "size_bytes": 442331,
+          "extension": ".pdf"
+        },
+        {
+          "name": "potential-of-ayurveda-to-achieve-universal-health-coverage.pdf",
+          "rel_path": "ayur\\potential-of-ayurveda-to-achieve-universal-health-coverage.pdf",
+          "size_bytes": 335185,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    "AYUSH_AMR_KNOWLEDGE_BASE_PACKAGE": {
+      "rel_path": "AYUSH_AMR_KNOWLEDGE_BASE_PACKAGE",
+      "files_count": 2,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "AYUSH_AMR_KNOWLEDGE_BASE.md",
+          "rel_path": "AYUSH_AMR_KNOWLEDGE_BASE_PACKAGE\\AYUSH_AMR_KNOWLEDGE_BASE.md",
+          "size_bytes": 20940,
+          "extension": ".md",
+          "text_info": {
+            "line_count": 536,
+            "head": [
+              "---",
+              "schema:",
+              "name: AMR AYUSH Knowledge Base",
+              "version: '1.0'",
+              "format: markdown-with-yaml-records",
+              "record_schema: amr.record.v1",
+              "corpus:",
+              "id: amr-india-ayush-evidence-kb",
+              "title: India AYUSH and AMR Evidence Knowledge Base",
+              "language: en",
+              "record_count: 10",
+              "source_count: 10",
+              "generated_from: curated_ayush_amr_evidence_records",
+              "indexing:",
+              "primary_key: record.id"
+            ]
+          }
+        },
+        {
+          "name": "AYUSH_AMR_SOURCE_INDEX.yaml",
+          "rel_path": "AYUSH_AMR_KNOWLEDGE_BASE_PACKAGE\\AYUSH_AMR_SOURCE_INDEX.yaml",
+          "size_bytes": 3502,
+          "extension": ".yaml",
+          "text_info": {
+            "line_count": 70,
+            "head": [
+              "---",
+              "schema:",
+              "name: AYUSH AMR Source Index",
+              "version: '1.0'",
+              "format: yaml-source-registry",
+              "record_schema: amr.source.v1",
+              "corpus:",
+              "id: amr-india-ayush-evidence-kb",
+              "source_count: 10",
+              "sources:",
+              "- source_id: AYUSH_NAP_AMR_2_0",
+              "title: National One Health Mission / NAP-AMR 2.0 (2025-2029)",
+              "source_type: government_document",
+              "file_name: National One Health Mission.pdf",
+              "verification_status: supplied_document_reviewed_at_summary_level"
+            ]
+          }
+        }
+      ]
+    },
+    "GOV": {
+      "rel_path": "GOV",
+      "files_count": 2,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "National One Health Mission.pdf",
+          "rel_path": "GOV\\National One Health Mission.pdf",
+          "size_bytes": 12888488,
+          "extension": ".pdf"
+        },
+        {
+          "name": "www-pib-gov-in-PressReleasePage-aspx-PRID-2209331-reg-3-lang.md",
+          "rel_path": "GOV\\www-pib-gov-in-PressReleasePage-aspx-PRID-2209331-reg-3-lang.md",
+          "size_bytes": 8369,
+          "extension": ".md",
+          "text_info": {
+            "line_count": 66,
+            "head": [
+              "AYUSH",
+              "![azadi ka amrit mahotsav](https://static.pib.gov.in/WriteReadData/specificdocs/photo/2026/sep/ph_9768_20260902_10000501.png)",
+              "# National Health Mission in AYUSH",
+              "Posted On:",
+              "12 DEC 2025 9:43PM by PIB Delhi",
+              "The Government of India is actively participating in the National One Health Mission (NOHM). The Mission was established on the recommendation of the 21st Prime Minister\u2019s Science, Technology and Innovation Advisory Council (PM-STIAC), with Cabinet approval in February 2024. The Mission is being steered by the Office of the Principal Scientific Adviser to the Government of India and involves more than 16 Central Ministries/Departments including Ministry of Ayush. The Department of Health Research (DHR)/Indian Council of Medical Research (ICMR) serves as the implementing agency. Further details can be accessed on\u00a0 [https://www.psa.gov.in/oneHealthMission](https://www.psa.gov.in/oneHealthMission).",
+              "The Government has established collaborations with key stakeholders, including the Indian Council of Medical Research (ICMR), the National Centre for Disease Control (NCDC), State Health Departments, the Department of Animal Husbandry & Dairying and other relevant institutions, to implement initiatives under the National One Health Mission. Further details are available on\u00a0 [https://www.psa.gov.in/oneHealthMission](https://www.psa.gov.in/oneHealthMission)."
+            ]
+          }
+        }
+      ]
+    },
+    "homeo": {
+      "rel_path": "homeo",
+      "files_count": 6,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "Antibiotic_Resistant_Staphyloccus_sensit.pdf",
+          "rel_path": "homeo\\Antibiotic_Resistant_Staphyloccus_sensit.pdf",
+          "size_bytes": 271976,
+          "extension": ".pdf"
+        },
+        {
+          "name": "Exploring_the_efficacy_of_homeopathic_re.pdf",
+          "rel_path": "homeo\\Exploring_the_efficacy_of_homeopathic_re.pdf",
+          "size_bytes": 266830,
+          "extension": ".pdf"
+        },
+        {
+          "name": "HRI-Antimicrobial-Resistance-AMR-submission-Nov-2013.pdf",
+          "rel_path": "homeo\\HRI-Antimicrobial-Resistance-AMR-submission-Nov-2013.pdf",
+          "size_bytes": 660972,
+          "extension": ".pdf"
+        },
+        {
+          "name": "main.pdf",
+          "rel_path": "homeo\\main.pdf",
+          "size_bytes": 166107,
+          "extension": ".pdf"
+        },
+        {
+          "name": "pmc-ncbi-nlm-nih-gov-articles-PMC11892463.md",
+          "rel_path": "homeo\\pmc-ncbi-nlm-nih-gov-articles-PMC11892463.md",
+          "size_bytes": 87561,
+          "extension": ".md",
+          "text_info": {
+            "line_count": 594,
+            "head": [
+              "[Skip to main content](https://pmc.ncbi.nlm.nih.gov/articles/PMC11892463/#main-content)",
+              "![](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-dot-gov.svg)",
+              "**Official websites use .gov**",
+              "A",
+              "**.gov** website belongs to an official",
+              "government organization in the United States.",
+              "![](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-https.svg)",
+              "**Secure .gov websites use HTTPS**"
+            ]
+          }
+        },
+        {
+          "name": "pmc-ncbi-nlm-nih-gov-articles-PMC6033723.md",
+          "rel_path": "homeo\\pmc-ncbi-nlm-nih-gov-articles-PMC6033723.md",
+          "size_bytes": 15266,
+          "extension": ".md",
+          "text_info": {
+            "line_count": 182,
+            "head": [
+              "[Skip to main content](https://pmc.ncbi.nlm.nih.gov/articles/PMC6033723/#main-content)",
+              "![](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-dot-gov.svg)",
+              "**Official websites use .gov**",
+              "A",
+              "**.gov** website belongs to an official",
+              "government organization in the United States.",
+              "![](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-https.svg)",
+              "**Secure .gov websites use HTTPS**"
+            ]
+          }
+        }
+      ]
+    },
+    "icmr": {
+      "rel_path": "icmr",
+      "files_count": 8,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "icmramrannualreport2017.pdf",
+          "rel_path": "icmr\\icmramrannualreport2017.pdf",
+          "size_bytes": 1288017,
+          "extension": ".pdf"
+        },
+        {
+          "name": "icmramrannualreport2018.pdf",
+          "rel_path": "icmr\\icmramrannualreport2018.pdf",
+          "size_bytes": 12811516,
+          "extension": ".pdf"
+        },
+        {
+          "name": "icmramrannualreport2019.pdf",
+          "rel_path": "icmr\\icmramrannualreport2019.pdf",
+          "size_bytes": 5060629,
+          "extension": ".pdf"
+        },
+        {
+          "name": "icmramrannualreport2020.pdf",
+          "rel_path": "icmr\\icmramrannualreport2020.pdf",
+          "size_bytes": 9530303,
+          "extension": ".pdf"
+        },
+        {
+          "name": "icmramrannualreport2021.pdf",
+          "rel_path": "icmr\\icmramrannualreport2021.pdf",
+          "size_bytes": 7991387,
+          "extension": ".pdf"
+        },
+        {
+          "name": "icmramrsnannualreport2024.pdf",
+          "rel_path": "icmr\\icmramrsnannualreport2024.pdf",
+          "size_bytes": 6967921,
+          "extension": ".pdf"
+        },
+        {
+          "name": "icmrannualreport2022.pdf",
+          "rel_path": "icmr\\icmrannualreport2022.pdf",
+          "size_bytes": 41801377,
+          "extension": ".pdf"
+        },
+        {
+          "name": "icmrannualreport2023.pdf",
+          "rel_path": "icmr\\icmrannualreport2023.pdf",
+          "size_bytes": 13008773,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    "india relevant": {
+      "rel_path": "india relevant",
+      "files_count": 5,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "{IMP}bhanushali-et-al-2024-whole-genome-sequencing-of-clinical-isolates-from-tuberculosis-patients-in-india-real-world-data.pdf",
+          "rel_path": "india relevant\\{IMP}bhanushali-et-al-2024-whole-genome-sequencing-of-clinical-isolates-from-tuberculosis-patients-in-india-real-world-data.pdf",
+          "size_bytes": 949474,
+          "extension": ".pdf"
+        },
+        {
+          "name": "{IMP}bhattacharjee-et-al-2025-co-existence-of-plasmid-mediated-blandm-1-and-blandm-5-in-escherichia-coli-sequence-type-167.pdf",
+          "rel_path": "india relevant\\{IMP}bhattacharjee-et-al-2025-co-existence-of-plasmid-mediated-blandm-1-and-blandm-5-in-escherichia-coli-sequence-type-167.pdf",
+          "size_bytes": 1444695,
+          "extension": ".pdf"
+        },
+        {
+          "name": "{IMP}rao-et-al-2023-lineage-classification-and-antitubercular-drug-resistance-surveillance-of-mycobacterium-tuberculosis-by.pdf",
+          "rel_path": "india relevant\\{IMP}rao-et-al-2023-lineage-classification-and-antitubercular-drug-resistance-surveillance-of-mycobacterium-tuberculosis-by.pdf",
+          "size_bytes": 1277417,
+          "extension": ".pdf"
+        },
+        {
+          "name": "{IMP}thirumoorthy-et-al-2025-recent-emergence-of-cephalosporin-resistant-salmonella-typhi-in-india-due-to-the-endemic-clone.pdf",
+          "rel_path": "india relevant\\{IMP}thirumoorthy-et-al-2025-recent-emergence-of-cephalosporin-resistant-salmonella-typhi-in-india-due-to-the-endemic-clone.pdf",
+          "size_bytes": 1718649,
+          "extension": ".pdf"
+        },
+        {
+          "name": "{IMp}halder-et-al-2024-whole-genome-sequence-based-molecular-characterization-of-blood-isolates-of-carbapenem-resistant.pdf",
+          "rel_path": "india relevant\\{IMp}halder-et-al-2024-whole-genome-sequence-based-molecular-characterization-of-blood-isolates-of-carbapenem-resistant.pdf",
+          "size_bytes": 5036256,
+          "extension": ".pdf"
+        }
+      ]
+    },
+    "Tamil": {
+      "rel_path": "Tamil",
+      "files_count": 5,
+      "subdirs_count": 3,
+      "files": [
+        {
+          "name": "AMRGuard_antibiotic_180_master_clinical_dataset.xlsx",
+          "rel_path": "Tamil\\AMRGuard_antibiotic_180_master_clinical_dataset.xlsx",
+          "size_bytes": 42108,
+          "extension": ".xlsx"
+        },
+        {
+          "name": "Hopsital Dataset.csv",
+          "rel_path": "Tamil\\Hopsital Dataset.csv",
+          "size_bytes": 92791,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 834,
+            "columns": [
+              "Age",
+              "Date of Data Entry",
+              "Gender",
+              "Diagnosis",
+              "Name of Drug",
+              "Dosage (gram)",
+              "Route",
+              "Frequency",
+              "Duration (days)",
+              "Indication"
+            ],
+            "num_columns": 10,
+            "sample_rows": [
+              {
+                "Age": "85",
+                "Date of Data Entry": "19/12/2019 14:41:49",
+                "Gender": "Female",
+                "Diagnosis": "ccf, hypertension, ida, ckd(stage 5), ?icm,",
+                "Name of Drug": "ceftriaxone",
+                "Dosage (gram)": "1",
+                "Route": "IV",
+                "Frequency": "BD",
+                "Duration (days)": "7",
+                "Indication": "icm"
+              },
+              {
+                "Age": "87",
+                "Date of Data Entry": "19/12/2019 16:35:25",
+                "Gender": "Female",
+                "Diagnosis": "pad(lt u.l), be amputation,/post op, akt",
+                "Name of Drug": "ceftriaxone",
+                "Dosage (gram)": "1",
+                "Route": "IV",
+                "Frequency": "BD",
+                "Duration (days)": "1",
+                "Indication": "post op"
+              },
+              {
+                "Age": "82",
+                "Date of Data Entry": "19/12/2019 15:48:49",
+                "Gender": "Male",
+                "Diagnosis": "type-2dm, ihd, col, copd, ht",
+                "Name of Drug": "ofloxacin",
+                "Dosage (gram)": "0.4",
+                "Route": "IV",
+                "Frequency": "BD",
+                "Duration (days)": "3",
+                "Indication": "abd distension with leg swelling"
+              }
+            ]
+          }
+        },
+        {
+          "name": "antibiotic_180_usage_symptoms_fda_complete.csv",
+          "rel_path": "Tamil\\antibiotic_180_usage_symptoms_fda_complete.csv",
+          "size_bytes": 60997,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 181,
+            "columns": [
+              "antibiotic_name",
+              "usage",
+              "symptoms"
+            ],
+            "num_columns": 3,
+            "sample_rows": [
+              {
+                "antibiotic_name": "Penicillin G",
+                "usage": "Treatment of severe infections caused by penicillin-susceptible organisms, including neurosyphilis, endocarditis, bacteremia, meningitis, and severe streptococcal infections.",
+                "symptoms": "Injection site reactions, nausea, diarrhea, rash; serious risks include severe anaphylaxis, Jarisch-Herxheimer reaction in syphilis, neurotoxicity/seizures at high doses, and Clostridioides difficile-associated diarrhoea."
+              },
+              {
+                "antibiotic_name": "Penicillin V",
+                "usage": "Treatment of mild-to-moderate susceptible bacterial infections, including streptococcal pharyngitis, tonsillitis, and mild skin and soft-tissue infections.",
+                "symptoms": "Nausea, vomiting, diarrhea, epigastric distress, rash; serious risks include acute hypersensitivity/anaphylaxis and Clostridioides difficile-associated diarrhoea."
+              },
+              {
+                "antibiotic_name": "Benzathine penicillin G",
+                "usage": "Long-acting intramuscular treatment for syphilis (primary, secondary, and latent), yaws, and secondary prophylaxis of rheumatic fever.",
+                "symptoms": "Injection site pain, erythema; serious risks include fatal inadvertent IV administration (cardiorespiratory arrest), severe anaphylaxis, and Jarisch-Herxheimer reaction."
+              }
+            ]
+          }
+        },
+        {
+          "name": "antibiotic_usage_side_effects_fda_starter.csv",
+          "rel_path": "Tamil\\antibiotic_usage_side_effects_fda_starter.csv",
+          "size_bytes": 12408,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 41,
+            "columns": [
+              "\ufeffantibiotic_name",
+              "usage",
+              "symptoms"
+            ],
+            "num_columns": 3,
+            "sample_rows": [
+              {
+                "\ufeffantibiotic_name": "Amoxicillin",
+                "usage": "Treatment of susceptible bacterial infections, including selected ear, nose and throat, respiratory, skin and genitourinary infections; also used in specific combination regimens for Helicobacter pylori.",
+                "symptoms": "Diarrhoea, nausea, vomiting, rash; serious risks include severe allergic reactions and Clostridioides difficile-associated diarrhoea."
+              },
+              {
+                "\ufeffantibiotic_name": "Amoxicillin/clavulanate",
+                "usage": "Treatment of selected susceptible bacterial infections, including some sinus, ear, respiratory, skin and urinary infections.",
+                "symptoms": "Diarrhoea, nausea, vomiting, rash; serious risks include allergic reactions, C. difficile-associated diarrhoea and liver injury."
+              },
+              {
+                "\ufeffantibiotic_name": "Ampicillin",
+                "usage": "Treatment of infections caused by susceptible bacteria, including selected respiratory, gastrointestinal, urinary and other infections.",
+                "symptoms": "Diarrhoea, nausea, rash; serious risks include allergic reactions, severe skin reactions and C. difficile-associated diarrhoea."
+              }
+            ]
+          }
+        },
+        {
+          "name": "uploaded_antibiotic_lookup_3col.csv",
+          "rel_path": "Tamil\\uploaded_antibiotic_lookup_3col.csv",
+          "size_bytes": 9773,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 71,
+            "columns": [
+              "\ufeffantibiotic_name",
+              "usage",
+              "symptoms"
+            ],
+            "num_columns": 3,
+            "sample_rows": [
+              {
+                "\ufeffantibiotic_name": "Amoxicillin",
+                "usage": "Community-Acquired Pneumonia (Mild Outpatient); Streptococcal Pharyngitis (Group A Strep); Acute Otitis Media; Odontogenic / Periapical Dental Abscess; Helicobacter pylori Gastritis / Peptic Ulcer Disease; Community-Acquired Pneumonia (Moderate Inpatient Ward); Acute Exacerbation of Chronic Bronchitis / COPD (Purulent Anthonisen Type 1); Acute Bacterial Rhinosinusitis (Persistent >10 Days); Diabetic Foot Infection (Mild Outpatient)",
+                "symptoms": "Diarrhoea, nausea, vomiting, rash; serious risks include severe allergic reactions and Clostridioides difficile-associated diarrhoea."
+              },
+              {
+                "\ufeffantibiotic_name": "Amoxicillin-Clavulanate",
+                "usage": "Community-Acquired Pneumonia (Moderate Inpatient Ward); Acute Exacerbation of Chronic Bronchitis / COPD (Purulent Anthonisen Type 1); Acute Bacterial Rhinosinusitis (Persistent >10 Days); Diabetic Foot Infection (Mild Outpatient)",
+                "symptoms": "Diarrhoea, nausea, vomiting, rash; serious risks include allergic reactions, C. difficile-associated diarrhoea and liver injury."
+              },
+              {
+                "\ufeffantibiotic_name": "Nitrofurantoin",
+                "usage": "Uncomplicated Acute Cystitis / Lower UTI; Recurrent Uncomplicated Cystitis in Females; Asymptomatic Bacteriuria in Pregnancy",
+                "symptoms": "Nausea, reduced appetite, headache; urine may darken. Serious risks include lung reactions, liver injury, peripheral neuropathy and haemolysis in susceptible patients."
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Tamil\\Anti": {
+      "rel_path": "Tamil\\Anti",
+      "files_count": 6,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "brands.csv",
+          "rel_path": "Tamil\\Anti\\brands.csv",
+          "size_bytes": 1520,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 78,
+            "columns": [
+              "id",
+              "brand_name",
+              "drug_id",
+              "default_strength"
+            ],
+            "num_columns": 4,
+            "sample_rows": [
+              {
+                "id": "1",
+                "brand_name": "Augmentin",
+                "drug_id": "2",
+                "default_strength": "625mg"
+              },
+              {
+                "id": "2",
+                "brand_name": "Clavam",
+                "drug_id": "2",
+                "default_strength": "625mg"
+              },
+              {
+                "id": "3",
+                "brand_name": "Moxikind-CV",
+                "drug_id": "2",
+                "default_strength": "625mg"
+              }
+            ]
+          }
+        },
+        {
+          "name": "conditions.csv",
+          "rel_path": "Tamil\\Anti\\conditions.csv",
+          "size_bytes": 2482,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 37,
+            "columns": [
+              "id",
+              "code",
+              "display_name"
+            ],
+            "num_columns": 3,
+            "sample_rows": [
+              {
+                "id": "1",
+                "code": "SYN_CAP_MILD",
+                "display_name": "Community-Acquired Pneumonia (Mild Outpatient)"
+              },
+              {
+                "id": "2",
+                "code": "SYN_UNCOMPLICATED_UTI",
+                "display_name": "Uncomplicated Acute Cystitis / Lower UTI"
+              },
+              {
+                "id": "3",
+                "code": "SYN_ACUTE_BRONCHITIS",
+                "display_name": "Acute Bronchitis (Self-Limiting Viral)"
+              }
+            ]
+          }
+        },
+        {
+          "name": "drugs.csv",
+          "rel_path": "Tamil\\Anti\\drugs.csv",
+          "size_bytes": 5375,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 81,
+            "columns": [
+              "id",
+              "generic_name",
+              "drug_class",
+              "is_antibiotic",
+              "aware_class",
+              "is_fluoroquinolone",
+              "pregnancy_contraindicated",
+              "min_age_years"
+            ],
+            "num_columns": 8,
+            "sample_rows": [
+              {
+                "id": "1",
+                "generic_name": "Amoxicillin",
+                "drug_class": "Aminopenicillin",
+                "is_antibiotic": "True",
+                "aware_class": "Access",
+                "is_fluoroquinolone": "False",
+                "pregnancy_contraindicated": "False",
+                "min_age_years": "0.0"
+              },
+              {
+                "id": "2",
+                "generic_name": "Amoxicillin-Clavulanate",
+                "drug_class": "Beta-lactam + Inhibitor",
+                "is_antibiotic": "True",
+                "aware_class": "Access",
+                "is_fluoroquinolone": "False",
+                "pregnancy_contraindicated": "False",
+                "min_age_years": "0.0"
+              },
+              {
+                "id": "3",
+                "generic_name": "Nitrofurantoin",
+                "drug_class": "Nitrofuran",
+                "is_antibiotic": "True",
+                "aware_class": "Access",
+                "is_fluoroquinolone": "False",
+                "pregnancy_contraindicated": "False",
+                "min_age_years": "1.0"
+              }
+            ]
+          }
+        },
+        {
+          "name": "guidelines.csv",
+          "rel_path": "Tamil\\Anti\\guidelines.csv",
+          "size_bytes": 6697,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 37,
+            "columns": [
+              "id",
+              "condition_id",
+              "source",
+              "section_ref",
+              "summary",
+              "antibiotic_indicated"
+            ],
+            "num_columns": 6,
+            "sample_rows": [
+              {
+                "id": "1",
+                "condition_id": "1",
+                "source": "ICMR STG 2022",
+                "section_ref": "Respiratory Infections - Mild CAP",
+                "summary": "Amoxicillin 500mg PO TID for 5 days is first-line. Fluoroquinolones reserved for beta-lactam anaphylaxis.",
+                "antibiotic_indicated": "True"
+              },
+              {
+                "id": "2",
+                "condition_id": "2",
+                "source": "ICMR STG 2022",
+                "section_ref": "Urinary Tract Infections - Acute Cystitis",
+                "summary": "Nitrofurantoin 100mg PO BD x 5d or Fosfomycin 3g single dose. Empirical fluoroquinolones contraindicated due to >75% E. coli resistance.",
+                "antibiotic_indicated": "True"
+              },
+              {
+                "id": "3",
+                "condition_id": "3",
+                "source": "ICMR STG 2022",
+                "section_ref": "Respiratory Infections - Acute Bronchitis",
+                "summary": "Acute bronchitis in immunocompetent adults is predominantly viral and self-limiting. Antibiotics provide zero clinical benefit and are not indicated.",
+                "antibiotic_indicated": "False"
+              }
+            ]
+          }
+        },
+        {
+          "name": "regimens.csv",
+          "rel_path": "Tamil\\Anti\\regimens.csv",
+          "size_bytes": 4723,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 61,
+            "columns": [
+              "id",
+              "condition_id",
+              "drug_id",
+              "dose_text",
+              "frequency",
+              "duration_days",
+              "source",
+              "verified_by"
+            ],
+            "num_columns": 8,
+            "sample_rows": [
+              {
+                "id": "1",
+                "condition_id": "1",
+                "drug_id": "1",
+                "dose_text": "500mg",
+                "frequency": "TID",
+                "duration_days": "5",
+                "source": "ICMR STG CAP 2022",
+                "verified_by": "ICMR Stewardship Committee"
+              },
+              {
+                "id": "2",
+                "condition_id": "2",
+                "drug_id": "3",
+                "dose_text": "100mg",
+                "frequency": "BID",
+                "duration_days": "5",
+                "source": "ICMR STG UTI 2022",
+                "verified_by": "ICMR Stewardship Committee"
+              },
+              {
+                "id": "3",
+                "condition_id": "2",
+                "drug_id": "4",
+                "dose_text": "3g single sachet",
+                "frequency": "Once",
+                "duration_days": "1",
+                "source": "ICMR STG UTI 2022",
+                "verified_by": "ICMR Stewardship Committee"
+              }
+            ]
+          }
+        },
+        {
+          "name": "rules.yaml",
+          "rel_path": "Tamil\\Anti\\rules.yaml",
+          "size_bytes": 3,
+          "extension": ".yaml",
+          "text_info": {
+            "line_count": 1,
+            "head": [
+              "[]"
+            ]
+          }
+        }
+      ]
+    },
+    "Tamil\\New folder": {
+      "rel_path": "Tamil\\New folder",
+      "files_count": 2,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "antibiotic_180_with_brand_names_master.csv",
+          "rel_path": "Tamil\\New folder\\antibiotic_180_with_brand_names_master.csv",
+          "size_bytes": 65358,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 181,
+            "columns": [
+              "antibiotic_name",
+              "common_brand_names",
+              "usage",
+              "symptoms"
+            ],
+            "num_columns": 4,
+            "sample_rows": [
+              {
+                "antibiotic_name": "Penicillin G",
+                "common_brand_names": "Pfizerpen, Crystapen, Benzylpenicillin",
+                "usage": "Treatment of severe infections caused by penicillin-susceptible organisms, including neurosyphilis, endocarditis, bacteremia, meningitis, and severe streptococcal infections.",
+                "symptoms": "Injection site reactions, nausea, diarrhea, rash; serious risks include severe anaphylaxis, Jarisch-Herxheimer reaction in syphilis, neurotoxicity/seizures at high doses, and Clostridioides difficile-associated diarrhoea."
+              },
+              {
+                "antibiotic_name": "Penicillin V",
+                "common_brand_names": "Pen-VK, Veetids, Kaypen, V-Cillin K",
+                "usage": "Treatment of mild-to-moderate susceptible bacterial infections, including streptococcal pharyngitis, tonsillitis, and mild skin and soft-tissue infections.",
+                "symptoms": "Nausea, vomiting, diarrhea, epigastric distress, rash; serious risks include acute hypersensitivity/anaphylaxis and Clostridioides difficile-associated diarrhoea."
+              },
+              {
+                "antibiotic_name": "Benzathine penicillin G",
+                "common_brand_names": "Bicillin L-A, Penidure, Retarpen, Extencilline",
+                "usage": "Long-acting intramuscular treatment for syphilis (primary, secondary, and latent), yaws, and secondary prophylaxis of rheumatic fever.",
+                "symptoms": "Injection site pain, erythema; serious risks include fatal inadvertent IV administration (cardiorespiratory arrest), severe anaphylaxis, and Jarisch-Herxheimer reaction."
+              }
+            ]
+          }
+        },
+        {
+          "name": "antibiotic_brand_to_generic_alias_lookup.csv",
+          "rel_path": "Tamil\\New folder\\antibiotic_brand_to_generic_alias_lookup.csv",
+          "size_bytes": 12676,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 406,
+            "columns": [
+              "brand_alias",
+              "full_brand_display",
+              "generic_antibiotic_name"
+            ],
+            "num_columns": 3,
+            "sample_rows": [
+              {
+                "brand_alias": "Pfizerpen",
+                "full_brand_display": "Pfizerpen",
+                "generic_antibiotic_name": "Penicillin G"
+              },
+              {
+                "brand_alias": "Crystapen",
+                "full_brand_display": "Crystapen",
+                "generic_antibiotic_name": "Penicillin G"
+              },
+              {
+                "brand_alias": "Benzylpenicillin",
+                "full_brand_display": "Benzylpenicillin",
+                "generic_antibiotic_name": "Penicillin G"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "Tamil\\New folder 2": {
+      "rel_path": "Tamil\\New folder 2",
+      "files_count": 3,
+      "subdirs_count": 0,
+      "files": [
+        {
+          "name": "AMRGuard_antibiotic_180_source_research_queue.csv",
+          "rel_path": "Tamil\\New folder 2\\AMRGuard_antibiotic_180_source_research_queue.csv",
+          "size_bytes": 113947,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 181,
+            "columns": [
+              "\ufeffsource_row_number",
+              "antibiotic_name",
+              "class_group",
+              "identity_or_status_note",
+              "official_dailymed_search_url",
+              "openfda_query_url",
+              "evidence_to_extract",
+              "current_research_status",
+              "verified_source_url",
+              "next_action"
+            ],
+            "num_columns": 10,
+            "sample_rows": [
+              {
+                "\ufeffsource_row_number": "1",
+                "antibiotic_name": "Penicillin G",
+                "class_group": "Natural Penicillins",
+                "identity_or_status_note": "",
+                "official_dailymed_search_url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Penicillin%20G",
+                "openfda_query_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22Penicillin%20G%22&limit=10",
+                "evidence_to_extract": "Indications/usage; common adverse reactions with frequencies; serious warnings/boxed warning; contraindications; interactions; formulation/route; human vs veterinary; effective date; source label ID/URL.",
+                "current_research_status": "NOT YET RESEARCHED \u2014 no class-level substitution",
+                "verified_source_url": "",
+                "next_action": "Extract indications, adverse reactions, boxed warnings/warnings, contraindications; confirm formulation/route and current label."
+              },
+              {
+                "\ufeffsource_row_number": "2",
+                "antibiotic_name": "Penicillin V",
+                "class_group": "Natural Penicillins",
+                "identity_or_status_note": "",
+                "official_dailymed_search_url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Penicillin%20V",
+                "openfda_query_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22Penicillin%20V%22&limit=10",
+                "evidence_to_extract": "Indications/usage; common adverse reactions with frequencies; serious warnings/boxed warning; contraindications; interactions; formulation/route; human vs veterinary; effective date; source label ID/URL.",
+                "current_research_status": "NOT YET RESEARCHED \u2014 no class-level substitution",
+                "verified_source_url": "",
+                "next_action": "Extract indications, adverse reactions, boxed warnings/warnings, contraindications; confirm formulation/route and current label."
+              },
+              {
+                "\ufeffsource_row_number": "3",
+                "antibiotic_name": "Benzathine penicillin G",
+                "class_group": "Natural Penicillins",
+                "identity_or_status_note": "",
+                "official_dailymed_search_url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Benzathine%20penicillin%20G",
+                "openfda_query_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22Benzathine%20penicillin%20G%22&limit=10",
+                "evidence_to_extract": "Indications/usage; common adverse reactions with frequencies; serious warnings/boxed warning; contraindications; interactions; formulation/route; human vs veterinary; effective date; source label ID/URL.",
+                "current_research_status": "NOT YET RESEARCHED \u2014 no class-level substitution",
+                "verified_source_url": "",
+                "next_action": "Extract indications, adverse reactions, boxed warnings/warnings, contraindications; confirm formulation/route and current label."
+              }
+            ]
+          }
+        },
+        {
+          "name": "AMRGuard_antibiotic_master_180_expanded.csv",
+          "rel_path": "Tamil\\New folder 2\\AMRGuard_antibiotic_master_180_expanded.csv",
+          "size_bytes": 207310,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 181,
+            "columns": [
+              "\ufeffantibiotic_name",
+              "usage",
+              "common_side_effects",
+              "serious_adverse_effects",
+              "possible_mechanism_or_cause",
+              "risk_factors_and_precautions",
+              "when_to_seek_help",
+              "regulatory_or_identity_note",
+              "source_basis",
+              "validation_status"
+            ],
+            "num_columns": 10,
+            "sample_rows": [
+              {
+                "\ufeffantibiotic_name": "Penicillin G",
+                "usage": "Treatment of selected infections caused by susceptible bacteria; the exact indication depends on the penicillin, formulation, organism and infection site. (provisional class-level summary; verify against a drug-specific label).",
+                "common_side_effects": "Possible effects include nausea, diarrhoea and rash; serious risks can include allergic reactions and C. difficile-associated diarrhoea.",
+                "serious_adverse_effects": "Serious risks vary by ingredient and formulation; individual drug label extraction required.",
+                "possible_mechanism_or_cause": "Inhibit bacterial cell-wall synthesis. Gastrointestinal symptoms can arise from effects on gut flora; allergy is an immune reaction rather than a predictable dose effect.",
+                "risk_factors_and_precautions": "History of penicillin/beta-lactam allergy; kidney impairment can affect dosing for some formulations; injection products have route-specific risks.",
+                "when_to_seek_help": "Seek urgent care for breathing difficulty, facial/throat swelling, fainting, blistering rash, or severe/persistent watery or bloody diarrhoea. Do not restart after suspected severe allergy without clinician review.",
+                "regulatory_or_identity_note": "Current FDA approval/marketed status not independently verified.",
+                "source_basis": "Provisional class-level summary only; individual label not yet verified.",
+                "validation_status": "class-level scaffold; not sufficient for clinical use"
+              },
+              {
+                "\ufeffantibiotic_name": "Penicillin V",
+                "usage": "Treatment of selected infections caused by susceptible bacteria; the exact indication depends on the penicillin, formulation, organism and infection site. (provisional class-level summary; verify against a drug-specific label).",
+                "common_side_effects": "Possible effects include nausea, diarrhoea and rash; serious risks can include allergic reactions and C. difficile-associated diarrhoea.",
+                "serious_adverse_effects": "Serious risks vary by ingredient and formulation; individual drug label extraction required.",
+                "possible_mechanism_or_cause": "Inhibit bacterial cell-wall synthesis. Gastrointestinal symptoms can arise from effects on gut flora; allergy is an immune reaction rather than a predictable dose effect.",
+                "risk_factors_and_precautions": "History of penicillin/beta-lactam allergy; kidney impairment can affect dosing for some formulations; injection products have route-specific risks.",
+                "when_to_seek_help": "Seek urgent care for breathing difficulty, facial/throat swelling, fainting, blistering rash, or severe/persistent watery or bloody diarrhoea. Do not restart after suspected severe allergy without clinician review.",
+                "regulatory_or_identity_note": "Current FDA approval/marketed status not independently verified.",
+                "source_basis": "Provisional class-level summary only; individual label not yet verified.",
+                "validation_status": "class-level scaffold; not sufficient for clinical use"
+              },
+              {
+                "\ufeffantibiotic_name": "Benzathine penicillin G",
+                "usage": "Treatment of selected infections caused by susceptible bacteria; the exact indication depends on the penicillin, formulation, organism and infection site. (provisional class-level summary; verify against a drug-specific label).",
+                "common_side_effects": "Possible effects include nausea, diarrhoea and rash; serious risks can include allergic reactions and C. difficile-associated diarrhoea.",
+                "serious_adverse_effects": "Serious risks vary by ingredient and formulation; individual drug label extraction required.",
+                "possible_mechanism_or_cause": "Inhibit bacterial cell-wall synthesis. Gastrointestinal symptoms can arise from effects on gut flora; allergy is an immune reaction rather than a predictable dose effect.",
+                "risk_factors_and_precautions": "History of penicillin/beta-lactam allergy; kidney impairment can affect dosing for some formulations; injection products have route-specific risks.",
+                "when_to_seek_help": "Seek urgent care for breathing difficulty, facial/throat swelling, fainting, blistering rash, or severe/persistent watery or bloody diarrhoea. Do not restart after suspected severe allergy without clinician review.",
+                "regulatory_or_identity_note": "Current FDA approval/marketed status not independently verified.",
+                "source_basis": "Provisional class-level summary only; individual label not yet verified.",
+                "validation_status": "class-level scaffold; not sufficient for clinical use"
+              }
+            ]
+          }
+        },
+        {
+          "name": "AMRGuard_antibiotic_master_180_research_progress.csv",
+          "rel_path": "Tamil\\New folder 2\\AMRGuard_antibiotic_master_180_research_progress.csv",
+          "size_bytes": 7773,
+          "extension": ".csv",
+          "csv_info": {
+            "row_count": 181,
+            "columns": [
+              "\ufeffantibiotic_name",
+              "usage",
+              "symptoms"
+            ],
+            "num_columns": 3,
+            "sample_rows": [
+              {
+                "\ufeffantibiotic_name": "Penicillin G",
+                "usage": "",
+                "symptoms": ""
+              },
+              {
+                "\ufeffantibiotic_name": "Penicillin V",
+                "usage": "",
+                "symptoms": ""
+              },
+              {
+                "\ufeffantibiotic_name": "Benzathine penicillin G",
+                "usage": "",
+                "symptoms": ""
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "root_files": [],
+  "file_details": [
+    {
+      "name": "IND data-who-int-dashboards-amr-antimicrobial-resistance-profile.md",
+      "rel_path": "IND data-who-int-dashboards-amr-antimicrobial-resistance-profile.md",
+      "size_bytes": 16325,
+      "extension": ".md",
+      "text_info": {
+        "line_count": 449,
+        "head": [
+          "[Skip to content](https://data.who.int/dashboards/amr/antimicrobial-resistance-profile?m49=356#main)",
+          "# Antimicrobial Resistance Dashboard",
+          "WHO AMR Programme",
+          "![](https://data.who.int/ResourcePackages/DDIBootstrap5/assets/dist/images/flags/GEO_FLAG_356.svg?package=DDIBootstrap5)India",
+          "- Country, territory or area",
+          "- Afghanistan",
+          "- Albania",
+          "- Algeria",
+          "- American Samoa",
+          "- Andorra",
+          "- Angola"
+        ]
+      }
+    },
+    {
+      "name": "WHO_RELAY_AMR.csv",
+      "rel_path": "WHO_RELAY_AMR.csv",
+      "size_bytes": 74351381,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 214368,
+        "columns": [
+          "IND_ID",
+          "IND_CODE",
+          "IND_UUID",
+          "IND_PER_CODE",
+          "DIM_TIME",
+          "DIM_TIME_TYPE",
+          "DIM_GEO_CODE_M49",
+          "DIM_GEO_CODE_TYPE",
+          "DIM_1_CODE",
+          "DIM_MEMBER_1_CODE",
+          "DIM_2_CODE",
+          "DIM_MEMBER_2_CODE",
+          "DIM_3_CODE",
+          "DIM_MEMBER_3_CODE",
+          "DIM_4_CODE",
+          "DIM_MEMBER_4_CODE",
+          "DIM_5_CODE",
+          "DIM_MEMBER_5_CODE",
+          "DIM_6_CODE",
+          "DIM_MEMBER_6_CODE",
+          "DIM_7_CODE",
+          "DIM_MEMBER_7_CODE",
+          "DIM_8_CODE",
+          "DIM_MEMBER_8_CODE",
+          "DIM_9_CODE",
+          "DIM_MEMBER_9_CODE",
+          "DIM_VALUE_TYPE",
+          "VALUE_NUMERIC",
+          "VALUE_LABEL",
+          "VALUE_NUMERIC_LOWER",
+          "VALUE_LABEL_LOWER",
+          "VALUE_NUMERIC_UPPER",
+          "VALUE_LABEL_UPPER",
+          "VALUE_COMMENTS",
+          "DIM_PUBLISH_STATE_CODE",
+          "VALUE_PROVENANCE",
+          "VALUE_CALC_TYPE",
+          "OBSERVATION_STATUS",
+          "ATT_1_CODE",
+          "ATT_MEMBER_1_CODE",
+          "ATT_2_CODE",
+          "ATT_MEMBER_2_CODE",
+          "_RecordID",
+          "Sys_PK",
+          "Sys_RowTitle",
+          "Sys_Version",
+          "Sys_VersionID",
+          "Sys_OriginCode",
+          "Sys_LoadBy",
+          "Sys_CommitDateUtc",
+          "Sys_FirstLoadBy",
+          "Sys_FirstCommitDateUtc",
+          "Sys_ID",
+          "Sys_BatchID",
+          "Sys_FirstBatchID"
+        ],
+        "num_columns": 55,
+        "sample_rows": [
+          {
+            "IND_ID": "TrACSS12017_OH_Q4.1",
+            "IND_CODE": "2017_OH_Q4.1",
+            "IND_UUID": "TrACSS1",
+            "IND_PER_CODE": "2017_OH_Q4.1",
+            "DIM_TIME": "2017",
+            "DIM_TIME_TYPE": "YEAR",
+            "DIM_GEO_CODE_M49": "192",
+            "DIM_GEO_CODE_TYPE": "COUNTRY",
+            "DIM_1_CODE": "",
+            "DIM_MEMBER_1_CODE": "",
+            "DIM_2_CODE": "",
+            "DIM_MEMBER_2_CODE": "",
+            "DIM_3_CODE": "",
+            "DIM_MEMBER_3_CODE": "",
+            "DIM_4_CODE": "",
+            "DIM_MEMBER_4_CODE": "",
+            "DIM_5_CODE": "",
+            "DIM_MEMBER_5_CODE": "",
+            "DIM_6_CODE": "",
+            "DIM_MEMBER_6_CODE": "",
+            "DIM_7_CODE": "",
+            "DIM_MEMBER_7_CODE": "",
+            "DIM_8_CODE": "",
+            "DIM_MEMBER_8_CODE": "",
+            "DIM_9_CODE": "",
+            "DIM_MEMBER_9_CODE": "",
+            "DIM_VALUE_TYPE": "TEXT",
+            "VALUE_NUMERIC": "2.00000000000000",
+            "VALUE_LABEL": "B",
+            "VALUE_NUMERIC_LOWER": "",
+            "VALUE_LABEL_LOWER": "",
+            "VALUE_NUMERIC_UPPER": "",
+            "VALUE_LABEL_UPPER": "",
+            "VALUE_COMMENTS": "",
+            "DIM_PUBLISH_STATE_CODE": "",
+            "VALUE_PROVENANCE": "",
+            "VALUE_CALC_TYPE": "",
+            "OBSERVATION_STATUS": "",
+            "ATT_1_CODE": "",
+            "ATT_MEMBER_1_CODE": "",
+            "ATT_2_CODE": "",
+            "ATT_MEMBER_2_CODE": "",
+            "_RecordID": "ff98d171-80de-88fe-8026-01a0c7db3100",
+            "Sys_PK": "-2147483619",
+            "Sys_RowTitle": "-",
+            "Sys_Version": "1",
+            "Sys_VersionID": "FF98D171-80DE-88FE-8026-01A0C7DB3100.1",
+            "Sys_OriginCode": "SYS_DATA_LOAD",
+            "Sys_LoadBy": "-",
+            "Sys_CommitDateUtc": "2026-09-22 06:43:33",
+            "Sys_FirstLoadBy": "-",
+            "Sys_FirstCommitDateUtc": "2026-09-22 06:43:33",
+            "Sys_ID": "ff98d171-80de-88fe-8026-01a0c7db3100",
+            "Sys_BatchID": "1317069",
+            "Sys_FirstBatchID": "1317069"
+          },
+          {
+            "IND_ID": "TrACSS12017_OH_Q4.1",
+            "IND_CODE": "2017_OH_Q4.1",
+            "IND_UUID": "TrACSS1",
+            "IND_PER_CODE": "2017_OH_Q4.1",
+            "DIM_TIME": "2017",
+            "DIM_TIME_TYPE": "YEAR",
+            "DIM_GEO_CODE_M49": "196",
+            "DIM_GEO_CODE_TYPE": "COUNTRY",
+            "DIM_1_CODE": "",
+            "DIM_MEMBER_1_CODE": "",
+            "DIM_2_CODE": "",
+            "DIM_MEMBER_2_CODE": "",
+            "DIM_3_CODE": "",
+            "DIM_MEMBER_3_CODE": "",
+            "DIM_4_CODE": "",
+            "DIM_MEMBER_4_CODE": "",
+            "DIM_5_CODE": "",
+            "DIM_MEMBER_5_CODE": "",
+            "DIM_6_CODE": "",
+            "DIM_MEMBER_6_CODE": "",
+            "DIM_7_CODE": "",
+            "DIM_MEMBER_7_CODE": "",
+            "DIM_8_CODE": "",
+            "DIM_MEMBER_8_CODE": "",
+            "DIM_9_CODE": "",
+            "DIM_MEMBER_9_CODE": "",
+            "DIM_VALUE_TYPE": "TEXT",
+            "VALUE_NUMERIC": "2.00000000000000",
+            "VALUE_LABEL": "B",
+            "VALUE_NUMERIC_LOWER": "",
+            "VALUE_LABEL_LOWER": "",
+            "VALUE_NUMERIC_UPPER": "",
+            "VALUE_LABEL_UPPER": "",
+            "VALUE_COMMENTS": "",
+            "DIM_PUBLISH_STATE_CODE": "",
+            "VALUE_PROVENANCE": "",
+            "VALUE_CALC_TYPE": "",
+            "OBSERVATION_STATUS": "",
+            "ATT_1_CODE": "",
+            "ATT_MEMBER_1_CODE": "",
+            "ATT_2_CODE": "",
+            "ATT_MEMBER_2_CODE": "",
+            "_RecordID": "bd263740-322c-8719-8027-01a0c7db3100",
+            "Sys_PK": "-2147483618",
+            "Sys_RowTitle": "-",
+            "Sys_Version": "1",
+            "Sys_VersionID": "BD263740-322C-8719-8027-01A0C7DB3100.1",
+            "Sys_OriginCode": "SYS_DATA_LOAD",
+            "Sys_LoadBy": "-",
+            "Sys_CommitDateUtc": "2026-09-22 06:43:33",
+            "Sys_FirstLoadBy": "-",
+            "Sys_FirstCommitDateUtc": "2026-09-22 06:43:33",
+            "Sys_ID": "bd263740-322c-8719-8027-01a0c7db3100",
+            "Sys_BatchID": "1317069",
+            "Sys_FirstBatchID": "1317069"
+          },
+          {
+            "IND_ID": "TrACSS12017_OH_Q4.1",
+            "IND_CODE": "2017_OH_Q4.1",
+            "IND_UUID": "TrACSS1",
+            "IND_PER_CODE": "2017_OH_Q4.1",
+            "DIM_TIME": "2017",
+            "DIM_TIME_TYPE": "YEAR",
+            "DIM_GEO_CODE_M49": "203",
+            "DIM_GEO_CODE_TYPE": "COUNTRY",
+            "DIM_1_CODE": "",
+            "DIM_MEMBER_1_CODE": "",
+            "DIM_2_CODE": "",
+            "DIM_MEMBER_2_CODE": "",
+            "DIM_3_CODE": "",
+            "DIM_MEMBER_3_CODE": "",
+            "DIM_4_CODE": "",
+            "DIM_MEMBER_4_CODE": "",
+            "DIM_5_CODE": "",
+            "DIM_MEMBER_5_CODE": "",
+            "DIM_6_CODE": "",
+            "DIM_MEMBER_6_CODE": "",
+            "DIM_7_CODE": "",
+            "DIM_MEMBER_7_CODE": "",
+            "DIM_8_CODE": "",
+            "DIM_MEMBER_8_CODE": "",
+            "DIM_9_CODE": "",
+            "DIM_MEMBER_9_CODE": "",
+            "DIM_VALUE_TYPE": "TEXT",
+            "VALUE_NUMERIC": "2.00000000000000",
+            "VALUE_LABEL": "B",
+            "VALUE_NUMERIC_LOWER": "",
+            "VALUE_LABEL_LOWER": "",
+            "VALUE_NUMERIC_UPPER": "",
+            "VALUE_LABEL_UPPER": "",
+            "VALUE_COMMENTS": "",
+            "DIM_PUBLISH_STATE_CODE": "",
+            "VALUE_PROVENANCE": "",
+            "VALUE_CALC_TYPE": "",
+            "OBSERVATION_STATUS": "",
+            "ATT_1_CODE": "",
+            "ATT_MEMBER_1_CODE": "",
+            "ATT_2_CODE": "",
+            "ATT_MEMBER_2_CODE": "",
+            "_RecordID": "813d6a51-4249-8a93-8028-01a0c7db3100",
+            "Sys_PK": "-2147483617",
+            "Sys_RowTitle": "-",
+            "Sys_Version": "1",
+            "Sys_VersionID": "813D6A51-4249-8A93-8028-01A0C7DB3100.1",
+            "Sys_OriginCode": "SYS_DATA_LOAD",
+            "Sys_LoadBy": "-",
+            "Sys_CommitDateUtc": "2026-09-22 06:43:33",
+            "Sys_FirstLoadBy": "-",
+            "Sys_FirstCommitDateUtc": "2026-09-22 06:43:33",
+            "Sys_ID": "813d6a51-4249-8a93-8028-01a0c7db3100",
+            "Sys_BatchID": "1317069",
+            "Sys_FirstBatchID": "1317069"
+          }
+        ]
+      }
+    },
+    {
+      "name": "aware-essentialmeds-org-list-awareGroup-Not-recommended.md",
+      "rel_path": "aware-essentialmeds-org-list-awareGroup-Not-recommended.md",
+      "size_bytes": 41442,
+      "extension": ".md",
+      "text_info": {
+        "line_count": 5259,
+        "head": [
+          "# [![aware logo](https://aware.essentialmeds.org/images/aware_logo_no_shadow.svg)](http://aware.essentialmeds.org/list)",
+          "[Groups](https://aware.essentialmeds.org/groups) [Antibiotic resistance](https://aware.essentialmeds.org/resistance) [List of antibiotics](https://aware.essentialmeds.org/list)",
+          "export",
+          "## Export",
+          "PDF",
+          "Excel (XLSX)",
+          "Word (DOCX)",
+          "CancelExport"
+        ]
+      }
+    },
+    {
+      "name": "aware-essentialmeds-org-list.md",
+      "rel_path": "aware-essentialmeds-org-list.md",
+      "size_bytes": 148863,
+      "extension": ".md",
+      "text_info": {
+        "line_count": 18275,
+        "head": [
+          "# [![aware logo](https://aware.essentialmeds.org/images/aware_logo_no_shadow.svg)](http://aware.essentialmeds.org/list)",
+          "[Groups](https://aware.essentialmeds.org/groups) [Antibiotic resistance](https://aware.essentialmeds.org/resistance) [List of antibiotics](https://aware.essentialmeds.org/list)",
+          "export",
+          "## Export",
+          "PDF",
+          "Excel (XLSX)",
+          "Word (DOCX)",
+          "CancelExport"
+        ]
+      }
+    },
+    {
+      "name": "amr2017.pdf",
+      "rel_path": "amr\\amr2017.pdf",
+      "size_bytes": 1312425,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amr2018.pdf",
+      "rel_path": "amr\\amr2018.pdf",
+      "size_bytes": 1161185,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amr2019.pdf",
+      "rel_path": "amr\\amr2019.pdf",
+      "size_bytes": 1708114,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amr2020.pdf",
+      "rel_path": "amr\\amr2020.pdf",
+      "size_bytes": 1041517,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amr2021.pdf",
+      "rel_path": "amr\\amr2021.pdf",
+      "size_bytes": 1945718,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amr2022.pdf",
+      "rel_path": "amr\\amr2022.pdf",
+      "size_bytes": 1609536,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amr2023.pdf",
+      "rel_path": "amr\\amr2023.pdf",
+      "size_bytes": 1107389,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amr2024.pdf",
+      "rel_path": "amr\\amr2024.pdf",
+      "size_bytes": 2515349,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amr2025.pdf",
+      "rel_path": "amr\\amr2025.pdf",
+      "size_bytes": 1356832,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amrc2022.pdf",
+      "rel_path": "amrc\\amrc2022.pdf",
+      "size_bytes": 1136486,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amrc2023.pdf",
+      "rel_path": "amrc\\amrc2023.pdf",
+      "size_bytes": 1140440,
+      "extension": ".pdf"
+    },
+    {
+      "name": "amrc2024.pdf",
+      "rel_path": "amrc\\amrc2024.pdf",
+      "size_bytes": 1935201,
+      "extension": ".pdf"
+    },
+    {
+      "name": "PACKAGE_MANIFEST.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\PACKAGE_MANIFEST.csv",
+      "size_bytes": 987,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 11,
+        "columns": [
+          "file",
+          "bytes",
+          "sha256"
+        ],
+        "num_columns": 3,
+        "sample_rows": [
+          {
+            "file": "amr_chatbot_corpus.csv",
+            "bytes": "3925051",
+            "sha256": "02880f310ac36d535ee76fb2ffea8a246bf83136fd3174bfe86a6472981a20b4"
+          },
+          {
+            "file": "amr_chatbot_corpus.jsonl",
+            "bytes": "4940992",
+            "sha256": "ad441e86480472bea74d05c4790e7e8c9521d256335d5de3bfb221abb536bd95"
+          },
+          {
+            "file": "amr_data_quality_report.csv",
+            "bytes": "1074",
+            "sha256": "069e70846eee29740ae55b1bcfe31dd56131d5cbe9ca6b24fe1cd4cb46289ba1"
+          }
+        ]
+      }
+    },
+    {
+      "name": "amr_chatbot_corpus.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_chatbot_corpus.csv",
+      "size_bytes": 3925051,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 22105,
+        "columns": [
+          "record_id",
+          "source_id",
+          "publisher",
+          "network",
+          "data_layer",
+          "report_year",
+          "record_type",
+          "pdf_page",
+          "pathogen",
+          "antibiotic",
+          "specimen",
+          "metric",
+          "value",
+          "unit",
+          "text",
+          "source_citation",
+          "quality_flag"
+        ],
+        "num_columns": 17,
+        "sample_rows": [
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p001_c00",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "publisher": "NCDC, Government of India",
+            "network": "NARS-Net",
+            "data_layer": "NCDC_AMR_surveillance_or_consumption",
+            "report_year": "2017",
+            "record_type": "document_chunk",
+            "pdf_page": "1",
+            "pathogen": "",
+            "antibiotic": "",
+            "specimen": "",
+            "metric": "",
+            "value": "",
+            "unit": "",
+            "text": "National Centre for Disease Control\n National AMR Surveillance Network\n AMR Data for year 2017\n\nNCDC is coordinating the \u201cNational Programme for Containment of Antimicrobial resistance\u201d\napproved during the 12th five year plan. Under the programme a network of laboratories is being\nset up across the country for conducting Antimicrobial Resistance (AMR) surveillance in order to\nunderstand the AMR trends in various geographical regions and accordingly take appropriate\naction. Currently 13 labs are included in the network:\n1. Lady Hardinge Medical College and associated hospitals, New Delhi, Delhi\n2. VMMC and associated Safdarjung Hospital, New Delhi, Delhi\n3. Government Medical College & Hospital, Chandigarh (UT)\n4. GSVM Medical College, Kanpur, Uttar Pradesh\n5. SMS Medical College, Jaipur, Rajasthan\n6. BJ Medical College, Ahmedabad, Gujarat\n7. BJ Medical College, Pune, Maharashtra\n8. Mysore Medical College and Research Institute, Mysore, Karnataka\n9. KAPV Govt Medical College Hospital, Thiruchirapally, Tamil Nadu\n10. Government Medical College, Thiruvananthapuram, Kerala\n11. MGM Medical College & MY Hospital, Indore, Madhya Pradesh\n12. NEIGRIHMS, Shillong, Meghalaya\n13. Gauhati, Medical College Hospital, Guwahati, Assam\n\nNCDC received AMR surveillance data for the year 2017 from 10 of the above 13 labs (S.no. 1 to\n10) based on the standardized Data Management SOP in the WHONET format for the following\npathogens:\n1. Staphylococcus aureus\n2. Enterococci species\n3. Escherichia coli\n4. Klebsiella species\n5. Pseudomonas species\n6. Acinetobacter species\n7. Salmonella enterica serotype Typhi and Paratyphi\n\n 1",
+            "source_citation": "amr23.pdf | PDF page 1",
+            "quality_flag": "verified"
+          },
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p002_c00",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "publisher": "NCDC, Government of India",
+            "network": "NARS-Net",
+            "data_layer": "NCDC_AMR_surveillance_or_consumption",
+            "report_year": "2017",
+            "record_type": "document_chunk",
+            "pdf_page": "2",
+            "pathogen": "",
+            "antibiotic": "",
+            "specimen": "",
+            "metric": "",
+            "value": "",
+            "unit": "",
+            "text": "The AMR data collected under the National AMR Containment Programme for the year 2017 is from\ntertiary health care settings (medical colleges). The data has been analyzed and is summarized below:\n\nTable1. The pathogens and specimens included\n Specimen S. Enterococcus Klebsiella E. coli Acinetoba Pseudom Salmonella\n aureus species pneumoniae cter onas Typhi/Par\n species species atyphi\n Blood \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Urine \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Pus Aspirates \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Other Sterile \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Body fluids\n\nTotal Number of unique patient\u2019s isolates data after validation from these 10 labs = 25833\n\uf0b7 Urine - 12144\n\uf0b7 Blood - 6354\n\uf0b7 Pus Aspirates (PA) and Other Sterile body fluids (OSBF) - 7335\n\n 2",
+            "source_citation": "amr23.pdf | PDF page 2",
+            "quality_flag": "verified"
+          },
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p003_c00",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "publisher": "NCDC, Government of India",
+            "network": "NARS-Net",
+            "data_layer": "NCDC_AMR_surveillance_or_consumption",
+            "report_year": "2017",
+            "record_type": "document_chunk",
+            "pdf_page": "3",
+            "pathogen": "",
+            "antibiotic": "",
+            "specimen": "",
+            "metric": "",
+            "value": "",
+            "unit": "",
+            "text": "Figure 1. Isolation rate of priority pathogens from various specimens\n\nFigure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n Healthcare facility\n\n 3",
+            "source_citation": "amr23.pdf | PDF page 3",
+            "quality_flag": "verified"
+          }
+        ]
+      }
+    },
+    {
+      "name": "amr_chatbot_corpus.jsonl",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_chatbot_corpus.jsonl",
+      "size_bytes": 4940992,
+      "extension": ".jsonl",
+      "jsonl_info": {
+        "line_count": 3843,
+        "sample_records": [
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p001_c00",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "publisher": "NCDC, Government of India",
+            "network": "NARS-Net",
+            "data_layer": "NCDC_AMR_surveillance_or_consumption",
+            "report_year": 2017,
+            "record_type": "document_chunk",
+            "pdf_page": 1,
+            "pathogen": "",
+            "antibiotic": "",
+            "specimen": "",
+            "metric": "",
+            "value": "",
+            "unit": "",
+            "text": "National Centre for Disease Control\n National AMR Surveillance Network\n AMR Data for year 2017\n\nNCDC is coordinating the \u201cNational Programme for Containment of Antimicrobial resistance\u201d\napproved during the 12th five year plan. Under the programme a network of laboratories is being\nset up across the country for conducting Antimicrobial Resistance (AMR) surveillance in order to\nunderstand the AMR trends in various geographical regions and accordingly take appropriate\naction. Currently 13 labs are included in the network:\n1. Lady Hardinge Medical College and associated hospitals, New Delhi, Delhi\n2. VMMC and associated Safdarjung Hospital, New Delhi, Delhi\n3. Government Medical College & Hospital, Chandigarh (UT)\n4. GSVM Medical College, Kanpur, Uttar Pradesh\n5. SMS Medical College, Jaipur, Rajasthan\n6. BJ Medical College, Ahmedabad, Gujarat\n7. BJ Medical College, Pune, Maharashtra\n8. Mysore Medical College and Research Institute, Mysore, Karnataka\n9. KAPV Govt Medical College Hospital, Thiruchirapally, Tamil Nadu\n10. Government Medical College, Thiruvananthapuram, Kerala\n11. MGM Medical College & MY Hospital, Indore, Madhya Pradesh\n12. NEIGRIHMS, Shillong, Meghalaya\n13. Gauhati, Medical College Hospital, Guwahati, Assam\n\nNCDC received AMR surveillance data for the year 2017 from 10 of the above 13 labs (S.no. 1 to\n10) based on the standardized Data Management SOP in the WHONET format for the following\npathogens:\n1. Staphylococcus aureus\n2. Enterococci species\n3. Escherichia coli\n4. Klebsiella species\n5. Pseudomonas species\n6. Acinetobacter species\n7. Salmonella enterica serotype Typhi and Paratyphi\n\n 1",
+            "source_citation": "amr23.pdf | PDF page 1",
+            "quality_flag": "verified"
+          },
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p002_c00",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "publisher": "NCDC, Government of India",
+            "network": "NARS-Net",
+            "data_layer": "NCDC_AMR_surveillance_or_consumption",
+            "report_year": 2017,
+            "record_type": "document_chunk",
+            "pdf_page": 2,
+            "pathogen": "",
+            "antibiotic": "",
+            "specimen": "",
+            "metric": "",
+            "value": "",
+            "unit": "",
+            "text": "The AMR data collected under the National AMR Containment Programme for the year 2017 is from\ntertiary health care settings (medical colleges). The data has been analyzed and is summarized below:\n\nTable1. The pathogens and specimens included\n Specimen S. Enterococcus Klebsiella E. coli Acinetoba Pseudom Salmonella\n aureus species pneumoniae cter onas Typhi/Par\n species species atyphi\n Blood \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Urine \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Pus Aspirates \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Other Sterile \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Body fluids\n\nTotal Number of unique patient\u2019s isolates data after validation from these 10 labs = 25833\n\uf0b7 Urine - 12144\n\uf0b7 Blood - 6354\n\uf0b7 Pus Aspirates (PA) and Other Sterile body fluids (OSBF) - 7335\n\n 2",
+            "source_citation": "amr23.pdf | PDF page 2",
+            "quality_flag": "verified"
+          },
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p003_c00",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "publisher": "NCDC, Government of India",
+            "network": "NARS-Net",
+            "data_layer": "NCDC_AMR_surveillance_or_consumption",
+            "report_year": 2017,
+            "record_type": "document_chunk",
+            "pdf_page": 3,
+            "pathogen": "",
+            "antibiotic": "",
+            "specimen": "",
+            "metric": "",
+            "value": "",
+            "unit": "",
+            "text": "Figure 1. Isolation rate of priority pathogens from various specimens\n\nFigure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n Healthcare facility\n\n 3",
+            "source_citation": "amr23.pdf | PDF page 3",
+            "quality_flag": "verified"
+          }
+        ]
+      }
+    },
+    {
+      "name": "amr_data_quality_report.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_data_quality_report.csv",
+      "size_bytes": 1074,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 8,
+        "columns": [
+          "dataset",
+          "rows",
+          "columns",
+          "duplicates",
+          "missing_report_year_before_fix",
+          "missing_report_year_after_fix",
+          "critical_issue",
+          "status"
+        ],
+        "num_columns": 8,
+        "sample_rows": [
+          {
+            "dataset": "ncdc_rag_clean",
+            "rows": "1095",
+            "columns": "15",
+            "duplicates": "0",
+            "missing_report_year_before_fix": "25",
+            "missing_report_year_after_fix": "0",
+            "critical_issue": "25 records in amr24.pdf had missing report_year; repaired to 2018 from source_id/source manifest.",
+            "status": "cleaned"
+          },
+          {
+            "dataset": "ncdc_evidence_clean",
+            "rows": "346",
+            "columns": "11",
+            "duplicates": "0",
+            "missing_report_year_before_fix": "25",
+            "missing_report_year_after_fix": "0",
+            "critical_issue": "2018 resistance evidence metadata year repaired from source provenance.",
+            "status": "cleaned"
+          },
+          {
+            "dataset": "ncdc_rag_chunks",
+            "rows": "749",
+            "columns": "8",
+            "duplicates": "0",
+            "missing_report_year_before_fix": "0",
+            "missing_report_year_after_fix": "0",
+            "critical_issue": "All 749 chunk IDs match the 749 document_chunk records in ncdc_amr_machine_trainable.csv.",
+            "status": "verified"
+          }
+        ]
+      }
+    },
+    {
+      "name": "amr_source_registry.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_source_registry.csv",
+      "size_bytes": 8355,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 29,
+        "columns": [
+          "source_id",
+          "publisher",
+          "network",
+          "data_layer",
+          "report_year",
+          "reporting_period",
+          "filename",
+          "runtime_filename",
+          "page_count",
+          "sha256",
+          "sha256_verified_against_manifest",
+          "official_source",
+          "role"
+        ],
+        "num_columns": 13,
+        "sample_rows": [
+          {
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "publisher": "National Centre for Disease Control (NCDC), Government of India",
+            "network": "NARS-Net",
+            "data_layer": "resistance",
+            "report_year": "2017",
+            "reporting_period": "2017",
+            "filename": "amr23.pdf",
+            "runtime_filename": "amr2017.pdf",
+            "page_count": "15",
+            "sha256": "0070d1b36c314a235bf1b744170e8e7bc95655db064c57cbb485f8301ffff6b2",
+            "sha256_verified_against_manifest": "True",
+            "official_source": "yes",
+            "role": "primary_source"
+          },
+          {
+            "source_id": "NCDC_resistance_2018_NARS-Net",
+            "publisher": "National Centre for Disease Control (NCDC), Government of India",
+            "network": "NARS-Net",
+            "data_layer": "resistance",
+            "report_year": "2018",
+            "reporting_period": "2018",
+            "filename": "amr24.pdf",
+            "runtime_filename": "amr2018.pdf",
+            "page_count": "19",
+            "sha256": "a09987ec16fe77b10438cd3340bf1c2c4aae1cd330ba0601b33231453693836f",
+            "sha256_verified_against_manifest": "True",
+            "official_source": "yes",
+            "role": "primary_source"
+          },
+          {
+            "source_id": "NCDC_resistance_2019_NARS-Net",
+            "publisher": "National Centre for Disease Control (NCDC), Government of India",
+            "network": "NARS-Net",
+            "data_layer": "resistance",
+            "report_year": "2019",
+            "reporting_period": "Reporting Period - January to December 2019 National Programme on AMR Containment National Centre for Disease Control 0 Directorate General",
+            "filename": "amr25.pdf",
+            "runtime_filename": "amr2019.pdf",
+            "page_count": "44",
+            "sha256": "6056c836ea739dd02cfc0af39295a49c41bffd4da31cfe302085b53a19fd3097",
+            "sha256_verified_against_manifest": "True",
+            "official_source": "yes",
+            "role": "primary_source"
+          }
+        ]
+      }
+    },
+    {
+      "name": "amr_surveillance_trend_summary.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\amr_surveillance_trend_summary.csv",
+      "size_bytes": 317,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 10,
+        "columns": [
+          "year",
+          "ncdc_submitted_isolates",
+          "ncdc_unique_patient_isolates",
+          "icmr_culture_positive_isolates"
+        ],
+        "num_columns": 4,
+        "sample_rows": [
+          {
+            "year": "2017",
+            "ncdc_submitted_isolates": "25833",
+            "ncdc_unique_patient_isolates": "25833",
+            "icmr_culture_positive_isolates": "45930.0"
+          },
+          {
+            "year": "2018",
+            "ncdc_submitted_isolates": "50724",
+            "ncdc_unique_patient_isolates": "50724",
+            "icmr_culture_positive_isolates": "60497.0"
+          },
+          {
+            "year": "2019",
+            "ncdc_submitted_isolates": "78860",
+            "ncdc_unique_patient_isolates": "74200",
+            "icmr_culture_positive_isolates": "107387.0"
+          }
+        ]
+      }
+    },
+    {
+      "name": "icmr_surveillance_pages.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\icmr_surveillance_pages.csv",
+      "size_bytes": 2175630,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 1354,
+        "columns": [
+          "source_id",
+          "filename",
+          "document_type",
+          "report_year",
+          "network",
+          "pdf_page",
+          "section",
+          "title",
+          "text",
+          "source_citation"
+        ],
+        "num_columns": 10,
+        "sample_rows": [
+          {
+            "source_id": "ICMR_AMRSN_2017",
+            "filename": "icmramrannualreport2017.pdf",
+            "document_type": "surveillance",
+            "report_year": "2017",
+            "network": "ICMR-AMRSN",
+            "pdf_page": "1",
+            "section": "",
+            "title": "",
+            "text": "1 AMR surveillance network Indian Council of Medical Research 2017 Compiled by: Dr Kamini Walia, Ph D MPH Maj Gen(Dr) V C Ohri, MD Dr Harpreet Singh, PhD Nodal centre Principal investigators Regional centre Principal investigators Typhoid: Dr Arti Kapil, AIIMS, New Delhi Dr Camilla Rodriques. Hinduja , Mumbai Fungal pathogens: Dr Arunaloke Chakarabarty, PGIMER, Chandigarh Dr Chand Wattal, SGRH, New Delhi Diarreal pathogens and GNNF: Dr V Balaji, CMC Vellore Dr Sanjay Bhattacharya, TMC, Kolkata Gram positive pathogens: Dr Sujatha Sistla, JIPMER, Pondicherry Dr Sourav Sen, AFMC, Pune Enterobacteriaceae spp: Dr Pallab Ray, PGIMER, Chandigarh Dr Thirunarayan, Apollo Chennai Dr Vijayshree Deotale, MGIMS Wardha Annual report Antimicrobial Resistance Surveillance Network January 2017-December 2017",
+            "source_citation": "icmramrannualreport2017.pdf | PDF page 1"
+          },
+          {
+            "source_id": "ICMR_AMRSN_2017",
+            "filename": "icmramrannualreport2017.pdf",
+            "document_type": "surveillance",
+            "report_year": "2017",
+            "network": "ICMR-AMRSN",
+            "pdf_page": "2",
+            "section": "",
+            "title": "",
+            "text": "2 AMR surveillance network Indian Council of Medical Research 2017 Summary of results of ICMR surveillance data from January 2017 to December 2017 Of the total number of 45,930 isolates, 55% were from in-patients in wards, 18% were from ICUs and 27% were from outpatients. Outpatient isolates (12,336) were predominantly from pus (39%) and urine (23%), ward isolates were predominantly from pus (32%) and blood (23%) and ICU isolates were predominantly from blood (25%), pus and lower respiratory tract (16% each). Gram negatives constituted major share (74%) of the isolates overall. Gram negatives were responsible for 98% of fecal, 96% of LRT, 87% of urinary, 80% of CSF, 76% of surgical site, and 62% each of blood and pus isolates. This will have bearing in empiric choice of antibiotics. Most importantly, the fact that 76% of surgical site infections were due to gram negatives will demand revising antibiotic prophylaxis guidelines for such infections which had targeted Staphylococci as the predominant organism for decades. Specimen wise, predominant group of isolates included Enterobacteriaceae (37%) and Staphylococci (30%) from blood, Enterobacteriaceae (73%) from urine, non-fermenting gram negative bacteria(GNB) (61%) and Enterobacteriaceae (34%) from LRT, Enterobacteriaceae (38%) and Staphylococci (33%) from pus, non-fermenting GNB (40%) and Enterobacteriaceae (39%) from CSF, Enterobacteriaceae (46%) and non-fermenting GNB (27%) from surgical sites, and fecal pathogens (68%) from feces. The isolates from blood comprised of Enterobacteriaceae (37%) followed by Staphylococci (30%) and nonfermenting GNB (19%). Of the Enterobacteriaceae, E. coli was the commonest (46%) followed by K. pneumoniae (42%) and Enterobacter species (7%). Among the typhoidal organisms, S. typhi is the most common etiological agent followed by S. paratyphi A. The ciprofloxacin susceptibility percentage was 15-18% only. Resistance in S. paratyphi A is higher as compared to S. typhi. Fluoroquinolone resistance was associated with DNA gyrase mutations. So it is no longer empirical choice. Third generation cephalosporin\u2019s are most commonly used for the treatment. But MIC50 and MIC 90 showed increasing trend. Among the diarrheal pathogens, Aeromonas spp is one of the most isolated species among diarrheal pathogens. Aeromonas spp showed moderate resistance to all tested antibiotics. Resistance to carbapenems especially imipenem, was higher compared to",
+            "source_citation": "icmramrannualreport2017.pdf | PDF page 2"
+          },
+          {
+            "source_id": "ICMR_AMRSN_2017",
+            "filename": "icmramrannualreport2017.pdf",
+            "document_type": "surveillance",
+            "report_year": "2017",
+            "network": "ICMR-AMRSN",
+            "pdf_page": "3",
+            "section": "",
+            "title": "",
+            "text": "3 AMR surveillance network Indian Council of Medical Research 2017 Blood OPD Ward ICU Urine OPD Ward ICU LRT OPD Ward ICU CSF OPD Ward ICU SS OPD Ward ICU Feces OPD Ward ICU other classes of antibiotics. Most Aeromonas strains are generally susceptible to trimethoprim-sulfamethoxazole (TMP-SMX), fluoroquinolones, second and third generation cephalosporins, aminoglycosides, carbapenems, chloramphenicol, and tetracyclines. Shigella spp is the second common diarrheal pathogen and the isolates demonstrated increased resistance to nalidixic acid and trimethoprim- sulfamethoxazole (89.9%). Tetracycline still appears to be effective for V cholerae. Figure i . Source of origin (OPD, ward or ICU) of isolates from various categories of specimens. Candida tropicalis and Aspergillus flavus was are most commonly isolated yeast and mold respectively. Wickerhamomyces anomalous(13.1%) was recognized as emerging yeast in pediatric patients. Increasing resistance in C. tropicalis against fluconazole and caspofungin is a serious concern. Heterogeneous over expression of efflux pumps was noticed in resistant C. tropicalis isolates. Total OPD Ward ICU Pus OPD Ward ICU",
+            "source_citation": "icmramrannualreport2017.pdf | PDF page 3"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ncdc_evidence_clean.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\ncdc_evidence_clean.csv",
+      "size_bytes": 390507,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 5443,
+        "columns": [
+          "evidence_id",
+          "source_id",
+          "filename",
+          "document_type",
+          "report_year",
+          "network",
+          "pdf_page",
+          "label",
+          "heading",
+          "raw_text",
+          "quality_flag"
+        ],
+        "num_columns": 11,
+        "sample_rows": [
+          {
+            "evidence_id": "NCDC_resistance_2017_NARS-Net_p003_0000",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "filename": "amr23.pdf",
+            "document_type": "resistance",
+            "report_year": "2017",
+            "network": "NARS-Net",
+            "pdf_page": "3",
+            "label": "Figure 1",
+            "heading": "Isolation rate of priority pathogens from various specimens",
+            "raw_text": "Figure 1. Isolation rate of priority pathogens from various specimens",
+            "quality_flag": "verified"
+          },
+          {
+            "evidence_id": "NCDC_resistance_2017_NARS-Net_p003_0001",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "filename": "amr23.pdf",
+            "document_type": "resistance",
+            "report_year": "2017",
+            "network": "NARS-Net",
+            "pdf_page": "3",
+            "label": "Figure 2. Isolation rate of priority pathogen from all specimens w.r",
+            "heading": "t the type of location in",
+            "raw_text": "Figure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n          Healthcare facility\n\n\n\n\n                                                                                                 3",
+            "quality_flag": "verified"
+          },
+          {
+            "evidence_id": "NCDC_resistance_2017_NARS-Net_p004_0002",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "filename": "amr23.pdf",
+            "document_type": "resistance",
+            "report_year": "2017",
+            "network": "NARS-Net",
+            "pdf_page": "4",
+            "label": "Table 2. Specimen",
+            "heading": "wise isolation of number of Priority Pathogens",
+            "raw_text": "Table 2. Specimen-wise isolation of number of Priority Pathogens\n\n                                                                              Number isolated\n                             Total          Number            Number         Other Sterile Body\n                           number of        isolated       isolated from        Fluids +Pus\n  Priority Pathogens        isolates      from Blood           Urine             aspirates\n S. aureus                    4537            2317                0                2220\n Enterococcus species         2760             620              1837                303\n E. coli                      8445             496              6919               1030\n Klebsiella species           6209            1341              3388               1480\n Pseudomonas species          1498             383                0                1115\n Acinetobacter species        2195            1008                0                1187\n Salmonella enterica\n serotype Typhi and\n Paratyphi                    189              189               0                     0\n Total                       25833            6354             12144                 7335",
+            "quality_flag": "verified"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ncdc_rag_clean.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\ncdc_rag_clean.csv",
+      "size_bytes": 970907,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 19357,
+        "columns": [
+          "record_id",
+          "record_type",
+          "source_id",
+          "filename",
+          "document_type",
+          "report_year",
+          "network",
+          "pdf_page",
+          "section",
+          "title",
+          "text",
+          "target",
+          "source_citation",
+          "quality_flag",
+          "training_role"
+        ],
+        "num_columns": 15,
+        "sample_rows": [
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p001_c00",
+            "record_type": "document_chunk",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "filename": "amr23.pdf",
+            "document_type": "resistance",
+            "report_year": "2017",
+            "network": "NARS-Net",
+            "pdf_page": "1",
+            "section": "",
+            "title": "",
+            "text": "National Centre for Disease Control\n National AMR Surveillance Network\n AMR Data for year 2017\n\nNCDC is coordinating the \u201cNational Programme for Containment of Antimicrobial resistance\u201d\napproved during the 12th five year plan. Under the programme a network of laboratories is being\nset up across the country for conducting Antimicrobial Resistance (AMR) surveillance in order to\nunderstand the AMR trends in various geographical regions and accordingly take appropriate\naction. Currently 13 labs are included in the network:\n1. Lady Hardinge Medical College and associated hospitals, New Delhi, Delhi\n2. VMMC and associated Safdarjung Hospital, New Delhi, Delhi\n3. Government Medical College & Hospital, Chandigarh (UT)\n4. GSVM Medical College, Kanpur, Uttar Pradesh\n5. SMS Medical College, Jaipur, Rajasthan\n6. BJ Medical College, Ahmedabad, Gujarat\n7. BJ Medical College, Pune, Maharashtra\n8. Mysore Medical College and Research Institute, Mysore, Karnataka\n9. KAPV Govt Medical College Hospital, Thiruchirapally, Tamil Nadu\n10. Government Medical College, Thiruvananthapuram, Kerala\n11. MGM Medical College & MY Hospital, Indore, Madhya Pradesh\n12. NEIGRIHMS, Shillong, Meghalaya\n13. Gauhati, Medical College Hospital, Guwahati, Assam\n\nNCDC received AMR surveillance data for the year 2017 from 10 of the above 13 labs (S.no. 1 to\n10) based on the standardized Data Management SOP in the WHONET format for the following\npathogens:\n1. Staphylococcus aureus\n2. Enterococci species\n3. Escherichia coli\n4. Klebsiella species\n5. Pseudomonas species\n6. Acinetobacter species\n7. Salmonella enterica serotype Typhi and Paratyphi\n\n 1",
+            "target": "",
+            "source_citation": "amr23.pdf | PDF page 1",
+            "quality_flag": "verified",
+            "training_role": "retrieval_context"
+          },
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p002_c00",
+            "record_type": "document_chunk",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "filename": "amr23.pdf",
+            "document_type": "resistance",
+            "report_year": "2017",
+            "network": "NARS-Net",
+            "pdf_page": "2",
+            "section": "",
+            "title": "",
+            "text": "The AMR data collected under the National AMR Containment Programme for the year 2017 is from\ntertiary health care settings (medical colleges). The data has been analyzed and is summarized below:\n\nTable1. The pathogens and specimens included\n Specimen S. Enterococcus Klebsiella E. coli Acinetoba Pseudom Salmonella\n aureus species pneumoniae cter onas Typhi/Par\n species species atyphi\n Blood \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Urine \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Pus Aspirates \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Other Sterile \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Body fluids\n\nTotal Number of unique patient\u2019s isolates data after validation from these 10 labs = 25833\n\uf0b7 Urine - 12144\n\uf0b7 Blood - 6354\n\uf0b7 Pus Aspirates (PA) and Other Sterile body fluids (OSBF) - 7335\n\n 2",
+            "target": "",
+            "source_citation": "amr23.pdf | PDF page 2",
+            "quality_flag": "verified",
+            "training_role": "retrieval_context"
+          },
+          {
+            "record_id": "NCDC_resistance_2017_NARS-Net_p003_c00",
+            "record_type": "document_chunk",
+            "source_id": "NCDC_resistance_2017_NARS-Net",
+            "filename": "amr23.pdf",
+            "document_type": "resistance",
+            "report_year": "2017",
+            "network": "NARS-Net",
+            "pdf_page": "3",
+            "section": "",
+            "title": "",
+            "text": "Figure 1. Isolation rate of priority pathogens from various specimens\n\nFigure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n Healthcare facility\n\n 3",
+            "target": "",
+            "source_citation": "amr23.pdf | PDF page 3",
+            "quality_flag": "verified",
+            "training_role": "retrieval_context"
+          }
+        ]
+      }
+    },
+    {
+      "name": "who_amr_canonical.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\who_amr_canonical.csv",
+      "size_bytes": 406505,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 1020,
+        "columns": [
+          "canonical_indicator",
+          "organism",
+          "country",
+          "DIM_GEO_CODE_M49",
+          "year",
+          "value_percent",
+          "value_label",
+          "definition",
+          "source_indicator_code",
+          "VALUE_PROVENANCE",
+          "DIM_VALUE_TYPE",
+          "DIM_PUBLISH_STATE_CODE",
+          "unit",
+          "source"
+        ],
+        "num_columns": 14,
+        "sample_rows": [
+          {
+            "canonical_indicator": "E_coli_3GC_resistance",
+            "organism": "Escherichia coli",
+            "country": "Algeria",
+            "DIM_GEO_CODE_M49": "12",
+            "year": "2023",
+            "value_percent": "55.36",
+            "value_label": "55.4",
+            "definition": "Percentage of bloodstream infection due to  Escherichia coli resistant to 3rd-generation cephalosporin (e.g., ESBL- E. coli) among patients seeking care and whose blood sample is taken and tested. AMR Surveillance National Coordinating Center",
+            "source_indicator_code": "AMR_INFECT_ECOLI",
+            "VALUE_PROVENANCE": "",
+            "DIM_VALUE_TYPE": "RATE_PER_100",
+            "DIM_PUBLISH_STATE_CODE": "PUBLISHED",
+            "unit": "percent",
+            "source": "WHO RELAY / GLASS AMR indicator export"
+          },
+          {
+            "canonical_indicator": "E_coli_3GC_resistance",
+            "organism": "Escherichia coli",
+            "country": "Argentina",
+            "DIM_GEO_CODE_M49": "32",
+            "year": "2017",
+            "value_percent": "18.4",
+            "value_label": "18.4",
+            "definition": "Percentage of bloodstream infection due to  Escherichia coli resistant to 3rd-generation cephalosporin (e.g., ESBL- E. coli) among patients seeking care and whose blood sample is taken and tested. AMR Surveillance National Coordinating Center",
+            "source_indicator_code": "AMR_INFECT_ECOLI",
+            "VALUE_PROVENANCE": "",
+            "DIM_VALUE_TYPE": "RATE_PER_100",
+            "DIM_PUBLISH_STATE_CODE": "PUBLISHED",
+            "unit": "percent",
+            "source": "WHO RELAY / GLASS AMR indicator export"
+          },
+          {
+            "canonical_indicator": "E_coli_3GC_resistance",
+            "organism": "Escherichia coli",
+            "country": "Argentina",
+            "DIM_GEO_CODE_M49": "32",
+            "year": "2018",
+            "value_percent": "20.0",
+            "value_label": "20",
+            "definition": "Percentage of bloodstream infection due to  Escherichia coli resistant to 3rd-generation cephalosporin (e.g., ESBL- E. coli) among patients seeking care and whose blood sample is taken and tested. AMR Surveillance National Coordinating Center",
+            "source_indicator_code": "AMR_INFECT_ECOLI",
+            "VALUE_PROVENANCE": "",
+            "DIM_VALUE_TYPE": "RATE_PER_100",
+            "DIM_PUBLISH_STATE_CODE": "PUBLISHED",
+            "unit": "percent",
+            "source": "WHO RELAY / GLASS AMR indicator export"
+          }
+        ]
+      }
+    },
+    {
+      "name": "who_aware_antibiotics.csv",
+      "rel_path": "AMR_ANALYZED_DATA_PACKAGE\\who_aware_antibiotics.csv",
+      "size_bytes": 38537,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 377,
+        "columns": [
+          "aware_index",
+          "antibiotic",
+          "aware_group",
+          "recommendation_count",
+          "recommendations",
+          "source"
+        ],
+        "num_columns": 6,
+        "sample_rows": [
+          {
+            "aware_index": "1",
+            "antibiotic": "Acetylspiramycin + metronidazole",
+            "aware_group": "Not Recommended",
+            "recommendation_count": "0",
+            "recommendations": "",
+            "source": "WHO AWaRe / Essential Medicines List export"
+          },
+          {
+            "aware_index": "2",
+            "antibiotic": "Amikacin",
+            "aware_group": "Access",
+            "recommendation_count": "5",
+            "recommendations": "Neutropaenia (high-risk); cefotaxime; Acute pyelonephritis (severe); Inflammatory or other diseases of prostate (severe); ceftriaxone",
+            "source": "WHO AWaRe / Essential Medicines List export"
+          },
+          {
+            "aware_index": "3",
+            "antibiotic": "Amikacin + cefepime",
+            "aware_group": "Not Recommended",
+            "recommendation_count": "0",
+            "recommendations": "",
+            "source": "WHO AWaRe / Essential Medicines List export"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AMR_KNOWLEDGE_BASE.md",
+      "rel_path": "amr_knowledge_base\\AMR_KNOWLEDGE_BASE.md",
+      "size_bytes": 6839612,
+      "extension": ".md",
+      "text_info": {
+        "line_count": 180378,
+        "head": [
+          "---",
+          "schema:",
+          "name: AMR Knowledge Base",
+          "version: '1.0'",
+          "format: markdown-with-yaml-records",
+          "record_schema: amr.record.v1",
+          "corpus:",
+          "id: amr-india-verified-kb",
+          "title: India Antimicrobial Resistance Verified Knowledge Base",
+          "language: en",
+          "record_count: 3843",
+          "source_count: 28",
+          "generated_from: amr_chatbot_corpus.csv",
+          "indexing:",
+          "primary_key: record.id"
+        ]
+      }
+    },
+    {
+      "name": "AMR_KNOWLEDGE_INDEX.yaml",
+      "rel_path": "amr_knowledge_base\\AMR_KNOWLEDGE_INDEX.yaml",
+      "size_bytes": 2117620,
+      "extension": ".yaml",
+      "text_info": {
+        "line_count": 65337,
+        "head": [
+          "schema: amr.index.v1",
+          "corpus_id: amr-india-verified-kb",
+          "generated_from: AMR_KNOWLEDGE_BASE.md",
+          "primary_key: id",
+          "records:",
+          "- id: ICMR_AMRSN_2017_p001",
+          "index_key: amr/ICMR_AMR_surveillance/page_chunk/ICMR_AMRSN_2017_p001",
+          "source_id: ICMR_AMRSN_2017",
+          "data_layer: ICMR_AMR_surveillance",
+          "record_type: page_chunk",
+          "report_year: 2017",
+          "pdf_page: 1",
+          "pathogen: null",
+          "antibiotic: null",
+          "specimen: null"
+        ]
+      }
+    },
+    {
+      "name": "AMR_KNOWLEDGE_MANIFEST.csv",
+      "rel_path": "amr_knowledge_base\\AMR_KNOWLEDGE_MANIFEST.csv",
+      "size_bytes": 404,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 5,
+        "columns": [
+          "file",
+          "bytes",
+          "sha256"
+        ],
+        "num_columns": 3,
+        "sample_rows": [
+          {
+            "file": "AMR_KNOWLEDGE_BASE.md",
+            "bytes": "6839612",
+            "sha256": "3cb0ad06a92b29e31541eae1447d218d5f21bbb487472251f7b69b1416b9ad29"
+          },
+          {
+            "file": "AMR_KNOWLEDGE_INDEX.yaml",
+            "bytes": "2117620",
+            "sha256": "5c1f2d84f765e5ab56af503c3fdea2bdc337879930a3cd8250ef29b192c00b5f"
+          },
+          {
+            "file": "AMR_SOURCE_INDEX.yaml",
+            "bytes": "14723",
+            "sha256": "38c282b9708305e3499926183a179b703ef0b8e899a3d9b8dfdcd562c217cc8d"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AMR_KNOWLEDGE_VALIDATION.yaml",
+      "rel_path": "amr_knowledge_base\\AMR_KNOWLEDGE_VALIDATION.yaml",
+      "size_bytes": 1188,
+      "extension": ".yaml",
+      "text_info": {
+        "line_count": 42,
+        "head": [
+          "schema: amr.validation.v1",
+          "corpus_file: AMR_KNOWLEDGE_BASE.md",
+          "record_count: 3843",
+          "unique_record_ids: true",
+          "unresolved_source_ids: []",
+          "all_source_ids_resolve: true",
+          "null_record_ids: 0",
+          "layer_counts:",
+          "ICMR_AMR_surveillance: 1353",
+          "NCDC_AMR_surveillance_or_consumption: 1095",
+          "WHO_AMR_indicator: 1019",
+          "antibiotic_ontology: 376",
+          "record_type_counts:",
+          "page_chunk: 1353",
+          "structured_observation: 1019"
+        ]
+      }
+    },
+    {
+      "name": "AMR_SOURCE_INDEX.yaml",
+      "rel_path": "amr_knowledge_base\\AMR_SOURCE_INDEX.yaml",
+      "size_bytes": 14723,
+      "extension": ".yaml",
+      "text_info": {
+        "line_count": 401,
+        "head": [
+          "schema: amr.source-index.v1",
+          "sources:",
+          "- source_id: NCDC_resistance_2017_NARS-Net",
+          "publisher: National Centre for Disease Control (NCDC), Government of India",
+          "network: NARS-Net",
+          "data_layer: resistance",
+          "report_year: '2017'",
+          "reporting_period: '2017'",
+          "filename: amr23.pdf",
+          "runtime_filename: amr2017.pdf",
+          "page_count: 15",
+          "sha256: 0070d1b36c314a235bf1b744170e8e7bc95655db064c57cbb485f8301ffff6b2",
+          "sha256_verified_against_manifest: 'True'",
+          "official_source: 'yes'",
+          "role: primary_source"
+        ]
+      }
+    },
+    {
+      "name": "Global_Scenario_of_Antimicrobial_Resistance_A_Revi.pdf",
+      "rel_path": "ayur\\Global_Scenario_of_Antimicrobial_Resistance_A_Revi.pdf",
+      "size_bytes": 410097,
+      "extension": ".pdf"
+    },
+    {
+      "name": "JFMPC-12-1764.pdf",
+      "rel_path": "ayur\\JFMPC-12-1764.pdf",
+      "size_bytes": 442331,
+      "extension": ".pdf"
+    },
+    {
+      "name": "potential-of-ayurveda-to-achieve-universal-health-coverage.pdf",
+      "rel_path": "ayur\\potential-of-ayurveda-to-achieve-universal-health-coverage.pdf",
+      "size_bytes": 335185,
+      "extension": ".pdf"
+    },
+    {
+      "name": "AYUSH_AMR_KNOWLEDGE_BASE.md",
+      "rel_path": "AYUSH_AMR_KNOWLEDGE_BASE_PACKAGE\\AYUSH_AMR_KNOWLEDGE_BASE.md",
+      "size_bytes": 20940,
+      "extension": ".md",
+      "text_info": {
+        "line_count": 536,
+        "head": [
+          "---",
+          "schema:",
+          "name: AMR AYUSH Knowledge Base",
+          "version: '1.0'",
+          "format: markdown-with-yaml-records",
+          "record_schema: amr.record.v1",
+          "corpus:",
+          "id: amr-india-ayush-evidence-kb",
+          "title: India AYUSH and AMR Evidence Knowledge Base",
+          "language: en",
+          "record_count: 10",
+          "source_count: 10",
+          "generated_from: curated_ayush_amr_evidence_records",
+          "indexing:",
+          "primary_key: record.id"
+        ]
+      }
+    },
+    {
+      "name": "AYUSH_AMR_SOURCE_INDEX.yaml",
+      "rel_path": "AYUSH_AMR_KNOWLEDGE_BASE_PACKAGE\\AYUSH_AMR_SOURCE_INDEX.yaml",
+      "size_bytes": 3502,
+      "extension": ".yaml",
+      "text_info": {
+        "line_count": 70,
+        "head": [
+          "---",
+          "schema:",
+          "name: AYUSH AMR Source Index",
+          "version: '1.0'",
+          "format: yaml-source-registry",
+          "record_schema: amr.source.v1",
+          "corpus:",
+          "id: amr-india-ayush-evidence-kb",
+          "source_count: 10",
+          "sources:",
+          "- source_id: AYUSH_NAP_AMR_2_0",
+          "title: National One Health Mission / NAP-AMR 2.0 (2025-2029)",
+          "source_type: government_document",
+          "file_name: National One Health Mission.pdf",
+          "verification_status: supplied_document_reviewed_at_summary_level"
+        ]
+      }
+    },
+    {
+      "name": "National One Health Mission.pdf",
+      "rel_path": "GOV\\National One Health Mission.pdf",
+      "size_bytes": 12888488,
+      "extension": ".pdf"
+    },
+    {
+      "name": "www-pib-gov-in-PressReleasePage-aspx-PRID-2209331-reg-3-lang.md",
+      "rel_path": "GOV\\www-pib-gov-in-PressReleasePage-aspx-PRID-2209331-reg-3-lang.md",
+      "size_bytes": 8369,
+      "extension": ".md",
+      "text_info": {
+        "line_count": 66,
+        "head": [
+          "AYUSH",
+          "![azadi ka amrit mahotsav](https://static.pib.gov.in/WriteReadData/specificdocs/photo/2026/sep/ph_9768_20260902_10000501.png)",
+          "# National Health Mission in AYUSH",
+          "Posted On:",
+          "12 DEC 2025 9:43PM by PIB Delhi",
+          "The Government of India is actively participating in the National One Health Mission (NOHM). The Mission was established on the recommendation of the 21st Prime Minister\u2019s Science, Technology and Innovation Advisory Council (PM-STIAC), with Cabinet approval in February 2024. The Mission is being steered by the Office of the Principal Scientific Adviser to the Government of India and involves more than 16 Central Ministries/Departments including Ministry of Ayush. The Department of Health Research (DHR)/Indian Council of Medical Research (ICMR) serves as the implementing agency. Further details can be accessed on\u00a0 [https://www.psa.gov.in/oneHealthMission](https://www.psa.gov.in/oneHealthMission).",
+          "The Government has established collaborations with key stakeholders, including the Indian Council of Medical Research (ICMR), the National Centre for Disease Control (NCDC), State Health Departments, the Department of Animal Husbandry & Dairying and other relevant institutions, to implement initiatives under the National One Health Mission. Further details are available on\u00a0 [https://www.psa.gov.in/oneHealthMission](https://www.psa.gov.in/oneHealthMission)."
+        ]
+      }
+    },
+    {
+      "name": "Antibiotic_Resistant_Staphyloccus_sensit.pdf",
+      "rel_path": "homeo\\Antibiotic_Resistant_Staphyloccus_sensit.pdf",
+      "size_bytes": 271976,
+      "extension": ".pdf"
+    },
+    {
+      "name": "Exploring_the_efficacy_of_homeopathic_re.pdf",
+      "rel_path": "homeo\\Exploring_the_efficacy_of_homeopathic_re.pdf",
+      "size_bytes": 266830,
+      "extension": ".pdf"
+    },
+    {
+      "name": "HRI-Antimicrobial-Resistance-AMR-submission-Nov-2013.pdf",
+      "rel_path": "homeo\\HRI-Antimicrobial-Resistance-AMR-submission-Nov-2013.pdf",
+      "size_bytes": 660972,
+      "extension": ".pdf"
+    },
+    {
+      "name": "main.pdf",
+      "rel_path": "homeo\\main.pdf",
+      "size_bytes": 166107,
+      "extension": ".pdf"
+    },
+    {
+      "name": "pmc-ncbi-nlm-nih-gov-articles-PMC11892463.md",
+      "rel_path": "homeo\\pmc-ncbi-nlm-nih-gov-articles-PMC11892463.md",
+      "size_bytes": 87561,
+      "extension": ".md",
+      "text_info": {
+        "line_count": 594,
+        "head": [
+          "[Skip to main content](https://pmc.ncbi.nlm.nih.gov/articles/PMC11892463/#main-content)",
+          "![](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-dot-gov.svg)",
+          "**Official websites use .gov**",
+          "A",
+          "**.gov** website belongs to an official",
+          "government organization in the United States.",
+          "![](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-https.svg)",
+          "**Secure .gov websites use HTTPS**"
+        ]
+      }
+    },
+    {
+      "name": "pmc-ncbi-nlm-nih-gov-articles-PMC6033723.md",
+      "rel_path": "homeo\\pmc-ncbi-nlm-nih-gov-articles-PMC6033723.md",
+      "size_bytes": 15266,
+      "extension": ".md",
+      "text_info": {
+        "line_count": 182,
+        "head": [
+          "[Skip to main content](https://pmc.ncbi.nlm.nih.gov/articles/PMC6033723/#main-content)",
+          "![](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-dot-gov.svg)",
+          "**Official websites use .gov**",
+          "A",
+          "**.gov** website belongs to an official",
+          "government organization in the United States.",
+          "![](https://cdn.ncbi.nlm.nih.gov/pmc/pd-medc-pmc-cloudpmc-viewer/production/9b1d9d87/var/data/static/img/icon-https.svg)",
+          "**Secure .gov websites use HTTPS**"
+        ]
+      }
+    },
+    {
+      "name": "icmramrannualreport2017.pdf",
+      "rel_path": "icmr\\icmramrannualreport2017.pdf",
+      "size_bytes": 1288017,
+      "extension": ".pdf"
+    },
+    {
+      "name": "icmramrannualreport2018.pdf",
+      "rel_path": "icmr\\icmramrannualreport2018.pdf",
+      "size_bytes": 12811516,
+      "extension": ".pdf"
+    },
+    {
+      "name": "icmramrannualreport2019.pdf",
+      "rel_path": "icmr\\icmramrannualreport2019.pdf",
+      "size_bytes": 5060629,
+      "extension": ".pdf"
+    },
+    {
+      "name": "icmramrannualreport2020.pdf",
+      "rel_path": "icmr\\icmramrannualreport2020.pdf",
+      "size_bytes": 9530303,
+      "extension": ".pdf"
+    },
+    {
+      "name": "icmramrannualreport2021.pdf",
+      "rel_path": "icmr\\icmramrannualreport2021.pdf",
+      "size_bytes": 7991387,
+      "extension": ".pdf"
+    },
+    {
+      "name": "icmramrsnannualreport2024.pdf",
+      "rel_path": "icmr\\icmramrsnannualreport2024.pdf",
+      "size_bytes": 6967921,
+      "extension": ".pdf"
+    },
+    {
+      "name": "icmrannualreport2022.pdf",
+      "rel_path": "icmr\\icmrannualreport2022.pdf",
+      "size_bytes": 41801377,
+      "extension": ".pdf"
+    },
+    {
+      "name": "icmrannualreport2023.pdf",
+      "rel_path": "icmr\\icmrannualreport2023.pdf",
+      "size_bytes": 13008773,
+      "extension": ".pdf"
+    },
+    {
+      "name": "{IMP}bhanushali-et-al-2024-whole-genome-sequencing-of-clinical-isolates-from-tuberculosis-patients-in-india-real-world-data.pdf",
+      "rel_path": "india relevant\\{IMP}bhanushali-et-al-2024-whole-genome-sequencing-of-clinical-isolates-from-tuberculosis-patients-in-india-real-world-data.pdf",
+      "size_bytes": 949474,
+      "extension": ".pdf"
+    },
+    {
+      "name": "{IMP}bhattacharjee-et-al-2025-co-existence-of-plasmid-mediated-blandm-1-and-blandm-5-in-escherichia-coli-sequence-type-167.pdf",
+      "rel_path": "india relevant\\{IMP}bhattacharjee-et-al-2025-co-existence-of-plasmid-mediated-blandm-1-and-blandm-5-in-escherichia-coli-sequence-type-167.pdf",
+      "size_bytes": 1444695,
+      "extension": ".pdf"
+    },
+    {
+      "name": "{IMP}rao-et-al-2023-lineage-classification-and-antitubercular-drug-resistance-surveillance-of-mycobacterium-tuberculosis-by.pdf",
+      "rel_path": "india relevant\\{IMP}rao-et-al-2023-lineage-classification-and-antitubercular-drug-resistance-surveillance-of-mycobacterium-tuberculosis-by.pdf",
+      "size_bytes": 1277417,
+      "extension": ".pdf"
+    },
+    {
+      "name": "{IMP}thirumoorthy-et-al-2025-recent-emergence-of-cephalosporin-resistant-salmonella-typhi-in-india-due-to-the-endemic-clone.pdf",
+      "rel_path": "india relevant\\{IMP}thirumoorthy-et-al-2025-recent-emergence-of-cephalosporin-resistant-salmonella-typhi-in-india-due-to-the-endemic-clone.pdf",
+      "size_bytes": 1718649,
+      "extension": ".pdf"
+    },
+    {
+      "name": "{IMp}halder-et-al-2024-whole-genome-sequence-based-molecular-characterization-of-blood-isolates-of-carbapenem-resistant.pdf",
+      "rel_path": "india relevant\\{IMp}halder-et-al-2024-whole-genome-sequence-based-molecular-characterization-of-blood-isolates-of-carbapenem-resistant.pdf",
+      "size_bytes": 5036256,
+      "extension": ".pdf"
+    },
+    {
+      "name": "AMRGuard_antibiotic_180_master_clinical_dataset.xlsx",
+      "rel_path": "Tamil\\AMRGuard_antibiotic_180_master_clinical_dataset.xlsx",
+      "size_bytes": 42108,
+      "extension": ".xlsx"
+    },
+    {
+      "name": "Hopsital Dataset.csv",
+      "rel_path": "Tamil\\Hopsital Dataset.csv",
+      "size_bytes": 92791,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 834,
+        "columns": [
+          "Age",
+          "Date of Data Entry",
+          "Gender",
+          "Diagnosis",
+          "Name of Drug",
+          "Dosage (gram)",
+          "Route",
+          "Frequency",
+          "Duration (days)",
+          "Indication"
+        ],
+        "num_columns": 10,
+        "sample_rows": [
+          {
+            "Age": "85",
+            "Date of Data Entry": "19/12/2019 14:41:49",
+            "Gender": "Female",
+            "Diagnosis": "ccf, hypertension, ida, ckd(stage 5), ?icm,",
+            "Name of Drug": "ceftriaxone",
+            "Dosage (gram)": "1",
+            "Route": "IV",
+            "Frequency": "BD",
+            "Duration (days)": "7",
+            "Indication": "icm"
+          },
+          {
+            "Age": "87",
+            "Date of Data Entry": "19/12/2019 16:35:25",
+            "Gender": "Female",
+            "Diagnosis": "pad(lt u.l), be amputation,/post op, akt",
+            "Name of Drug": "ceftriaxone",
+            "Dosage (gram)": "1",
+            "Route": "IV",
+            "Frequency": "BD",
+            "Duration (days)": "1",
+            "Indication": "post op"
+          },
+          {
+            "Age": "82",
+            "Date of Data Entry": "19/12/2019 15:48:49",
+            "Gender": "Male",
+            "Diagnosis": "type-2dm, ihd, col, copd, ht",
+            "Name of Drug": "ofloxacin",
+            "Dosage (gram)": "0.4",
+            "Route": "IV",
+            "Frequency": "BD",
+            "Duration (days)": "3",
+            "Indication": "abd distension with leg swelling"
+          }
+        ]
+      }
+    },
+    {
+      "name": "antibiotic_180_usage_symptoms_fda_complete.csv",
+      "rel_path": "Tamil\\antibiotic_180_usage_symptoms_fda_complete.csv",
+      "size_bytes": 60997,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 181,
+        "columns": [
+          "antibiotic_name",
+          "usage",
+          "symptoms"
+        ],
+        "num_columns": 3,
+        "sample_rows": [
+          {
+            "antibiotic_name": "Penicillin G",
+            "usage": "Treatment of severe infections caused by penicillin-susceptible organisms, including neurosyphilis, endocarditis, bacteremia, meningitis, and severe streptococcal infections.",
+            "symptoms": "Injection site reactions, nausea, diarrhea, rash; serious risks include severe anaphylaxis, Jarisch-Herxheimer reaction in syphilis, neurotoxicity/seizures at high doses, and Clostridioides difficile-associated diarrhoea."
+          },
+          {
+            "antibiotic_name": "Penicillin V",
+            "usage": "Treatment of mild-to-moderate susceptible bacterial infections, including streptococcal pharyngitis, tonsillitis, and mild skin and soft-tissue infections.",
+            "symptoms": "Nausea, vomiting, diarrhea, epigastric distress, rash; serious risks include acute hypersensitivity/anaphylaxis and Clostridioides difficile-associated diarrhoea."
+          },
+          {
+            "antibiotic_name": "Benzathine penicillin G",
+            "usage": "Long-acting intramuscular treatment for syphilis (primary, secondary, and latent), yaws, and secondary prophylaxis of rheumatic fever.",
+            "symptoms": "Injection site pain, erythema; serious risks include fatal inadvertent IV administration (cardiorespiratory arrest), severe anaphylaxis, and Jarisch-Herxheimer reaction."
+          }
+        ]
+      }
+    },
+    {
+      "name": "antibiotic_usage_side_effects_fda_starter.csv",
+      "rel_path": "Tamil\\antibiotic_usage_side_effects_fda_starter.csv",
+      "size_bytes": 12408,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 41,
+        "columns": [
+          "\ufeffantibiotic_name",
+          "usage",
+          "symptoms"
+        ],
+        "num_columns": 3,
+        "sample_rows": [
+          {
+            "\ufeffantibiotic_name": "Amoxicillin",
+            "usage": "Treatment of susceptible bacterial infections, including selected ear, nose and throat, respiratory, skin and genitourinary infections; also used in specific combination regimens for Helicobacter pylori.",
+            "symptoms": "Diarrhoea, nausea, vomiting, rash; serious risks include severe allergic reactions and Clostridioides difficile-associated diarrhoea."
+          },
+          {
+            "\ufeffantibiotic_name": "Amoxicillin/clavulanate",
+            "usage": "Treatment of selected susceptible bacterial infections, including some sinus, ear, respiratory, skin and urinary infections.",
+            "symptoms": "Diarrhoea, nausea, vomiting, rash; serious risks include allergic reactions, C. difficile-associated diarrhoea and liver injury."
+          },
+          {
+            "\ufeffantibiotic_name": "Ampicillin",
+            "usage": "Treatment of infections caused by susceptible bacteria, including selected respiratory, gastrointestinal, urinary and other infections.",
+            "symptoms": "Diarrhoea, nausea, rash; serious risks include allergic reactions, severe skin reactions and C. difficile-associated diarrhoea."
+          }
+        ]
+      }
+    },
+    {
+      "name": "uploaded_antibiotic_lookup_3col.csv",
+      "rel_path": "Tamil\\uploaded_antibiotic_lookup_3col.csv",
+      "size_bytes": 9773,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 71,
+        "columns": [
+          "\ufeffantibiotic_name",
+          "usage",
+          "symptoms"
+        ],
+        "num_columns": 3,
+        "sample_rows": [
+          {
+            "\ufeffantibiotic_name": "Amoxicillin",
+            "usage": "Community-Acquired Pneumonia (Mild Outpatient); Streptococcal Pharyngitis (Group A Strep); Acute Otitis Media; Odontogenic / Periapical Dental Abscess; Helicobacter pylori Gastritis / Peptic Ulcer Disease; Community-Acquired Pneumonia (Moderate Inpatient Ward); Acute Exacerbation of Chronic Bronchitis / COPD (Purulent Anthonisen Type 1); Acute Bacterial Rhinosinusitis (Persistent >10 Days); Diabetic Foot Infection (Mild Outpatient)",
+            "symptoms": "Diarrhoea, nausea, vomiting, rash; serious risks include severe allergic reactions and Clostridioides difficile-associated diarrhoea."
+          },
+          {
+            "\ufeffantibiotic_name": "Amoxicillin-Clavulanate",
+            "usage": "Community-Acquired Pneumonia (Moderate Inpatient Ward); Acute Exacerbation of Chronic Bronchitis / COPD (Purulent Anthonisen Type 1); Acute Bacterial Rhinosinusitis (Persistent >10 Days); Diabetic Foot Infection (Mild Outpatient)",
+            "symptoms": "Diarrhoea, nausea, vomiting, rash; serious risks include allergic reactions, C. difficile-associated diarrhoea and liver injury."
+          },
+          {
+            "\ufeffantibiotic_name": "Nitrofurantoin",
+            "usage": "Uncomplicated Acute Cystitis / Lower UTI; Recurrent Uncomplicated Cystitis in Females; Asymptomatic Bacteriuria in Pregnancy",
+            "symptoms": "Nausea, reduced appetite, headache; urine may darken. Serious risks include lung reactions, liver injury, peripheral neuropathy and haemolysis in susceptible patients."
+          }
+        ]
+      }
+    },
+    {
+      "name": "brands.csv",
+      "rel_path": "Tamil\\Anti\\brands.csv",
+      "size_bytes": 1520,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 78,
+        "columns": [
+          "id",
+          "brand_name",
+          "drug_id",
+          "default_strength"
+        ],
+        "num_columns": 4,
+        "sample_rows": [
+          {
+            "id": "1",
+            "brand_name": "Augmentin",
+            "drug_id": "2",
+            "default_strength": "625mg"
+          },
+          {
+            "id": "2",
+            "brand_name": "Clavam",
+            "drug_id": "2",
+            "default_strength": "625mg"
+          },
+          {
+            "id": "3",
+            "brand_name": "Moxikind-CV",
+            "drug_id": "2",
+            "default_strength": "625mg"
+          }
+        ]
+      }
+    },
+    {
+      "name": "conditions.csv",
+      "rel_path": "Tamil\\Anti\\conditions.csv",
+      "size_bytes": 2482,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 37,
+        "columns": [
+          "id",
+          "code",
+          "display_name"
+        ],
+        "num_columns": 3,
+        "sample_rows": [
+          {
+            "id": "1",
+            "code": "SYN_CAP_MILD",
+            "display_name": "Community-Acquired Pneumonia (Mild Outpatient)"
+          },
+          {
+            "id": "2",
+            "code": "SYN_UNCOMPLICATED_UTI",
+            "display_name": "Uncomplicated Acute Cystitis / Lower UTI"
+          },
+          {
+            "id": "3",
+            "code": "SYN_ACUTE_BRONCHITIS",
+            "display_name": "Acute Bronchitis (Self-Limiting Viral)"
+          }
+        ]
+      }
+    },
+    {
+      "name": "drugs.csv",
+      "rel_path": "Tamil\\Anti\\drugs.csv",
+      "size_bytes": 5375,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 81,
+        "columns": [
+          "id",
+          "generic_name",
+          "drug_class",
+          "is_antibiotic",
+          "aware_class",
+          "is_fluoroquinolone",
+          "pregnancy_contraindicated",
+          "min_age_years"
+        ],
+        "num_columns": 8,
+        "sample_rows": [
+          {
+            "id": "1",
+            "generic_name": "Amoxicillin",
+            "drug_class": "Aminopenicillin",
+            "is_antibiotic": "True",
+            "aware_class": "Access",
+            "is_fluoroquinolone": "False",
+            "pregnancy_contraindicated": "False",
+            "min_age_years": "0.0"
+          },
+          {
+            "id": "2",
+            "generic_name": "Amoxicillin-Clavulanate",
+            "drug_class": "Beta-lactam + Inhibitor",
+            "is_antibiotic": "True",
+            "aware_class": "Access",
+            "is_fluoroquinolone": "False",
+            "pregnancy_contraindicated": "False",
+            "min_age_years": "0.0"
+          },
+          {
+            "id": "3",
+            "generic_name": "Nitrofurantoin",
+            "drug_class": "Nitrofuran",
+            "is_antibiotic": "True",
+            "aware_class": "Access",
+            "is_fluoroquinolone": "False",
+            "pregnancy_contraindicated": "False",
+            "min_age_years": "1.0"
+          }
+        ]
+      }
+    },
+    {
+      "name": "guidelines.csv",
+      "rel_path": "Tamil\\Anti\\guidelines.csv",
+      "size_bytes": 6697,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 37,
+        "columns": [
+          "id",
+          "condition_id",
+          "source",
+          "section_ref",
+          "summary",
+          "antibiotic_indicated"
+        ],
+        "num_columns": 6,
+        "sample_rows": [
+          {
+            "id": "1",
+            "condition_id": "1",
+            "source": "ICMR STG 2022",
+            "section_ref": "Respiratory Infections - Mild CAP",
+            "summary": "Amoxicillin 500mg PO TID for 5 days is first-line. Fluoroquinolones reserved for beta-lactam anaphylaxis.",
+            "antibiotic_indicated": "True"
+          },
+          {
+            "id": "2",
+            "condition_id": "2",
+            "source": "ICMR STG 2022",
+            "section_ref": "Urinary Tract Infections - Acute Cystitis",
+            "summary": "Nitrofurantoin 100mg PO BD x 5d or Fosfomycin 3g single dose. Empirical fluoroquinolones contraindicated due to >75% E. coli resistance.",
+            "antibiotic_indicated": "True"
+          },
+          {
+            "id": "3",
+            "condition_id": "3",
+            "source": "ICMR STG 2022",
+            "section_ref": "Respiratory Infections - Acute Bronchitis",
+            "summary": "Acute bronchitis in immunocompetent adults is predominantly viral and self-limiting. Antibiotics provide zero clinical benefit and are not indicated.",
+            "antibiotic_indicated": "False"
+          }
+        ]
+      }
+    },
+    {
+      "name": "regimens.csv",
+      "rel_path": "Tamil\\Anti\\regimens.csv",
+      "size_bytes": 4723,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 61,
+        "columns": [
+          "id",
+          "condition_id",
+          "drug_id",
+          "dose_text",
+          "frequency",
+          "duration_days",
+          "source",
+          "verified_by"
+        ],
+        "num_columns": 8,
+        "sample_rows": [
+          {
+            "id": "1",
+            "condition_id": "1",
+            "drug_id": "1",
+            "dose_text": "500mg",
+            "frequency": "TID",
+            "duration_days": "5",
+            "source": "ICMR STG CAP 2022",
+            "verified_by": "ICMR Stewardship Committee"
+          },
+          {
+            "id": "2",
+            "condition_id": "2",
+            "drug_id": "3",
+            "dose_text": "100mg",
+            "frequency": "BID",
+            "duration_days": "5",
+            "source": "ICMR STG UTI 2022",
+            "verified_by": "ICMR Stewardship Committee"
+          },
+          {
+            "id": "3",
+            "condition_id": "2",
+            "drug_id": "4",
+            "dose_text": "3g single sachet",
+            "frequency": "Once",
+            "duration_days": "1",
+            "source": "ICMR STG UTI 2022",
+            "verified_by": "ICMR Stewardship Committee"
+          }
+        ]
+      }
+    },
+    {
+      "name": "rules.yaml",
+      "rel_path": "Tamil\\Anti\\rules.yaml",
+      "size_bytes": 3,
+      "extension": ".yaml",
+      "text_info": {
+        "line_count": 1,
+        "head": [
+          "[]"
+        ]
+      }
+    },
+    {
+      "name": "antibiotic_180_with_brand_names_master.csv",
+      "rel_path": "Tamil\\New folder\\antibiotic_180_with_brand_names_master.csv",
+      "size_bytes": 65358,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 181,
+        "columns": [
+          "antibiotic_name",
+          "common_brand_names",
+          "usage",
+          "symptoms"
+        ],
+        "num_columns": 4,
+        "sample_rows": [
+          {
+            "antibiotic_name": "Penicillin G",
+            "common_brand_names": "Pfizerpen, Crystapen, Benzylpenicillin",
+            "usage": "Treatment of severe infections caused by penicillin-susceptible organisms, including neurosyphilis, endocarditis, bacteremia, meningitis, and severe streptococcal infections.",
+            "symptoms": "Injection site reactions, nausea, diarrhea, rash; serious risks include severe anaphylaxis, Jarisch-Herxheimer reaction in syphilis, neurotoxicity/seizures at high doses, and Clostridioides difficile-associated diarrhoea."
+          },
+          {
+            "antibiotic_name": "Penicillin V",
+            "common_brand_names": "Pen-VK, Veetids, Kaypen, V-Cillin K",
+            "usage": "Treatment of mild-to-moderate susceptible bacterial infections, including streptococcal pharyngitis, tonsillitis, and mild skin and soft-tissue infections.",
+            "symptoms": "Nausea, vomiting, diarrhea, epigastric distress, rash; serious risks include acute hypersensitivity/anaphylaxis and Clostridioides difficile-associated diarrhoea."
+          },
+          {
+            "antibiotic_name": "Benzathine penicillin G",
+            "common_brand_names": "Bicillin L-A, Penidure, Retarpen, Extencilline",
+            "usage": "Long-acting intramuscular treatment for syphilis (primary, secondary, and latent), yaws, and secondary prophylaxis of rheumatic fever.",
+            "symptoms": "Injection site pain, erythema; serious risks include fatal inadvertent IV administration (cardiorespiratory arrest), severe anaphylaxis, and Jarisch-Herxheimer reaction."
+          }
+        ]
+      }
+    },
+    {
+      "name": "antibiotic_brand_to_generic_alias_lookup.csv",
+      "rel_path": "Tamil\\New folder\\antibiotic_brand_to_generic_alias_lookup.csv",
+      "size_bytes": 12676,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 406,
+        "columns": [
+          "brand_alias",
+          "full_brand_display",
+          "generic_antibiotic_name"
+        ],
+        "num_columns": 3,
+        "sample_rows": [
+          {
+            "brand_alias": "Pfizerpen",
+            "full_brand_display": "Pfizerpen",
+            "generic_antibiotic_name": "Penicillin G"
+          },
+          {
+            "brand_alias": "Crystapen",
+            "full_brand_display": "Crystapen",
+            "generic_antibiotic_name": "Penicillin G"
+          },
+          {
+            "brand_alias": "Benzylpenicillin",
+            "full_brand_display": "Benzylpenicillin",
+            "generic_antibiotic_name": "Penicillin G"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AMRGuard_antibiotic_180_source_research_queue.csv",
+      "rel_path": "Tamil\\New folder 2\\AMRGuard_antibiotic_180_source_research_queue.csv",
+      "size_bytes": 113947,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 181,
+        "columns": [
+          "\ufeffsource_row_number",
+          "antibiotic_name",
+          "class_group",
+          "identity_or_status_note",
+          "official_dailymed_search_url",
+          "openfda_query_url",
+          "evidence_to_extract",
+          "current_research_status",
+          "verified_source_url",
+          "next_action"
+        ],
+        "num_columns": 10,
+        "sample_rows": [
+          {
+            "\ufeffsource_row_number": "1",
+            "antibiotic_name": "Penicillin G",
+            "class_group": "Natural Penicillins",
+            "identity_or_status_note": "",
+            "official_dailymed_search_url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Penicillin%20G",
+            "openfda_query_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22Penicillin%20G%22&limit=10",
+            "evidence_to_extract": "Indications/usage; common adverse reactions with frequencies; serious warnings/boxed warning; contraindications; interactions; formulation/route; human vs veterinary; effective date; source label ID/URL.",
+            "current_research_status": "NOT YET RESEARCHED \u2014 no class-level substitution",
+            "verified_source_url": "",
+            "next_action": "Extract indications, adverse reactions, boxed warnings/warnings, contraindications; confirm formulation/route and current label."
+          },
+          {
+            "\ufeffsource_row_number": "2",
+            "antibiotic_name": "Penicillin V",
+            "class_group": "Natural Penicillins",
+            "identity_or_status_note": "",
+            "official_dailymed_search_url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Penicillin%20V",
+            "openfda_query_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22Penicillin%20V%22&limit=10",
+            "evidence_to_extract": "Indications/usage; common adverse reactions with frequencies; serious warnings/boxed warning; contraindications; interactions; formulation/route; human vs veterinary; effective date; source label ID/URL.",
+            "current_research_status": "NOT YET RESEARCHED \u2014 no class-level substitution",
+            "verified_source_url": "",
+            "next_action": "Extract indications, adverse reactions, boxed warnings/warnings, contraindications; confirm formulation/route and current label."
+          },
+          {
+            "\ufeffsource_row_number": "3",
+            "antibiotic_name": "Benzathine penicillin G",
+            "class_group": "Natural Penicillins",
+            "identity_or_status_note": "",
+            "official_dailymed_search_url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=Benzathine%20penicillin%20G",
+            "openfda_query_url": "https://api.fda.gov/drug/label.json?search=openfda.generic_name%3A%22Benzathine%20penicillin%20G%22&limit=10",
+            "evidence_to_extract": "Indications/usage; common adverse reactions with frequencies; serious warnings/boxed warning; contraindications; interactions; formulation/route; human vs veterinary; effective date; source label ID/URL.",
+            "current_research_status": "NOT YET RESEARCHED \u2014 no class-level substitution",
+            "verified_source_url": "",
+            "next_action": "Extract indications, adverse reactions, boxed warnings/warnings, contraindications; confirm formulation/route and current label."
+          }
+        ]
+      }
+    },
+    {
+      "name": "AMRGuard_antibiotic_master_180_expanded.csv",
+      "rel_path": "Tamil\\New folder 2\\AMRGuard_antibiotic_master_180_expanded.csv",
+      "size_bytes": 207310,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 181,
+        "columns": [
+          "\ufeffantibiotic_name",
+          "usage",
+          "common_side_effects",
+          "serious_adverse_effects",
+          "possible_mechanism_or_cause",
+          "risk_factors_and_precautions",
+          "when_to_seek_help",
+          "regulatory_or_identity_note",
+          "source_basis",
+          "validation_status"
+        ],
+        "num_columns": 10,
+        "sample_rows": [
+          {
+            "\ufeffantibiotic_name": "Penicillin G",
+            "usage": "Treatment of selected infections caused by susceptible bacteria; the exact indication depends on the penicillin, formulation, organism and infection site. (provisional class-level summary; verify against a drug-specific label).",
+            "common_side_effects": "Possible effects include nausea, diarrhoea and rash; serious risks can include allergic reactions and C. difficile-associated diarrhoea.",
+            "serious_adverse_effects": "Serious risks vary by ingredient and formulation; individual drug label extraction required.",
+            "possible_mechanism_or_cause": "Inhibit bacterial cell-wall synthesis. Gastrointestinal symptoms can arise from effects on gut flora; allergy is an immune reaction rather than a predictable dose effect.",
+            "risk_factors_and_precautions": "History of penicillin/beta-lactam allergy; kidney impairment can affect dosing for some formulations; injection products have route-specific risks.",
+            "when_to_seek_help": "Seek urgent care for breathing difficulty, facial/throat swelling, fainting, blistering rash, or severe/persistent watery or bloody diarrhoea. Do not restart after suspected severe allergy without clinician review.",
+            "regulatory_or_identity_note": "Current FDA approval/marketed status not independently verified.",
+            "source_basis": "Provisional class-level summary only; individual label not yet verified.",
+            "validation_status": "class-level scaffold; not sufficient for clinical use"
+          },
+          {
+            "\ufeffantibiotic_name": "Penicillin V",
+            "usage": "Treatment of selected infections caused by susceptible bacteria; the exact indication depends on the penicillin, formulation, organism and infection site. (provisional class-level summary; verify against a drug-specific label).",
+            "common_side_effects": "Possible effects include nausea, diarrhoea and rash; serious risks can include allergic reactions and C. difficile-associated diarrhoea.",
+            "serious_adverse_effects": "Serious risks vary by ingredient and formulation; individual drug label extraction required.",
+            "possible_mechanism_or_cause": "Inhibit bacterial cell-wall synthesis. Gastrointestinal symptoms can arise from effects on gut flora; allergy is an immune reaction rather than a predictable dose effect.",
+            "risk_factors_and_precautions": "History of penicillin/beta-lactam allergy; kidney impairment can affect dosing for some formulations; injection products have route-specific risks.",
+            "when_to_seek_help": "Seek urgent care for breathing difficulty, facial/throat swelling, fainting, blistering rash, or severe/persistent watery or bloody diarrhoea. Do not restart after suspected severe allergy without clinician review.",
+            "regulatory_or_identity_note": "Current FDA approval/marketed status not independently verified.",
+            "source_basis": "Provisional class-level summary only; individual label not yet verified.",
+            "validation_status": "class-level scaffold; not sufficient for clinical use"
+          },
+          {
+            "\ufeffantibiotic_name": "Benzathine penicillin G",
+            "usage": "Treatment of selected infections caused by susceptible bacteria; the exact indication depends on the penicillin, formulation, organism and infection site. (provisional class-level summary; verify against a drug-specific label).",
+            "common_side_effects": "Possible effects include nausea, diarrhoea and rash; serious risks can include allergic reactions and C. difficile-associated diarrhoea.",
+            "serious_adverse_effects": "Serious risks vary by ingredient and formulation; individual drug label extraction required.",
+            "possible_mechanism_or_cause": "Inhibit bacterial cell-wall synthesis. Gastrointestinal symptoms can arise from effects on gut flora; allergy is an immune reaction rather than a predictable dose effect.",
+            "risk_factors_and_precautions": "History of penicillin/beta-lactam allergy; kidney impairment can affect dosing for some formulations; injection products have route-specific risks.",
+            "when_to_seek_help": "Seek urgent care for breathing difficulty, facial/throat swelling, fainting, blistering rash, or severe/persistent watery or bloody diarrhoea. Do not restart after suspected severe allergy without clinician review.",
+            "regulatory_or_identity_note": "Current FDA approval/marketed status not independently verified.",
+            "source_basis": "Provisional class-level summary only; individual label not yet verified.",
+            "validation_status": "class-level scaffold; not sufficient for clinical use"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AMRGuard_antibiotic_master_180_research_progress.csv",
+      "rel_path": "Tamil\\New folder 2\\AMRGuard_antibiotic_master_180_research_progress.csv",
+      "size_bytes": 7773,
+      "extension": ".csv",
+      "csv_info": {
+        "row_count": 181,
+        "columns": [
+          "\ufeffantibiotic_name",
+          "usage",
+          "symptoms"
+        ],
+        "num_columns": 3,
+        "sample_rows": [
+          {
+            "\ufeffantibiotic_name": "Penicillin G",
+            "usage": "",
+            "symptoms": ""
+          },
+          {
+            "\ufeffantibiotic_name": "Penicillin V",
+            "usage": "",
+            "symptoms": ""
+          },
+          {
+            "\ufeffantibiotic_name": "Benzathine penicillin G",
+            "usage": "",
+            "symptoms": ""
+          }
+        ]
+      }
+    }
+  ]
+}

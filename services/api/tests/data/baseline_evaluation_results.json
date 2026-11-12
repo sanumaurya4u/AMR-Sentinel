@@ -1,0 +1,506 @@
+{
+  "summary": {
+    "total_cases": 30,
+    "demographics": {
+      "age_accuracy": 96.67,
+      "gender_accuracy": 100.0,
+      "pregnancy_accuracy": 93.33,
+      "egfr_accuracy": 100.0
+    },
+    "medication_extraction": {
+      "drug_precision": 46.67,
+      "drug_recall": 46.67,
+      "drug_f1": 46.67
+    },
+    "indication_classification": {
+      "indication_accuracy": 23.33
+    },
+    "audit_concordance": {
+      "status_concordance": 60.0,
+      "mean_rule_jaccard": 58.33
+    },
+    "overall_quality_score": 74.29
+  },
+  "details": [
+    {
+      "id": "BENCH_01",
+      "scenario": "Pediatric acute diarrhea prescribed Ciprofloxacin (Fluoroquinolone in child <18)",
+      "pred_drugs": [
+        "Ciprofloxacin"
+      ],
+      "truth_drugs": [
+        "Ciprofloxacin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_WATERY_DIARRHEA",
+      "pred_status": "NEEDS_URGENT_REVIEW",
+      "exp_status": "NEEDS_URGENT_REVIEW",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_02",
+      "scenario": "Pediatric mild pneumonia prescribed Doxycycline (Tetracycline in child <12)",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Doxycycline"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_CAP_MILD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_URGENT_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_03",
+      "scenario": "Pediatric acute otitis media guideline concordant Amoxicillin",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Amoxicillin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_AOM",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_04",
+      "scenario": "Pediatric strep pharyngitis prescribed Azithromycin guideline alternative",
+      "pred_drugs": [
+        "Azithromycin"
+      ],
+      "truth_drugs": [
+        "Azithromycin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_PHARYNGITIS_STREP",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_05",
+      "scenario": "Elderly female acute cystitis with severe renal impairment (eGFR 22)",
+      "pred_drugs": [
+        "Nitrofurantoin"
+      ],
+      "truth_drugs": [
+        "Nitrofurantoin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_UNCOMPLICATED_UTI",
+      "pred_status": "NEEDS_URGENT_REVIEW",
+      "exp_status": "NEEDS_URGENT_REVIEW",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_06",
+      "scenario": "Adult female uncomplicated UTI guideline concordant Nitrofurantoin",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Nitrofurantoin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_UNCOMPLICATED_UTI",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_07",
+      "scenario": "Aminoglycoside Gentamicin prescribed without eGFR recorded (Incomplete Data)",
+      "pred_drugs": [
+        "Gentamicin"
+      ],
+      "truth_drugs": [
+        "Gentamicin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_PYELONEPHRITIS_UNCOMPLICATED",
+      "pred_status": "INCOMPLETE_DATA",
+      "exp_status": "INCOMPLETE_DATA",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_08",
+      "scenario": "Pyelonephritis prescribed Amikacin with documented normal eGFR 95",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Amikacin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_PYELONEPHRITIS_UNCOMPLICATED",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_09",
+      "scenario": "Pregnant patient prescribed Doxycycline (Tetracycline contraindicated in pregnancy)",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Doxycycline"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_CAP_MILD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_URGENT_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_10",
+      "scenario": "Pregnant patient prescribed Ciprofloxacin (Fluoroquinolone contraindicated in pregnancy)",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Ciprofloxacin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_UNCOMPLICATED_UTI",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_URGENT_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_11",
+      "scenario": "Pregnant patient asymptomatic bacteriuria prescribed safe Cefalexin",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Cefalexin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_ASYMPTOMATIC_BACTERIURIA_PREGNANCY",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_12",
+      "scenario": "Penicillin allergy patient prescribed Amoxicillin (Beta-lactam allergy contraindication)",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Amoxicillin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_CAP_MILD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_URGENT_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_13",
+      "scenario": "Penicillin allergy patient prescribed Azithromycin (Safe Macrolide alternative)",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Azithromycin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_CAP_MILD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_14",
+      "scenario": "Acute bacterial rhinosinusitis prescribed Amoxicillin-Clavulanate",
+      "pred_drugs": [
+        "Amoxicillin-Clavulanate"
+      ],
+      "truth_drugs": [
+        "Amoxicillin-Clavulanate"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_ACUTE_RHINOSINUSITIS",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_15",
+      "scenario": "CDSCO Banned FDC prescribed: Cefixime + Azithromycin",
+      "pred_drugs": [
+        "Azithromycin"
+      ],
+      "truth_drugs": [
+        "Cefixime + Azithromycin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_CAP_MILD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_URGENT_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_16",
+      "scenario": "CDSCO Banned FDC prescribed: Ofloxacin + Ornidazole",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Ofloxacin + Ornidazole"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_WATERY_DIARRHEA",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_URGENT_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_17",
+      "scenario": "CDSCO Banned FDC prescribed: Amoxicillin + Flucloxacillin",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Amoxicillin + Flucloxacillin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_SSTI_UNCOMPLICATED",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_18",
+      "scenario": "Self-limiting viral acute bronchitis inappropriately prescribed Azithromycin",
+      "pred_drugs": [
+        "Azithromycin"
+      ],
+      "truth_drugs": [
+        "Azithromycin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_ACUTE_BRONCHITIS",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_19",
+      "scenario": "Viral common cold inappropriately prescribed Amoxicillin",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Amoxicillin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_COMMON_COLD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_20",
+      "scenario": "Viral URTI managed with symptomatic supportive Paracetamol",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Paracetamol"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_VIRAL_URTI",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_21",
+      "scenario": "Non-streptococcal viral sore throat inappropriately prescribed Cefixime",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Cefixime"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_PHARYNGITIS_NON_STREP",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_22",
+      "scenario": "Uncomplicated UTI inappropriately prescribed WHO Reserve antibiotic Meropenem",
+      "pred_drugs": [
+        "Meropenem"
+      ],
+      "truth_drugs": [
+        "Meropenem"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_UNCOMPLICATED_UTI",
+      "pred_status": "NEEDS_REVIEW",
+      "exp_status": "NEEDS_REVIEW",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_23",
+      "scenario": "Uncomplicated SSTI inappropriately prescribed WHO Reserve antibiotic Linezolid",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Linezolid"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_SSTI_UNCOMPLICATED",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_24",
+      "scenario": "Mild CAP with excessive duration: 14 days of Amoxicillin",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Amoxicillin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_CAP_MILD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_25",
+      "scenario": "Uncomplicated UTI with excessive duration: 10 days of Nitrofurantoin",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Nitrofurantoin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_UNCOMPLICATED_UTI",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NEEDS_REVIEW",
+      "status_match": false,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_26",
+      "scenario": "Guideline concordant mild CAP: Amoxicillin 500mg TID x 5 days",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Amoxicillin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_CAP_MILD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_27",
+      "scenario": "Guideline concordant uncomplicated UTI: Nitrofurantoin 100mg BD x 5 days",
+      "pred_drugs": [
+        "Nitrofurantoin"
+      ],
+      "truth_drugs": [
+        "Nitrofurantoin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_UNCOMPLICATED_UTI",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_28",
+      "scenario": "Guideline concordant acute watery diarrhea: ORS + Zinc x 14 days",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Oral Rehydration Salts (ORS) + Zinc"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_WATERY_DIARRHEA",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_29",
+      "scenario": "Guideline concordant uncomplicated SSTI: Cefalexin 500mg QID x 5 days",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Cefalexin"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_SSTI_UNCOMPLICATED",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    },
+    {
+      "id": "BENCH_30",
+      "scenario": "Guideline concordant viral cold: Paracetamol 650mg TDS x 3 days",
+      "pred_drugs": [
+        "Amoxicillin"
+      ],
+      "truth_drugs": [
+        "Paracetamol"
+      ],
+      "pred_indication": "SYN_CAP_MILD",
+      "truth_indication": "SYN_COMMON_COLD",
+      "pred_status": "NO_RULE_TRIGGERED",
+      "exp_status": "NO_RULE_TRIGGERED",
+      "status_match": true,
+      "engine": "offline_heuristic_adapter"
+    }
+  ]
+}

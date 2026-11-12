@@ -1,0 +1,361 @@
+"""Build benchmark cases dataset for AMR Sentinel AI Agent."""
+import json
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path("services/api").resolve()))
+from app.engine.engine import DeterministicAuditEngine
+
+# Load rules manifest
+rules_path = Path("services/api/app/rules_data/rules_v1.0.0.json")
+with open(rules_path, "r", encoding="utf-8") as f:
+    manifest = json.load(f)
+
+engine = DeterministicAuditEngine(manifest)
+
+raw_cases = [
+    {
+        "id": "BENCH_01",
+        "scenario": "Pediatric acute diarrhea prescribed Ciprofloxacin (Fluoroquinolone in child <18)",
+        "document_text": "PRESCRIPTION\nPatient: Master Aarav Patel, Age: 8 yrs, Male.\neGFR: 95 mL/min. Allergies: None.\nComplaints: Acute watery diarrhea, mild fever x 1 day.\nDiagnosis: Acute watery diarrhea.\nRx:\n1. Tab Cifran 250mg BD x 5 days\nDr. K. Verma, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 8.0, "gender": "male", "isPregnant": False, "egfrMlMin": 95.0, "allergies": []},
+            "indicationCode": "SYN_WATERY_DIARRHEA",
+            "prescriptionLines": [{"drugName": "Ciprofloxacin", "doseText": "250 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_02",
+        "scenario": "Pediatric mild pneumonia prescribed Doxycycline (Tetracycline in child <12)",
+        "document_text": "PRESCRIPTION\nPatient: Ananya Rao, Age: 9 years, Female.\neGFR: 90 mL/min. No known drug allergies.\nDiagnosis: Mild Community Acquired Pneumonia\nRx:\nTab Doxicip 100 mg BD for 5 days.\nDr. S. Nair, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 9.0, "gender": "female", "isPregnant": False, "egfrMlMin": 90.0, "allergies": []},
+            "indicationCode": "SYN_CAP_MILD",
+            "prescriptionLines": [{"drugName": "Doxycycline", "doseText": "100 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_03",
+        "scenario": "Pediatric acute otitis media guideline concordant Amoxicillin",
+        "document_text": "CLINICAL NOTE\nPatient: Kabir Singh, 5 yr old Male.\neGFR: 90 mL/min. Allergies: Nil.\nDiagnosis: Acute Otitis Media (AOM), right ear pain.\nRx:\nSyp Amoxicillin 250mg TID x 5 days\nDr. Joshi, DNB Ped",
+        "ground_truth": {
+            "patientContext": {"ageYears": 5.0, "gender": "male", "isPregnant": False, "egfrMlMin": 90.0, "allergies": []},
+            "indicationCode": "SYN_AOM",
+            "prescriptionLines": [{"drugName": "Amoxicillin", "doseText": "250 mg", "frequencyText": "Three times daily (TID)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_04",
+        "scenario": "Pediatric strep pharyngitis prescribed Azithromycin guideline alternative",
+        "document_text": "OUTPATIENT PRESCRIPTION\nPatient: Meera Iyer, Age: 10 yrs, Female.\neGFR: 95 mL/min. Allergies: none.\nDiagnosis: Streptococcal Pharyngitis, exudative tonsillitis.\nRx:\nTab Azithral 250mg OD for 3 days.\nDr. Ramanathan, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 10.0, "gender": "female", "isPregnant": False, "egfrMlMin": 95.0, "allergies": []},
+            "indicationCode": "SYN_PHARYNGITIS_STREP",
+            "prescriptionLines": [{"drugName": "Azithromycin", "doseText": "250 mg", "frequencyText": "Once daily (OD)", "durationDays": 3}],
+        }
+    },
+    {
+        "id": "BENCH_05",
+        "scenario": "Elderly female acute cystitis with severe renal impairment (eGFR 22)",
+        "document_text": "PRESCRIPTION\nPatient: Saraswati Devi, Age: 74 years, Female.\neGFR: 22 mL/min (CKD Stage 4). Allergies: None.\nComplaints: Dysuria, burning micturition, frequency.\nDiagnosis: Uncomplicated UTI / Lower UTI.\nRx:\nCap Martifur 100 mg BD x 5 days.\nDr. R. Gupta, MD (Nephrology)",
+        "ground_truth": {
+            "patientContext": {"ageYears": 74.0, "gender": "female", "isPregnant": False, "egfrMlMin": 22.0, "allergies": []},
+            "indicationCode": "SYN_UNCOMPLICATED_UTI",
+            "prescriptionLines": [{"drugName": "Nitrofurantoin", "doseText": "100 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_06",
+        "scenario": "Adult female uncomplicated UTI guideline concordant Nitrofurantoin",
+        "document_text": "OUTPATIENT SLIP\nPatient: Priya Menon, Age: 42 yrs, Female.\neGFR: 85 mL/min. Not pregnant. Allergies: None.\nDiagnosis: Acute cystitis / Uncomplicated UTI.\nRx:\nCap Niftas 100mg BD for 5 days.\nDr. V. Rao, MBBS",
+        "ground_truth": {
+            "patientContext": {"ageYears": 42.0, "gender": "female", "isPregnant": False, "egfrMlMin": 85.0, "allergies": []},
+            "indicationCode": "SYN_UNCOMPLICATED_UTI",
+            "prescriptionLines": [{"drugName": "Nitrofurantoin", "doseText": "100 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_07",
+        "scenario": "Aminoglycoside Gentamicin prescribed without eGFR recorded (Incomplete Data)",
+        "document_text": "PRESCRIPTION NOTE\nPatient: Rajesh Khanna, Age: 52 yrs, Male.\neGFR: Not recorded / Pending lab.\nDiagnosis: Uncomplicated Pyelonephritis\nRx:\nInj Gentamicin 80 mg BD for 5 days\nDr. S. Mehta, MS",
+        "ground_truth": {
+            "patientContext": {"ageYears": 52.0, "gender": "male", "isPregnant": False, "egfrMlMin": None, "allergies": []},
+            "indicationCode": "SYN_PYELONEPHRITIS_UNCOMPLICATED",
+            "prescriptionLines": [{"drugName": "Gentamicin", "doseText": "80 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_08",
+        "scenario": "Pyelonephritis prescribed Amikacin with documented normal eGFR 95",
+        "document_text": "PRESCRIPTION\nPatient: Vikram Seth, Age: 38 yrs, Male.\neGFR: 95 mL/min. Allergies: Nil.\nDiagnosis: Acute pyelonephritis (outpatient)\nRx:\nInj Amikacin 500 mg BD x 5 days\nDr. Arun, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 38.0, "gender": "male", "isPregnant": False, "egfrMlMin": 95.0, "allergies": []},
+            "indicationCode": "SYN_PYELONEPHRITIS_UNCOMPLICATED",
+            "prescriptionLines": [{"drugName": "Amikacin", "doseText": "500 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_09",
+        "scenario": "Pregnant patient prescribed Doxycycline (Tetracycline contraindicated in pregnancy)",
+        "document_text": "ANTENATAL OPD PRESCRIPTION\nPatient: Pooja Sharma, Age: 27 yrs, Female (Pregnant, 2nd trimester).\neGFR: 100 mL/min. Allergies: None.\nDiagnosis: Mild Community Acquired Pneumonia\nRx:\nTab Doxicip 100 mg BD for 5 days.\nDr. M. Roy, DGO",
+        "ground_truth": {
+            "patientContext": {"ageYears": 27.0, "gender": "female", "isPregnant": True, "egfrMlMin": 100.0, "allergies": []},
+            "indicationCode": "SYN_CAP_MILD",
+            "prescriptionLines": [{"drugName": "Doxycycline", "doseText": "100 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_10",
+        "scenario": "Pregnant patient prescribed Ciprofloxacin (Fluoroquinolone contraindicated in pregnancy)",
+        "document_text": "PRESCRIPTION\nPatient: Neha Kulkarni, Age: 29 years, Female (Pregnant, 1st trimester).\neGFR: 105 mL/min. Allergies: Nil.\nDiagnosis: Acute lower urinary tract infection / cystitis\nRx:\nTab Ciplox 500 mg BD x 5 days\nDr. G. Deshmukh, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 29.0, "gender": "female", "isPregnant": True, "egfrMlMin": 105.0, "allergies": []},
+            "indicationCode": "SYN_UNCOMPLICATED_UTI",
+            "prescriptionLines": [{"drugName": "Ciprofloxacin", "doseText": "500 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_11",
+        "scenario": "Pregnant patient asymptomatic bacteriuria prescribed safe Cefalexin",
+        "document_text": "OBSTETRICS PRESCRIPTION\nPatient: Deepa Nambiar, Age: 26 yrs, Female (Pregnant).\neGFR: 110 mL/min. Allergies: None.\nDiagnosis: Asymptomatic bacteriuria in pregnancy.\nRx:\nCap Phexin 500 mg QID for 5 days.\nDr. Lakshmi, MS (OBG)",
+        "ground_truth": {
+            "patientContext": {"ageYears": 26.0, "gender": "female", "isPregnant": True, "egfrMlMin": 110.0, "allergies": []},
+            "indicationCode": "SYN_ASYMPTOMATIC_BACTERIURIA_PREGNANCY",
+            "prescriptionLines": [{"drugName": "Cefalexin", "doseText": "500 mg", "frequencyText": "Four times daily (QID)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_12",
+        "scenario": "Penicillin allergy patient prescribed Amoxicillin (Beta-lactam allergy contraindication)",
+        "document_text": "PRESCRIPTION\nPatient: Suresh Prabhu, Age: 45 years, Male.\neGFR: 90 mL/min. ALLERGY: Penicillin (severe urticaria).\nDiagnosis: Mild Community-Acquired Pneumonia\nRx:\nTab Novamox 500mg TID x 5 days\nDr. B. Das, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 45.0, "gender": "male", "isPregnant": False, "egfrMlMin": 90.0, "allergies": ["Penicillin"]},
+            "indicationCode": "SYN_CAP_MILD",
+            "prescriptionLines": [{"drugName": "Amoxicillin", "doseText": "500 mg", "frequencyText": "Three times daily (TID)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_13",
+        "scenario": "Penicillin allergy patient prescribed Azithromycin (Safe Macrolide alternative)",
+        "document_text": "PRESCRIPTION\nPatient: Sunita Sen, Age: 36 yrs, Female.\neGFR: 98 mL/min. ALLERGY: Penicillin.\nDiagnosis: Mild Community-Acquired Pneumonia\nRx:\nTab Azee 500 mg OD for 5 days\nDr. Mukherjee, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 36.0, "gender": "female", "isPregnant": False, "egfrMlMin": 98.0, "allergies": ["Penicillin"]},
+            "indicationCode": "SYN_CAP_MILD",
+            "prescriptionLines": [{"drugName": "Azithromycin", "doseText": "500 mg", "frequencyText": "Once daily (OD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_14",
+        "scenario": "Acute bacterial rhinosinusitis prescribed Amoxicillin-Clavulanate",
+        "document_text": "CLINICAL PRESCRIPTION\nPatient: Harish Patel, Age: 50 years, Male.\neGFR: 92 mL/min. Allergies: None.\nDiagnosis: Acute bacterial rhinosinusitis (>10 days facial pain, nasal purulence).\nRx:\nTab Augmentin 625 mg BD x 5 days\nDr. P. Sen, MS (ENT)",
+        "ground_truth": {
+            "patientContext": {"ageYears": 50.0, "gender": "male", "isPregnant": False, "egfrMlMin": 92.0, "allergies": []},
+            "indicationCode": "SYN_ACUTE_RHINOSINUSITIS",
+            "prescriptionLines": [{"drugName": "Amoxicillin-Clavulanate", "doseText": "625 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_15",
+        "scenario": "CDSCO Banned FDC prescribed: Cefixime + Azithromycin",
+        "document_text": "PRESCRIPTION\nPatient: Manoj Tiwari, Age: 34 yrs, Male.\neGFR: 95 mL/min. Allergies: Nil.\nDiagnosis: Mild CAP\nRx:\nTab Cefixime + Azithromycin 200mg+250mg BD for 5 days\nDr. R. Pandey, MBBS",
+        "ground_truth": {
+            "patientContext": {"ageYears": 34.0, "gender": "male", "isPregnant": False, "egfrMlMin": 95.0, "allergies": []},
+            "indicationCode": "SYN_CAP_MILD",
+            "prescriptionLines": [{"drugName": "Cefixime + Azithromycin", "doseText": "200 mg + 250 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_16",
+        "scenario": "CDSCO Banned FDC prescribed: Ofloxacin + Ornidazole",
+        "document_text": "OPD SLIP\nPatient: Ashok Kumar, Age: 42 yrs, Male.\neGFR: 90 mL/min. Allergies: None.\nDiagnosis: Acute Watery Diarrhea\nRx:\nTab Ofloxacin + Ornidazole 200mg+500mg BD x 5 days\nDr. S. K. Gupta, MBBS",
+        "ground_truth": {
+            "patientContext": {"ageYears": 42.0, "gender": "male", "isPregnant": False, "egfrMlMin": 90.0, "allergies": []},
+            "indicationCode": "SYN_WATERY_DIARRHEA",
+            "prescriptionLines": [{"drugName": "Ofloxacin + Ornidazole", "doseText": "200 mg + 500 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_17",
+        "scenario": "CDSCO Banned FDC prescribed: Amoxicillin + Flucloxacillin",
+        "document_text": "PRESCRIPTION NOTE\nPatient: Geeta Sharma, Age: 38 yrs, Female.\neGFR: 92 mL/min. Allergies: Nil.\nDiagnosis: Uncomplicated Skin and Soft Tissue Infection (SSTI)\nRx:\nCap Amoxicillin + Flucloxacillin 500mg+500mg BD for 5 days\nDr. Anand, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 38.0, "gender": "female", "isPregnant": False, "egfrMlMin": 92.0, "allergies": []},
+            "indicationCode": "SYN_SSTI_UNCOMPLICATED",
+            "prescriptionLines": [{"drugName": "Amoxicillin + Flucloxacillin", "doseText": "500 mg + 500 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_18",
+        "scenario": "Self-limiting viral acute bronchitis inappropriately prescribed Azithromycin",
+        "document_text": "PRESCRIPTION\nPatient: Shilpa Nair, Age: 31 years, Female.\neGFR: 105 mL/min. Allergies: None.\nDiagnosis: Acute Bronchitis (cough x 3 days, no rales, clear chest).\nRx:\nTab Azithral 500 mg OD for 5 days\nDr. K. Joseph, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 31.0, "gender": "female", "isPregnant": False, "egfrMlMin": 105.0, "allergies": []},
+            "indicationCode": "SYN_ACUTE_BRONCHITIS",
+            "prescriptionLines": [{"drugName": "Azithromycin", "doseText": "500 mg", "frequencyText": "Once daily (OD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_19",
+        "scenario": "Viral common cold inappropriately prescribed Amoxicillin",
+        "document_text": "PRESCRIPTION\nPatient: Rohan Varma, Age: 25 yrs, Male.\neGFR: 110 mL/min. Allergies: None.\nDiagnosis: Common Cold / Rhinopharyngitis (rhinorrhea, sneezing).\nRx:\nTab Mox 500 mg TID for 5 days\nDr. T. Roy, MBBS",
+        "ground_truth": {
+            "patientContext": {"ageYears": 25.0, "gender": "male", "isPregnant": False, "egfrMlMin": 110.0, "allergies": []},
+            "indicationCode": "SYN_COMMON_COLD",
+            "prescriptionLines": [{"drugName": "Amoxicillin", "doseText": "500 mg", "frequencyText": "Three times daily (TID)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_20",
+        "scenario": "Viral URTI managed with symptomatic supportive Paracetamol",
+        "document_text": "PRESCRIPTION SLIP\nPatient: Kavita Joshi, Age: 28 yrs, Female.\neGFR: 100 mL/min. Allergies: Nil.\nDiagnosis: Viral Upper Respiratory Tract Infection (Viral URTI).\nRx:\nTab Paracetamol 650 mg TDS for 3 days\nSteam inhalation BD\nDr. N. Menon, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 28.0, "gender": "female", "isPregnant": False, "egfrMlMin": 100.0, "allergies": []},
+            "indicationCode": "SYN_VIRAL_URTI",
+            "prescriptionLines": [{"drugName": "Paracetamol", "doseText": "650 mg", "frequencyText": "Three times daily (TDS)", "durationDays": 3}],
+        }
+    },
+    {
+        "id": "BENCH_21",
+        "scenario": "Non-streptococcal viral sore throat inappropriately prescribed Cefixime",
+        "document_text": "PRESCRIPTION\nPatient: Amit Saxena, Age: 33 yrs, Male.\neGFR: 98 mL/min. Allergies: None.\nDiagnosis: Non-streptococcal pharyngitis (viral sore throat, no tonsillar exudates).\nRx:\nTab Taxim-O 200 mg BD for 5 days\nDr. D. Bose, MS",
+        "ground_truth": {
+            "patientContext": {"ageYears": 33.0, "gender": "male", "isPregnant": False, "egfrMlMin": 98.0, "allergies": []},
+            "indicationCode": "SYN_PHARYNGITIS_NON_STREP",
+            "prescriptionLines": [{"drugName": "Cefixime", "doseText": "200 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_22",
+        "scenario": "Uncomplicated UTI inappropriately prescribed WHO Reserve antibiotic Meropenem",
+        "document_text": "PRESCRIPTION\nPatient: Rashmi Patel, Age: 28 yrs, Female.\neGFR: 105 mL/min. Allergies: None.\nDiagnosis: Uncomplicated Acute Cystitis / Lower UTI.\nRx:\nInj Meronem 1000 mg TDS for 5 days\nDr. H. Shah, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 28.0, "gender": "female", "isPregnant": False, "egfrMlMin": 105.0, "allergies": []},
+            "indicationCode": "SYN_UNCOMPLICATED_UTI",
+            "prescriptionLines": [{"drugName": "Meropenem", "doseText": "1000 mg", "frequencyText": "Every 8 hours (TDS)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_23",
+        "scenario": "Uncomplicated SSTI inappropriately prescribed WHO Reserve antibiotic Linezolid",
+        "document_text": "PRESCRIPTION\nPatient: Santosh Yadav, Age: 35 yrs, Male.\neGFR: 95 mL/min. Allergies: Nil.\nDiagnosis: Uncomplicated Skin and Soft Tissue Infection (mild localized impetigo).\nRx:\nTab Linospan 600 mg BD x 5 days\nDr. P. Hegde, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 35.0, "gender": "male", "isPregnant": False, "egfrMlMin": 95.0, "allergies": []},
+            "indicationCode": "SYN_SSTI_UNCOMPLICATED",
+            "prescriptionLines": [{"drugName": "Linezolid", "doseText": "600 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_24",
+        "scenario": "Mild CAP with excessive duration: 14 days of Amoxicillin",
+        "document_text": "PRESCRIPTION\nPatient: Alok Mishra, Age: 40 years, Male.\neGFR: 95 mL/min. Allergies: None.\nDiagnosis: Mild Community-Acquired Pneumonia\nRx:\nTab Amoxil 500 mg TID for 14 days\nDr. S. K. Roy, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 40.0, "gender": "male", "isPregnant": False, "egfrMlMin": 95.0, "allergies": []},
+            "indicationCode": "SYN_CAP_MILD",
+            "prescriptionLines": [{"drugName": "Amoxicillin", "doseText": "500 mg", "frequencyText": "Three times daily (TID)", "durationDays": 14}],
+        }
+    },
+    {
+        "id": "BENCH_25",
+        "scenario": "Uncomplicated UTI with excessive duration: 10 days of Nitrofurantoin",
+        "document_text": "PRESCRIPTION\nPatient: Swati Deshmukh, Age: 33 yrs, Female.\neGFR: 90 mL/min. Allergies: Nil.\nDiagnosis: Uncomplicated Acute Cystitis / Lower UTI.\nRx:\nCap Urifast 100 mg BD for 10 days\nDr. V. Patil, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 33.0, "gender": "female", "isPregnant": False, "egfrMlMin": 90.0, "allergies": []},
+            "indicationCode": "SYN_UNCOMPLICATED_UTI",
+            "prescriptionLines": [{"drugName": "Nitrofurantoin", "doseText": "100 mg", "frequencyText": "Twice daily (BD)", "durationDays": 10}],
+        }
+    },
+    {
+        "id": "BENCH_26",
+        "scenario": "Guideline concordant mild CAP: Amoxicillin 500mg TID x 5 days",
+        "document_text": "OUTPATIENT PRESCRIPTION\nPatient: Arvind Narayanan, Age: 34 yrs, Male.\neGFR: 98 mL/min. Allergies: None.\nComplaints: Fever, productive cough with rust-colored sputum x 2 days.\nDiagnosis: Community-Acquired Pneumonia (Mild Outpatient).\nRx:\nTab Almox 500 mg TID for 5 days\nDr. T. Krishnan, MD (Pulmonary Med)",
+        "ground_truth": {
+            "patientContext": {"ageYears": 34.0, "gender": "male", "isPregnant": False, "egfrMlMin": 98.0, "allergies": []},
+            "indicationCode": "SYN_CAP_MILD",
+            "prescriptionLines": [{"drugName": "Amoxicillin", "doseText": "500 mg", "frequencyText": "Three times daily (TID)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_27",
+        "scenario": "Guideline concordant uncomplicated UTI: Nitrofurantoin 100mg BD x 5 days",
+        "document_text": "PRESCRIPTION\nPatient: Divya Reddy, Age: 29 years, Female.\neGFR: 102 mL/min. Not pregnant. Allergies: None.\nDiagnosis: Uncomplicated Acute Cystitis / Lower UTI.\nRx:\nCap Martifur 100 mg BD for 5 days\nDr. S. K. Chari, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 29.0, "gender": "female", "isPregnant": False, "egfrMlMin": 102.0, "allergies": []},
+            "indicationCode": "SYN_UNCOMPLICATED_UTI",
+            "prescriptionLines": [{"drugName": "Nitrofurantoin", "doseText": "100 mg", "frequencyText": "Twice daily (BD)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_28",
+        "scenario": "Guideline concordant acute watery diarrhea: ORS + Zinc x 14 days",
+        "document_text": "PRESCRIPTION\nPatient: Tarun Bannerjee, Age: 24 yrs, Male.\neGFR: 105 mL/min. Allergies: Nil.\nDiagnosis: Acute Watery Diarrhea (Non-Cholera).\nRx:\nOral Rehydration Salts (ORS) + Zinc 1 sachet + 20 mg As directed for 14 days\nDr. B. Das, MD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 24.0, "gender": "male", "isPregnant": False, "egfrMlMin": 105.0, "allergies": []},
+            "indicationCode": "SYN_WATERY_DIARRHEA",
+            "prescriptionLines": [{"drugName": "Oral Rehydration Salts (ORS) + Zinc", "doseText": "1 sachet + 20 mg", "frequencyText": "As directed", "durationDays": 14}],
+        }
+    },
+    {
+        "id": "BENCH_29",
+        "scenario": "Guideline concordant uncomplicated SSTI: Cefalexin 500mg QID x 5 days",
+        "document_text": "PRESCRIPTION\nPatient: Madhavan Pillai, Age: 44 years, Male.\neGFR: 92 mL/min. Allergies: None.\nDiagnosis: Uncomplicated Skin and Soft Tissue Infection (Cellulitis / Impetigo).\nRx:\nCap Sporidex 500 mg QID for 5 days\nDr. S. George, DVD",
+        "ground_truth": {
+            "patientContext": {"ageYears": 44.0, "gender": "male", "isPregnant": False, "egfrMlMin": 92.0, "allergies": []},
+            "indicationCode": "SYN_SSTI_UNCOMPLICATED",
+            "prescriptionLines": [{"drugName": "Cefalexin", "doseText": "500 mg", "frequencyText": "Four times daily (QID)", "durationDays": 5}],
+        }
+    },
+    {
+        "id": "BENCH_30",
+        "scenario": "Guideline concordant viral cold: Paracetamol 650mg TDS x 3 days",
+        "document_text": "PRESCRIPTION\nPatient: Siddharth Roy, Age: 30 yrs, Male.\neGFR: 100 mL/min. Allergies: Nil.\nDiagnosis: Common Cold / Rhinopharyngitis (Viral).\nRx:\nTab Paracetamol 650 mg TDS for 3 days\nDr. A. Ghosh, MBBS",
+        "ground_truth": {
+            "patientContext": {"ageYears": 30.0, "gender": "male", "isPregnant": False, "egfrMlMin": 100.0, "allergies": []},
+            "indicationCode": "SYN_COMMON_COLD",
+            "prescriptionLines": [{"drugName": "Paracetamol", "doseText": "650 mg", "frequencyText": "Three times daily (TDS)", "durationDays": 3}],
+        }
+    },
+]
+
+# Compute expected audit output dynamically from the DeterministicAuditEngine
+processed_cases = []
+for c in raw_cases:
+    gt = c["ground_truth"]
+    eval_input = {
+        "patient_context": {
+            "age_years": gt["patientContext"]["ageYears"],
+            "gender": gt["patientContext"]["gender"],
+            "is_pregnant": gt["patientContext"]["isPregnant"],
+            "egfr_ml_min": gt["patientContext"]["egfrMlMin"],
+            "allergies": gt["patientContext"]["allergies"],
+        },
+        "indication_code": gt["indicationCode"],
+        "prescription_lines": [
+            {
+                "drug_name": pl["drugName"],
+                "dose_text": pl["doseText"],
+                "frequency_text": pl["frequencyText"],
+                "duration_days": pl["durationDays"],
+            }
+            for pl in gt["prescriptionLines"]
+        ],
+    }
+    audit_res = engine.evaluate(eval_input)
+    rule_ids = [f["rule_id"] for f in audit_res.get("findings", [])]
+    processed_cases.append({
+        "id": c["id"],
+        "scenario": c["scenario"],
+        "document_text": c["document_text"],
+        "ground_truth": gt,
+        "expected_audit": {
+            "status": audit_res["status"],
+            "rules": rule_ids,
+        }
+    })
+
+out_dir = Path("services/api/tests/data")
+out_dir.mkdir(parents=True, exist_ok=True)
+out_file = out_dir / "benchmark_cases.json"
+with open(out_file, "w", encoding="utf-8") as f:
+    json.dump(processed_cases, f, indent=2)
+
+print(f"Successfully generated {len(processed_cases)} benchmark cases at {out_file}")

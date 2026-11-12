@@ -1,0 +1,785 @@
+{
+  "hospital_dataset": {
+    "total_records": 833,
+    "fields": [
+      "Age",
+      "Date of Data Entry",
+      "Gender",
+      "Diagnosis",
+      "Name of Drug",
+      "Dosage (gram)",
+      "Route",
+      "Frequency",
+      "Duration (days)",
+      "Indication"
+    ],
+    "sample_records": [
+      {
+        "Age": "85",
+        "Date of Data Entry": "19/12/2019 14:41:49",
+        "Gender": "Female",
+        "Diagnosis": "ccf, hypertension, ida, ckd(stage 5), ?icm,",
+        "Name of Drug": "ceftriaxone",
+        "Dosage (gram)": "1",
+        "Route": "IV",
+        "Frequency": "BD",
+        "Duration (days)": "7",
+        "Indication": "icm"
+      },
+      {
+        "Age": "87",
+        "Date of Data Entry": "19/12/2019 16:35:25",
+        "Gender": "Female",
+        "Diagnosis": "pad(lt u.l), be amputation,/post op, akt",
+        "Name of Drug": "ceftriaxone",
+        "Dosage (gram)": "1",
+        "Route": "IV",
+        "Frequency": "BD",
+        "Duration (days)": "1",
+        "Indication": "post op"
+      },
+      {
+        "Age": "82",
+        "Date of Data Entry": "19/12/2019 15:48:49",
+        "Gender": "Male",
+        "Diagnosis": "type-2dm, ihd, col, copd, ht",
+        "Name of Drug": "ofloxacin",
+        "Dosage (gram)": "0.4",
+        "Route": "IV",
+        "Frequency": "BD",
+        "Duration (days)": "3",
+        "Indication": "abd distension with leg swelling"
+      },
+      {
+        "Age": "82",
+        "Date of Data Entry": "19/12/2019 15:50:33",
+        "Gender": "Male",
+        "Diagnosis": "type-2 dm, ihd, col, copd, ht",
+        "Name of Drug": "cefipime",
+        "Dosage (gram)": "1",
+        "Route": "IV",
+        "Frequency": "BD",
+        "Duration (days)": "5",
+        "Indication": "abd distension with leg swelling"
+      },
+      {
+        "Age": "82",
+        "Date of Data Entry": "19/12/2019 15:52:20",
+        "Gender": "Male",
+        "Diagnosis": "type-2 dm, ihd, col, copd, ht",
+        "Name of Drug": "azithromycin",
+        "Dosage (gram)": "0.5",
+        "Route": "Oral",
+        "Frequency": "OD",
+        "Duration (days)": "3",
+        "Indication": "abd distension with leg swelling"
+      }
+    ],
+    "top_diagnoses": [
+      [
+        "ccf, koch's lung, copd, chest infection, pre-diabetes",
+        20
+      ],
+      [
+        "general debility e excessive vomitting, uraemic gastritis, hcv aki ckd, retro(+)",
+        18
+      ],
+      [
+        "rvi stage 3, ht disease, renal impairment, koch's lungs, ccf, increased lft",
+        18
+      ],
+      [
+        "severe anaemia,  multiple myeloma,  CKD,  chest infection",
+        16
+      ],
+      [
+        "neutropenia, fever, anaemia, ca buffalo mucosa, type 2 dm",
+        15
+      ],
+      [
+        "heart failure, hcv, col, ihd, ccf, chest infection",
+        12
+      ],
+      [
+        "ccf, hypertension, ida, ckd(stage 5), ?icm,",
+        11
+      ],
+      [
+        "green snake bite",
+        11
+      ],
+      [
+        "acute pulmonary edema, ihd, uti, type 2 dm, chest infection",
+        10
+      ],
+      [
+        "he, col, portal hypertension, hrs, koch's lung",
+        10
+      ],
+      [
+        "type-2 dm, ihd, col, copd, ht",
+        9
+      ],
+      [
+        "hepatic encephalopathy, col, hypokalaemia",
+        9
+      ],
+      [
+        "he,  rvi with col",
+        9
+      ],
+      [
+        "confusion, liver impairment,esophagocutaneous fistula",
+        9
+      ],
+      [
+        "left sided hemiparesis, acute cerebral infarct, hypertension, ihd",
+        8
+      ]
+    ],
+    "top_drugs": [
+      [
+        "ceftriaxone",
+        221
+      ],
+      [
+        "co-amoxiclav",
+        162
+      ],
+      [
+        "metronidazole",
+        59
+      ],
+      [
+        "cefixime",
+        58
+      ],
+      [
+        "septrin",
+        37
+      ],
+      [
+        "clarithromycin",
+        32
+      ],
+      [
+        "levofloxacin",
+        31
+      ],
+      [
+        "amoxicillin+flucloxacillin",
+        29
+      ],
+      [
+        "ceftazidime",
+        24
+      ],
+      [
+        "cefepime",
+        14
+      ],
+      [
+        "cefipime",
+        13
+      ],
+      [
+        "clindamycin",
+        12
+      ],
+      [
+        "rifaximin",
+        10
+      ],
+      [
+        "coamoxiclav",
+        9
+      ],
+      [
+        "amikacin",
+        9
+      ],
+      [
+        "cefoperazone",
+        9
+      ],
+      [
+        "meropenem",
+        8
+      ],
+      [
+        "ciprofloxacin",
+        7
+      ],
+      [
+        "azithromycin",
+        5
+      ],
+      [
+        "gentamicin",
+        5
+      ]
+    ],
+    "routes": [
+      [
+        "IV",
+        534
+      ],
+      [
+        "Oral",
+        293
+      ],
+      [
+        "IM",
+        4
+      ],
+      [
+        "Route",
+        2
+      ]
+    ],
+    "frequencies": [
+      [
+        "BD",
+        430
+      ],
+      [
+        "TDS",
+        283
+      ],
+      [
+        "OD",
+        110
+      ],
+      [
+        "QID",
+        8
+      ],
+      [
+        "Freq",
+        1
+      ],
+      [
+        "Frequency",
+        1
+      ]
+    ],
+    "genders": [
+      [
+        "Male",
+        449
+      ],
+      [
+        "Female",
+        382
+      ],
+      [
+        "Sex",
+        2
+      ]
+    ],
+    "duration_distribution": [
+      [
+        "1",
+        270
+      ],
+      [
+        "5",
+        151
+      ],
+      [
+        "2",
+        91
+      ],
+      [
+        "3",
+        78
+      ],
+      [
+        "7",
+        74
+      ],
+      [
+        "4",
+        69
+      ],
+      [
+        "8",
+        28
+      ],
+      [
+        "6",
+        25
+      ],
+      [
+        "10",
+        22
+      ],
+      [
+        "14",
+        18
+      ]
+    ]
+  },
+  "anti_tables": {
+    "brands.csv": {
+      "count": 77,
+      "columns": [
+        "id",
+        "brand_name",
+        "drug_id",
+        "default_strength"
+      ],
+      "sample": [
+        {
+          "id": "1",
+          "brand_name": "Augmentin",
+          "drug_id": "2",
+          "default_strength": "625mg"
+        },
+        {
+          "id": "2",
+          "brand_name": "Clavam",
+          "drug_id": "2",
+          "default_strength": "625mg"
+        },
+        {
+          "id": "3",
+          "brand_name": "Moxikind-CV",
+          "drug_id": "2",
+          "default_strength": "625mg"
+        }
+      ]
+    },
+    "conditions.csv": {
+      "count": 36,
+      "columns": [
+        "id",
+        "code",
+        "display_name"
+      ],
+      "sample": [
+        {
+          "id": "1",
+          "code": "SYN_CAP_MILD",
+          "display_name": "Community-Acquired Pneumonia (Mild Outpatient)"
+        },
+        {
+          "id": "2",
+          "code": "SYN_UNCOMPLICATED_UTI",
+          "display_name": "Uncomplicated Acute Cystitis / Lower UTI"
+        },
+        {
+          "id": "3",
+          "code": "SYN_ACUTE_BRONCHITIS",
+          "display_name": "Acute Bronchitis (Self-Limiting Viral)"
+        }
+      ]
+    },
+    "drugs.csv": {
+      "count": 80,
+      "columns": [
+        "id",
+        "generic_name",
+        "drug_class",
+        "is_antibiotic",
+        "aware_class",
+        "is_fluoroquinolone",
+        "pregnancy_contraindicated",
+        "min_age_years"
+      ],
+      "sample": [
+        {
+          "id": "1",
+          "generic_name": "Amoxicillin",
+          "drug_class": "Aminopenicillin",
+          "is_antibiotic": "True",
+          "aware_class": "Access",
+          "is_fluoroquinolone": "False",
+          "pregnancy_contraindicated": "False",
+          "min_age_years": "0.0"
+        },
+        {
+          "id": "2",
+          "generic_name": "Amoxicillin-Clavulanate",
+          "drug_class": "Beta-lactam + Inhibitor",
+          "is_antibiotic": "True",
+          "aware_class": "Access",
+          "is_fluoroquinolone": "False",
+          "pregnancy_contraindicated": "False",
+          "min_age_years": "0.0"
+        },
+        {
+          "id": "3",
+          "generic_name": "Nitrofurantoin",
+          "drug_class": "Nitrofuran",
+          "is_antibiotic": "True",
+          "aware_class": "Access",
+          "is_fluoroquinolone": "False",
+          "pregnancy_contraindicated": "False",
+          "min_age_years": "1.0"
+        }
+      ]
+    },
+    "guidelines.csv": {
+      "count": 36,
+      "columns": [
+        "id",
+        "condition_id",
+        "source",
+        "section_ref",
+        "summary",
+        "antibiotic_indicated"
+      ],
+      "sample": [
+        {
+          "id": "1",
+          "condition_id": "1",
+          "source": "ICMR STG 2022",
+          "section_ref": "Respiratory Infections - Mild CAP",
+          "summary": "Amoxicillin 500mg PO TID for 5 days is first-line. Fluoroquinolones reserved for beta-lactam anaphylaxis.",
+          "antibiotic_indicated": "True"
+        },
+        {
+          "id": "2",
+          "condition_id": "2",
+          "source": "ICMR STG 2022",
+          "section_ref": "Urinary Tract Infections - Acute Cystitis",
+          "summary": "Nitrofurantoin 100mg PO BD x 5d or Fosfomycin 3g single dose. Empirical fluoroquinolones contraindicated due to >75% E. coli resistance.",
+          "antibiotic_indicated": "True"
+        },
+        {
+          "id": "3",
+          "condition_id": "3",
+          "source": "ICMR STG 2022",
+          "section_ref": "Respiratory Infections - Acute Bronchitis",
+          "summary": "Acute bronchitis in immunocompetent adults is predominantly viral and self-limiting. Antibiotics provide zero clinical benefit and are not indicated.",
+          "antibiotic_indicated": "False"
+        }
+      ]
+    },
+    "regimens.csv": {
+      "count": 60,
+      "columns": [
+        "id",
+        "condition_id",
+        "drug_id",
+        "dose_text",
+        "frequency",
+        "duration_days",
+        "source",
+        "verified_by"
+      ],
+      "sample": [
+        {
+          "id": "1",
+          "condition_id": "1",
+          "drug_id": "1",
+          "dose_text": "500mg",
+          "frequency": "TID",
+          "duration_days": "5",
+          "source": "ICMR STG CAP 2022",
+          "verified_by": "ICMR Stewardship Committee"
+        },
+        {
+          "id": "2",
+          "condition_id": "2",
+          "drug_id": "3",
+          "dose_text": "100mg",
+          "frequency": "BID",
+          "duration_days": "5",
+          "source": "ICMR STG UTI 2022",
+          "verified_by": "ICMR Stewardship Committee"
+        },
+        {
+          "id": "3",
+          "condition_id": "2",
+          "drug_id": "4",
+          "dose_text": "3g single sachet",
+          "frequency": "Once",
+          "duration_days": "1",
+          "source": "ICMR STG UTI 2022",
+          "verified_by": "ICMR Stewardship Committee"
+        }
+      ]
+    }
+  },
+  "brand_to_generic_alias": {
+    "count": 405,
+    "sample": [
+      {
+        "brand_alias": "Pfizerpen",
+        "full_brand_display": "Pfizerpen",
+        "generic_antibiotic_name": "Penicillin G"
+      },
+      {
+        "brand_alias": "Crystapen",
+        "full_brand_display": "Crystapen",
+        "generic_antibiotic_name": "Penicillin G"
+      },
+      {
+        "brand_alias": "Benzylpenicillin",
+        "full_brand_display": "Benzylpenicillin",
+        "generic_antibiotic_name": "Penicillin G"
+      },
+      {
+        "brand_alias": "Pen-VK",
+        "full_brand_display": "Pen-VK",
+        "generic_antibiotic_name": "Penicillin V"
+      },
+      {
+        "brand_alias": "Veetids",
+        "full_brand_display": "Veetids",
+        "generic_antibiotic_name": "Penicillin V"
+      }
+    ],
+    "unique_generics": 180,
+    "unique_brands": 403
+  },
+  "who_aware_antibiotics": {
+    "count": 376,
+    "columns": [
+      "aware_index",
+      "antibiotic",
+      "aware_group",
+      "recommendation_count",
+      "recommendations",
+      "source"
+    ],
+    "categories": [
+      [
+        "",
+        376
+      ]
+    ],
+    "sample": [
+      {
+        "aware_index": "1",
+        "antibiotic": "Acetylspiramycin + metronidazole",
+        "aware_group": "Not Recommended",
+        "recommendation_count": "0",
+        "recommendations": "",
+        "source": "WHO AWaRe / Essential Medicines List export"
+      },
+      {
+        "aware_index": "2",
+        "antibiotic": "Amikacin",
+        "aware_group": "Access",
+        "recommendation_count": "5",
+        "recommendations": "Neutropaenia (high-risk); cefotaxime; Acute pyelonephritis (severe); Inflammatory or other diseases of prostate (severe); ceftriaxone",
+        "source": "WHO AWaRe / Essential Medicines List export"
+      },
+      {
+        "aware_index": "3",
+        "antibiotic": "Amikacin + cefepime",
+        "aware_group": "Not Recommended",
+        "recommendation_count": "0",
+        "recommendations": "",
+        "source": "WHO AWaRe / Essential Medicines List export"
+      }
+    ]
+  },
+  "amr_chatbot_corpus": {
+    "total_records": 3843,
+    "record_types": [
+      [
+        "page_chunk",
+        1353
+      ],
+      [
+        "structured_observation",
+        1019
+      ],
+      [
+        "document_chunk",
+        749
+      ],
+      [
+        "antibiotic_entry",
+        376
+      ],
+      [
+        "resistance_evidence",
+        250
+      ],
+      [
+        "consumption_evidence",
+        96
+      ]
+    ],
+    "top_pathogens": [
+      [
+        "",
+        2824
+      ],
+      [
+        "Escherichia coli",
+        513
+      ],
+      [
+        "Methicillin-resistant Staphylococcus aureus",
+        506
+      ]
+    ],
+    "top_antibiotics": [
+      [
+        "",
+        3467
+      ],
+      [
+        "Acetylspiramycin + metronidazole",
+        1
+      ],
+      [
+        "Amikacin",
+        1
+      ],
+      [
+        "Amikacin + cefepime",
+        1
+      ],
+      [
+        "Amoxicillin",
+        1
+      ],
+      [
+        "Amoxicillin + bacillus coagulans + cloxacillin",
+        1
+      ],
+      [
+        "Amoxicillin + bacillus coagulans + dicloxacillin",
+        1
+      ],
+      [
+        "Amoxicillin + clavulanic acid",
+        1
+      ],
+      [
+        "Amoxicillin + clavulanic acid + lactic ferments",
+        1
+      ],
+      [
+        "Amoxicillin + clavulanic acid + lactobacillus acidophilus",
+        1
+      ],
+      [
+        "Amoxicillin + clavulanic acid + nimesulide",
+        1
+      ],
+      [
+        "Amoxicillin + cloxacillin",
+        1
+      ],
+      [
+        "Amoxicillin + cloxacillin + lactic acid",
+        1
+      ],
+      [
+        "Amoxicillin + cloxacillin + lactobacillus acidophilus + serrapeptase",
+        1
+      ],
+      [
+        "Amoxicillin + cloxacillin + lactobacillus lactis",
+        1
+      ]
+    ],
+    "sample": [
+      {
+        "record_id": "NCDC_resistance_2017_NARS-Net_p001_c00",
+        "source_id": "NCDC_resistance_2017_NARS-Net",
+        "publisher": "NCDC, Government of India",
+        "network": "NARS-Net",
+        "data_layer": "NCDC_AMR_surveillance_or_consumption",
+        "report_year": "2017",
+        "record_type": "document_chunk",
+        "pdf_page": "1",
+        "pathogen": "",
+        "antibiotic": "",
+        "specimen": "",
+        "metric": "",
+        "value": "",
+        "unit": "",
+        "text": "National Centre for Disease Control\n National AMR Surveillance Network\n AMR Data for year 2017\n\nNCDC is coordinating the \u201cNational Programme for Containment of Antimicrobial resistance\u201d\napproved during the 12th five year plan. Under the programme a network of laboratories is being\nset up across the country for conducting Antimicrobial Resistance (AMR) surveillance in order to\nunderstand the AMR trends in various geographical regions and accordingly take appropriate\naction. Currently 13 labs are included in the network:\n1. Lady Hardinge Medical College and associated hospitals, New Delhi, Delhi\n2. VMMC and associated Safdarjung Hospital, New Delhi, Delhi\n3. Government Medical College & Hospital, Chandigarh (UT)\n4. GSVM Medical College, Kanpur, Uttar Pradesh\n5. SMS Medical College, Jaipur, Rajasthan\n6. BJ Medical College, Ahmedabad, Gujarat\n7. BJ Medical College, Pune, Maharashtra\n8. Mysore Medical College and Research Institute, Mysore, Karnataka\n9. KAPV Govt Medical College Hospital, Thiruchirapally, Tamil Nadu\n10. Government Medical College, Thiruvananthapuram, Kerala\n11. MGM Medical College & MY Hospital, Indore, Madhya Pradesh\n12. NEIGRIHMS, Shillong, Meghalaya\n13. Gauhati, Medical College Hospital, Guwahati, Assam\n\nNCDC received AMR surveillance data for the year 2017 from 10 of the above 13 labs (S.no. 1 to\n10) based on the standardized Data Management SOP in the WHONET format for the following\npathogens:\n1. Staphylococcus aureus\n2. Enterococci species\n3. Escherichia coli\n4. Klebsiella species\n5. Pseudomonas species\n6. Acinetobacter species\n7. Salmonella enterica serotype Typhi and Paratyphi\n\n 1",
+        "source_citation": "amr23.pdf | PDF page 1",
+        "quality_flag": "verified"
+      },
+      {
+        "record_id": "NCDC_resistance_2017_NARS-Net_p002_c00",
+        "source_id": "NCDC_resistance_2017_NARS-Net",
+        "publisher": "NCDC, Government of India",
+        "network": "NARS-Net",
+        "data_layer": "NCDC_AMR_surveillance_or_consumption",
+        "report_year": "2017",
+        "record_type": "document_chunk",
+        "pdf_page": "2",
+        "pathogen": "",
+        "antibiotic": "",
+        "specimen": "",
+        "metric": "",
+        "value": "",
+        "unit": "",
+        "text": "The AMR data collected under the National AMR Containment Programme for the year 2017 is from\ntertiary health care settings (medical colleges). The data has been analyzed and is summarized below:\n\nTable1. The pathogens and specimens included\n Specimen S. Enterococcus Klebsiella E. coli Acinetoba Pseudom Salmonella\n aureus species pneumoniae cter onas Typhi/Par\n species species atyphi\n Blood \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Urine \uf06c\uf020 \uf06c\uf020 \uf06c\uf020\n Pus Aspirates \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Other Sterile \uf06c \uf06c \uf06c \uf06c \uf06c \uf06c\uf020 \uf020\n Body fluids\n\nTotal Number of unique patient\u2019s isolates data after validation from these 10 labs = 25833\n\uf0b7 Urine - 12144\n\uf0b7 Blood - 6354\n\uf0b7 Pus Aspirates (PA) and Other Sterile body fluids (OSBF) - 7335\n\n 2",
+        "source_citation": "amr23.pdf | PDF page 2",
+        "quality_flag": "verified"
+      },
+      {
+        "record_id": "NCDC_resistance_2017_NARS-Net_p003_c00",
+        "source_id": "NCDC_resistance_2017_NARS-Net",
+        "publisher": "NCDC, Government of India",
+        "network": "NARS-Net",
+        "data_layer": "NCDC_AMR_surveillance_or_consumption",
+        "report_year": "2017",
+        "record_type": "document_chunk",
+        "pdf_page": "3",
+        "pathogen": "",
+        "antibiotic": "",
+        "specimen": "",
+        "metric": "",
+        "value": "",
+        "unit": "",
+        "text": "Figure 1. Isolation rate of priority pathogens from various specimens\n\nFigure 2. Isolation rate of priority pathogen from all specimens w.r.t the type of location in\n Healthcare facility\n\n 3",
+        "source_citation": "amr23.pdf | PDF page 3",
+        "quality_flag": "verified"
+      },
+      {
+        "record_id": "NCDC_resistance_2017_NARS-Net_p004_c00",
+        "source_id": "NCDC_resistance_2017_NARS-Net",
+        "publisher": "NCDC, Government of India",
+        "network": "NARS-Net",
+        "data_layer": "NCDC_AMR_surveillance_or_consumption",
+        "report_year": "2017",
+        "record_type": "document_chunk",
+        "pdf_page": "4",
+        "pathogen": "",
+        "antibiotic": "",
+        "specimen": "",
+        "metric": "",
+        "value": "",
+        "unit": "",
+        "text": "Of the 25833 isolates of priority pathogens, E.coli constituted 33% followed by Klebsiella species\n(24%), S. aureus (17.5%), Enterococcus species (10.6%), Acinetobacter species (8.5%) and\nPseudomonas species (5.8%). However isolation rate from blood was highest for S. aureus\n(36.4%), followed by Klebsiella species (21.1%), Acinetobacter species (15.8%), Enterococcus\nspecies (9.7%), E. coli (7.8%) and lowest for Pseudomonas species (6%) (Table 2).\n\nTable 2. Specimen-wise isolation of number of Priority Pathogens\n\n Number isolated\n Total Number Number Other Sterile Body\n number of isolated isolated from Fluids +Pus\n Priority Pathogens isolates from Blood Urine aspirates\n S. aureus 4537 2317 0 2220\n Enterococcus species 2760 620 1837 303\n E. coli 8445 496 6919 1030\n Klebsiella species 6209 1341 3388 1480\n Pseudomonas species 1498 383 0 1115\n Acinetobacter species 2195 1008 0 1187\n Salmonella enterica\n serotype Typhi and\n Paratyphi 189 189 0 0\n Total 25833 6354 12144 7335\n\nFigure 3. Isolation of priority pathogens from various specimens\n\n 4",
+        "source_citation": "amr23.pdf | PDF page 4",
+        "quality_flag": "verified"
+      },
+      {
+        "record_id": "NCDC_resistance_2017_NARS-Net_p005_c00",
+        "source_id": "NCDC_resistance_2017_NARS-Net",
+        "publisher": "NCDC, Government of India",
+        "network": "NARS-Net",
+        "data_layer": "NCDC_AMR_surveillance_or_consumption",
+        "report_year": "2017",
+        "record_type": "document_chunk",
+        "pdf_page": "5",
+        "pathogen": "",
+        "antibiotic": "",
+        "specimen": "",
+        "metric": "",
+        "value": "",
+        "unit": "",
+        "text": "Antibiotic resistance pattern observed\nThe resistance profile of selected antibiotics as per NCDC AMR Surveillance SOP for priority\npathogens have been tabulated in Tables 3-8 and summarized below:\n\nGram Positive Bacteria\nS. aureus isolates from blood showed 57.1% resistance to cefoxitin (surrogate for mecA-mediated\noxacillin resistance), overall resistance to cefoxitin including other sterile body fluids and pus\naspirates was found to be 55.7% (Table 3 and 4). The results of resistance to vancomycin against\nS. aureus and Enterococcus species were not considered as the susceptibility test was not done by\nbroth microdilution as per CLSI guidelines. However, emergence of linezolid resistant S. aureus\nisolates and isolates of Enterococcus species to the extent of 2.2% and 4.6% respectively is a\nmatter of concern. Resistance to gentamicin (aminoglycoside) was observed to be 38.7% for S.\naureus and 59% for Enterococccus species (Table 3 and 4). Figure 4 depicts the higher resistance\nrates for most of the antibiotics tested against S. aureus in ICU settings as compared to non-ICU\nsetting. In contrast, the resistance rate for tetracycline and doxycycline was observed to be higher\nin non-ICU setting than in ICU setting (Figure 4 and 5).\n\nTable 3: Resistance (%) in Enterococcus species\n\n Antimicrobials Blood+OSBF+PA+Urine\n tested (N=2760) Blood+OSBF+PA (N=923) Urine (N=1837)\n No. tested % Resistance No. tested % Resistance No.tested %Resistance\nAmpicillin 1719 58.1 571 63 1170 55.8\nErythromycin 1206 72.3 590 73.1 631 71.8\nGentamicin (High) 2180 56.1 688 50.6 1514 59\nCiprofloxacin 1178 73.4 754 68.8 438 81.3\nLinezolid 2459 5.7 754 8.6 1728 4.6\nTetracycline* 1068 44.9 359 43.5 722 45.7",
+        "source_citation": "amr23.pdf | PDF page 5",
+        "quality_flag": "verified"
+      }
+    ]
+  },
+  "amr_knowledge_validation": "schema: amr.validation.v1\ncorpus_file: AMR_KNOWLEDGE_BASE.md\nrecord_count: 3843\nunique_record_ids: true\nunresolved_source_ids: []\nall_source_ids_resolve: true\nnull_record_ids: 0\nlayer_counts:\n  ICMR_AMR_surveillance: 1353\n  NCDC_AMR_surveillance_or_consumption: 1095\n  WHO_AMR_indicator: 1019\n  antibiotic_ontology: 376\nrecord_type_counts:\n  page_chunk: 1353\n  structured_observation: 1019\n  document_chunk: 749\n  antibiotic_entry: 376\n  resistance_evidence: 250\n  consumption_evidence: 96\nsource_counts:\n  WHO_RELAY_AMR: 1019\n  WHO_AWaRe_Essential_Medicines: 376\n  ICMR_AMRSN_2023: 243\n  ICMR_AMRSN_2022: 223\n  ICMR_AMRSN_2024: 206\n  ICMR_AMRSN_2021: 206\n  ICMR_AMRSN_2020: 188\n  NCDC_resistance_2024_NARS-Net: 170\n  NCDC_resistance_2025_NARS-Net: 164\n  ICMR_AMRSN_2019: 138\n  NCDC_resistance_2023_NARS-Net: 113\n  NCDC_consumption_2024_NACNET_SACNET: 106\n  NCDC_resistance_2022_NARS-Net: 99\n  ICMR_AMRSN_2018: 98\n  NCDC_resistance_2021_NARS-Net: 80\n  NCDC_resistance_2020_NARS-Net: 79\n  NCDC_resistance_2019_NARS-Net: 76\n  NCDC_consumption_2022_NAC-NET: 63\n  NCDC_consumption_2023_NAC-NET: 61\n  ICMR_AMRSN_2017: 51\n  NCDC_resistance_2018_NARS-Net: 48\n  NCDC_resistance_2017_NARS-Net: 36\n",
+  "amr_source_index_head": "schema: amr.source-index.v1\nsources:\n- source_id: NCDC_resistance_2017_NARS-Net\n  publisher: National Centre for Disease Control (NCDC), Government of India\n  network: NARS-Net\n  data_layer: resistance\n  report_year: '2017'\n  reporting_period: '2017'\n  filename: amr23.pdf\n  runtime_filename: amr2017.pdf\n  page_count: 15\n  sha256: 0070d1b36c314a235bf1b744170e8e7bc95655db064c57cbb485f8301ffff6b2\n  sha256_verified_against_manifest: 'True'\n  official_source: 'yes'\n  role: primary_source\n  record_count: 36\n- source_id: NCDC_resistance_2018_NARS-Net\n  publisher: National Centre for Disease Control (NCDC), Government of India\n  network: NARS-Net\n  data_layer: resistance\n  report_year: '2018'\n  reporting_period: '2018'\n  filename: amr24.pdf\n  runtime_filename: amr2018.pdf\n  page_count: 19\n  sha256: a09987ec16fe77b10438cd3340bf1c2c4aae1cd330ba0601b33231453693836f\n  sha256_verified_against_manifest: 'True'\n  official_source: 'yes'\n  role: primary_source\n  record_count: 48\n- source_id: NCDC_resistance_2019_NARS-Net\n  publisher: National Centre for Disease Control (NCDC), Government of India\n  network: NARS-Net\n  data_layer: resistance\n  report_year: '2019'\n  reporting_period: Reporting Period - January to December 2019 National Programme\n    on AMR Containment National Centre for Disease Control 0 Directorate General\n  filename: amr25.pdf\n  runtime_filename: amr2019.pdf\n  page_count: 44\n"
+}
