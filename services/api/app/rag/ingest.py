@@ -89,17 +89,44 @@ def load_cdsco_banned_fdcs() -> list[dict[str, Any]]:
 
 def build_amr_knowledge_corpus(workspace_root: Path | None = None) -> list[dict[str, Any]]:
     """Assemble all structured clinical chunks across available datasets."""
-    if workspace_root is None:
-        workspace_root = Path(__file__).resolve().parents[4]
-
     corpus: list[dict[str, Any]] = []
 
+    # Local bundled data path (inside container / services/api)
+    local_data = Path(__file__).parent / "data"
+
     # 1. ICMR STG Guidelines
-    icmr_csv = workspace_root / "data_sets" / "Tamil" / "Anti" / "guidelines.csv"
+    icmr_csv = local_data / "guidelines.csv"
+    if not icmr_csv.exists() and workspace_root is not None:
+        icmr_csv = workspace_root / "data_sets" / "Tamil" / "Anti" / "guidelines.csv"
+    if not icmr_csv.exists():
+        # Fallback to search relative to parent directories safely
+        curr = Path(__file__).resolve().parent
+        for _ in range(5):
+            candidate = curr / "data_sets" / "Tamil" / "Anti" / "guidelines.csv"
+            if candidate.exists():
+                icmr_csv = candidate
+                break
+            if curr.parent == curr:
+                break
+            curr = curr.parent
+
     corpus.extend(load_icmr_guidelines(icmr_csv))
 
     # 2. WHO AWaRe Classifications
-    who_csv = workspace_root / "data_sets" / "AMR_ANALYZED_DATA_PACKAGE" / "who_aware_antibiotics.csv"
+    who_csv = local_data / "who_aware_antibiotics.csv"
+    if not who_csv.exists() and workspace_root is not None:
+        who_csv = workspace_root / "data_sets" / "AMR_ANALYZED_DATA_PACKAGE" / "who_aware_antibiotics.csv"
+    if not who_csv.exists():
+        curr = Path(__file__).resolve().parent
+        for _ in range(5):
+            candidate = curr / "data_sets" / "AMR_ANALYZED_DATA_PACKAGE" / "who_aware_antibiotics.csv"
+            if candidate.exists():
+                who_csv = candidate
+                break
+            if curr.parent == curr:
+                break
+            curr = curr.parent
+
     corpus.extend(load_who_aware_antibiotics(who_csv))
 
     # 3. CDSCO Banned FDCs
