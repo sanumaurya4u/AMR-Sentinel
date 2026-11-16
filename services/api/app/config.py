@@ -47,8 +47,13 @@ class Settings(BaseSettings):
     SUPABASE_SERVICE_ROLE_KEY: str = ""
     SUPABASE_JWT_SECRET: str = ""
 
+    # Database & ORM (PostgreSQL via psycopg or local fallback)
+    DATABASE_URL: str = "sqlite+aiosqlite:///amr_sentinel.db"
+
     # Assistive AI (Optional Gemini API key for OCR/intake)
     GEMINI_API_KEY: str = ""
+    OPENROUTER_API_KEY: str = ""
+    OPENROUTER_MODEL: str = "google/gemini-2.5-flash"
 
     # Active clinical rule set version
     ACTIVE_RULE_SET_VERSION: str = "1.0.0"

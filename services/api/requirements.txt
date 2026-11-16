@@ -5,3 +5,12 @@ pydantic-settings>=2.6.0
 python-multipart>=0.0.12
 pyyaml>=6.0.2
 httpx>=0.28.0
+
+# Database & ORM
+sqlalchemy[asyncio]>=2.0.30
+psycopg[binary]>=3.1.18
+
+# Search, RAG & Matching
+rapidfuzz>=3.8.0
+rank-bm25>=0.2.2
+pgvector>=0.2.5

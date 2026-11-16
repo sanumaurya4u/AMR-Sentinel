@@ -2,10 +2,12 @@
 import time
 import uuid
 
+from app.api.v1.agent import router as agent_router
 from app.api.v1.audits import router as audits_router
 from app.api.v1.extractions import router as extractions_router
 from app.api.v1.health import router as health_router
 from app.api.v1.metrics import router as metrics_router
+from app.api.v1.rag import router as rag_router
 from app.config import get_settings
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
@@ -71,3 +73,7 @@ app.include_router(extractions_router, prefix="/v1")
 app.include_router(extractions_router, prefix="/api/v1")
 app.include_router(metrics_router, prefix="/v1")
 app.include_router(metrics_router, prefix="/api/v1")
+app.include_router(agent_router, prefix="/v1")
+app.include_router(agent_router, prefix="/api/v1")
+app.include_router(rag_router, prefix="/v1")
+app.include_router(rag_router, prefix="/api/v1")

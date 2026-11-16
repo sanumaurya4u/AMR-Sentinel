@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { ShieldAlert, PlusCircle, LayoutDashboard, BarChart3, Stethoscope, Sparkles } from "lucide-react";
+import { ShieldAlert, PlusCircle, LayoutDashboard, BarChart3, Stethoscope, Sparkles, BookOpen } from "lucide-react";
 
 export function Navbar() {
   return (
@@ -45,6 +45,13 @@ export function Navbar() {
           >
             <BarChart3 className="h-4 w-4" />
             Stewardship Insights
+          </Link>
+          <Link
+            href="/knowledge"
+            className="flex items-center gap-1.5 px-3 py-2 rounded-md hover:text-ink hover:bg-canvas transition-colors"
+          >
+            <BookOpen className="h-4 w-4" />
+            Knowledge &amp; RAG
           </Link>
         </nav>
 

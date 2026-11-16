@@ -9,6 +9,7 @@ import re
 from typing import Any
 
 from app.config import get_settings
+from app.extraction.fuzzy_match import get_drug_entity_matcher
 from app.services.amr_knowledge import get_amr_knowledge_service
 
 # Comprehensive brand-to-generic catalog derived from Indian pharmaceutical records
@@ -363,7 +364,19 @@ class ExtractionAdapter:
                     "durationDays": final_dur,
                 })
 
-        # Fallback if no specific drug token matched
+        # RapidFuzz fallback if no exact brand token matched
+        if not detected_lines:
+            fuzzy_matcher = get_drug_entity_matcher()
+            fuzzy_entities = fuzzy_matcher.resolve_entities_in_text(text_content)
+            for fe in fuzzy_entities:
+                detected_lines.append({
+                    "drugName": fe["matched_generic"],
+                    "doseText": fe["default_dose"],
+                    "frequencyText": fe["default_freq"],
+                    "durationDays": fe["default_duration"],
+                })
+
+        # Default fallback if still nothing detected
         if not detected_lines:
             detected_lines.append({
                 "drugName": "Amoxicillin",

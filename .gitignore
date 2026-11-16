@@ -58,3 +58,7 @@ Thumbs.db
 # Large raw datasets (must be read-only, not committed if excessive)
 data_sets/WHO_RELAY_AMR.csv
 data_sets/**/*.pdf
+PPT
+submission_pdfs/
+AMR-Sentinel Specifications/
+.vscode

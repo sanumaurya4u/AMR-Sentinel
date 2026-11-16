@@ -16,6 +16,7 @@ import { Navbar } from "@/components/Navbar";
 import { StatusBadge } from "@/components/StatusBadge";
 import { DisclaimerBanner, SyntheticDataNotice } from "@/components/DisclaimerBanner";
 import { SYNTHETIC_SAMPLE_CASES } from "@/lib/sample-cases";
+import { AnimatedCard } from "@/components/AnimatedCard";
 
 export default function DashboardPage() {
   return (
@@ -24,90 +25,94 @@ export default function DashboardPage() {
 
       <main className="flex-1 py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full space-y-8">
         {/* Welcome & Organization Banner */}
-        <div className="rounded-2xl border border-border bg-surface p-6 sm:p-8 shadow-xs">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div className="space-y-2 max-w-2xl">
-              <div className="inline-flex items-center gap-2 rounded-full bg-primary-subtle px-3 py-1 text-xs font-semibold text-primary">
-                <Building2 className="h-3.5 w-3.5" />
-                Demo Org: National Antimicrobial Stewardship Initiative
+        <AnimatedCard delay={0.05}>
+          <div className="rounded-2xl border border-border bg-surface p-6 sm:p-8 shadow-xs">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
+              <div className="space-y-2 max-w-2xl">
+                <div className="inline-flex items-center gap-2 rounded-full bg-primary-subtle px-3 py-1 text-xs font-semibold text-primary">
+                  <Building2 className="h-3.5 w-3.5" />
+                  Demo Org: National Antimicrobial Stewardship Initiative
+                </div>
+                <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-ink">
+                  Prescription Auditing &amp; Stewardship Dashboard
+                </h1>
+                <p className="text-sm text-slate-clinical leading-relaxed">
+                  Empowering prescribers with pure deterministic second-checks against ICMR Standard Treatment Guidelines 2022 and WHO AWaRe 2023. Preventing empiric over-escalation, contraindicated regimens, and irrational combinations in outpatient care.
+                </p>
               </div>
-              <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-ink">
-                Prescription Auditing &amp; Stewardship Dashboard
-              </h1>
-              <p className="text-sm text-slate-clinical leading-relaxed">
-                Empowering prescribers with pure deterministic second-checks against ICMR Standard Treatment Guidelines 2022 and WHO AWaRe 2023. Preventing empiric over-escalation, contraindicated regimens, and irrational combinations in outpatient care.
-              </p>
-            </div>
 
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
-              <Link
-                href="/new-audit"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white shadow-xs hover:bg-primary-hover transition-colors"
-              >
-                <Sparkles className="h-4 w-4" />
-                Start New Audit
-                <ArrowRight className="h-4 w-4" />
-              </Link>
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0">
+                <Link
+                  href="/new-audit"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-bold text-white shadow-xs hover:bg-primary-hover transition-colors"
+                >
+                  <Sparkles className="h-4 w-4" />
+                  Start New Audit
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
+        </AnimatedCard>
 
         <SyntheticDataNotice />
 
         {/* Stewardship Key Metrics (De-identified Institutional Trends) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div className="rounded-xl border border-border bg-surface p-5 shadow-xs">
-            <div className="flex items-center justify-between text-slate-clinical">
-              <span className="text-xs font-semibold uppercase tracking-wider">Access Class Share</span>
-              <Activity className="h-4 w-4 text-emerald-600" />
+        <AnimatedCard delay={0.1}>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="rounded-xl border border-border bg-surface p-5 shadow-xs">
+              <div className="flex items-center justify-between text-slate-clinical">
+                <span className="text-xs font-semibold uppercase tracking-wider">Access Class Share</span>
+                <Activity className="h-4 w-4 text-emerald-600" />
+              </div>
+              <div className="mt-3 flex items-baseline gap-2">
+                <span className="text-2xl font-bold text-ink">64.2%</span>
+                <span className="text-xs font-semibold text-emerald-700 flex items-center">
+                  ↑ WHO Target &ge;60%
+                </span>
+              </div>
+              <p className="mt-1 text-[11px] text-slate-clinical">WHO AWaRe Benchmark Target</p>
             </div>
-            <div className="mt-3 flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-ink">64.2%</span>
-              <span className="text-xs font-semibold text-emerald-700 flex items-center">
-                ↑ WHO Target &ge;60%
-              </span>
-            </div>
-            <p className="mt-1 text-[11px] text-slate-clinical">WHO AWaRe Benchmark Target</p>
-          </div>
 
-          <div className="rounded-xl border border-border bg-surface p-5 shadow-xs">
-            <div className="flex items-center justify-between text-slate-clinical">
-              <span className="text-xs font-semibold uppercase tracking-wider">Watch Class Share</span>
-              <Activity className="h-4 w-4 text-amber-600" />
+            <div className="rounded-xl border border-border bg-surface p-5 shadow-xs">
+              <div className="flex items-center justify-between text-slate-clinical">
+                <span className="text-xs font-semibold uppercase tracking-wider">Watch Class Share</span>
+                <Activity className="h-4 w-4 text-amber-600" />
+              </div>
+              <div className="mt-3 flex items-baseline gap-2">
+                <span className="text-2xl font-bold text-ink">31.8%</span>
+                <span className="text-xs font-semibold text-amber-700 flex items-center">
+                  <TrendingDown className="h-3 w-3 mr-0.5" /> -4.1% MoM
+                </span>
+              </div>
+              <p className="mt-1 text-[11px] text-slate-clinical">Active De-escalation Rate</p>
             </div>
-            <div className="mt-3 flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-ink">31.8%</span>
-              <span className="text-xs font-semibold text-amber-700 flex items-center">
-                <TrendingDown className="h-3 w-3 mr-0.5" /> -4.1% MoM
-              </span>
-            </div>
-            <p className="mt-1 text-[11px] text-slate-clinical">Active De-escalation Rate</p>
-          </div>
 
-          <div className="rounded-xl border border-border bg-surface p-5 shadow-xs">
-            <div className="flex items-center justify-between text-slate-clinical">
-              <span className="text-xs font-semibold uppercase tracking-wider">Reserve Escapes Intercepted</span>
-              <ShieldAlert className="h-4 w-4 text-purple-600" />
+            <div className="rounded-xl border border-border bg-surface p-5 shadow-xs">
+              <div className="flex items-center justify-between text-slate-clinical">
+                <span className="text-xs font-semibold uppercase tracking-wider">Reserve Escapes Intercepted</span>
+                <ShieldAlert className="h-4 w-4 text-purple-600" />
+              </div>
+              <div className="mt-3 flex items-baseline gap-2">
+                <span className="text-2xl font-bold text-ink">18</span>
+                <span className="text-xs font-semibold text-purple-700">Protected Reserve</span>
+              </div>
+              <p className="mt-1 text-[11px] text-slate-clinical">Carbapenems &amp; Polymyxins saved</p>
             </div>
-            <div className="mt-3 flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-ink">18</span>
-              <span className="text-xs font-semibold text-purple-700">Protected Reserve</span>
-            </div>
-            <p className="mt-1 text-[11px] text-slate-clinical">Carbapenems &amp; Polymyxins saved</p>
-          </div>
 
-          <div className="rounded-xl border border-border bg-surface p-5 shadow-xs">
-            <div className="flex items-center justify-between text-slate-clinical">
-              <span className="text-xs font-semibold uppercase tracking-wider">Contraindications Blocked</span>
-              <AlertOctagon className="h-4 w-4 text-urgent" />
+            <div className="rounded-xl border border-border bg-surface p-5 shadow-xs">
+              <div className="flex items-center justify-between text-slate-clinical">
+                <span className="text-xs font-semibold uppercase tracking-wider">Contraindications Blocked</span>
+                <AlertOctagon className="h-4 w-4 text-urgent" />
+              </div>
+              <div className="mt-3 flex items-baseline gap-2">
+                <span className="text-2xl font-bold text-urgent">42</span>
+                <span className="text-xs font-semibold text-urgent">Zero-Tolerance</span>
+              </div>
+              <p className="mt-1 text-[11px] text-slate-clinical">Pediatric, pregnancy &amp; renal safety</p>
             </div>
-            <div className="mt-3 flex items-baseline gap-2">
-              <span className="text-2xl font-bold text-urgent">42</span>
-              <span className="text-xs font-semibold text-urgent">Zero-Tolerance</span>
-            </div>
-            <p className="mt-1 text-[11px] text-slate-clinical">Pediatric, pregnancy &amp; renal safety</p>
           </div>
-        </div>
+        </AnimatedCard>
 
         {/* Guided Synthetic Demo Scenarios */}
         <div className="space-y-4">
