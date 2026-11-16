@@ -256,6 +256,9 @@ export default function ResultsPage() {
                       <span className="font-bold text-ink">
                         {(confirmedInput.patientContext as { ageYears?: number })?.ageYears ?? "N/A"} yrs •{" "}
                         {(confirmedInput.patientContext as { gender?: string })?.gender ?? "N/A"}
+                        {(confirmedInput.patientContext as { weightKg?: number })?.weightKg
+                          ? ` • ${(confirmedInput.patientContext as { weightKg?: number })?.weightKg} kg`
+                          : ""}
                       </span>
                     </div>
                     <div className="bg-white p-2.5 rounded-lg border border-border">

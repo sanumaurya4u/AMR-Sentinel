@@ -293,7 +293,7 @@ export default function DashboardPage() {
 
                 <div className="mt-4 pt-3 border-t border-border flex items-center justify-between">
                   <span className="text-[11px] font-medium text-slate-clinical">
-                    Age: {sc.patientContext.ageYears}y • {sc.patientContext.gender}
+                    Age: {sc.patientContext.ageYears}y{sc.patientContext.weightKg ? ` • ${sc.patientContext.weightKg}kg` : ""} • {sc.patientContext.gender}
                   </span>
                   <Link
                     href={`/new-audit?case=${sc.id}`}

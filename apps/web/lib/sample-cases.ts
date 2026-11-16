@@ -14,6 +14,7 @@ export interface SyntheticCase {
     gender: "female" | "male" | "other";
     isPregnant: boolean;
     egfrMlMin?: number;
+    weightKg?: number;
     allergies: string[];
   };
   indicationCode: string;
@@ -39,6 +40,7 @@ export const SYNTHETIC_SAMPLE_CASES: SyntheticCase[] = [
       gender: "male",
       isPregnant: false,
       egfrMlMin: 95,
+      weightKg: 25,
       allergies: [],
     },
     indicationCode: "SYN_WATERY_DIARRHEA",

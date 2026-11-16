@@ -12,4 +12,5 @@ class PatientContext(BaseModel):
     gender: Literal["female", "male", "other"] = Field("other", description="Biological gender")
     is_pregnant: bool = Field(False, alias="isPregnant", description="Whether patient is documented as currently pregnant")
     egfr_ml_min: float | None = Field(None, ge=0.0, le=250.0, alias="egfrMlMin", description="Estimated GFR in mL/min/1.73m²")
+    weight_kg: float | None = Field(None, ge=0.5, le=300.0, alias="weightKg", description="Patient weight in kg (critical for pediatric dosing)")
     allergies: list[str] = Field(default_factory=list, description="List of documented drug allergies")

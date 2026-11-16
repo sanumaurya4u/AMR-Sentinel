@@ -132,7 +132,7 @@ export function Sidebar({ isCollapsed = false, onToggleCollapse }: SidebarProps)
           <button
             type="button"
             onClick={onToggleCollapse}
-            aria-label={isCollapsed ? "Expand sidebar" : "Collapse sidebar"}
+            aria-label={isCollapsed ? "Expand View" : "Collapse View"}
             className="flex w-full items-center justify-center gap-2 rounded-lg border border-border bg-canvas/60 p-2 text-xs font-medium text-slate-clinical hover:bg-canvas hover:text-ink transition-colors"
           >
             {isCollapsed ? (

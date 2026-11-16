@@ -15,8 +15,8 @@ const config: Config = {
           dark: "#0A1B2A",
         },
         slate: {
-          clinical: "#627D98",
-          subtle: "#829AB1",
+          clinical: "#486581",
+          subtle: "#627D98",
           light: "#BCCCDC",
         },
         canvas: "#F7FAFC",
