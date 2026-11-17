@@ -19,7 +19,7 @@ const config: Config = {
           subtle: "#627D98",
           light: "#BCCCDC",
         },
-        canvas: "#F7FAFC",
+        canvas: "#F0F4F8",
         surface: "#FFFFFF",
         primary: {
           DEFAULT: "#0F766E",
